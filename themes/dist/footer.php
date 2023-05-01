@@ -4,7 +4,7 @@
 
 
 
-//Menüp einrichten, depth-> untermenü ebenen
+    //Menü einrichten, depth-> untermenü ebenen
 <?php
     wp_nav_menu(array(
         'theme_location' => 'footer',
