@@ -7,12 +7,10 @@ text Domain: wifi
 
 
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
 */
+
+
+
 
 :root {
     --base-bg-color: #255991;
@@ -25,7 +23,7 @@ text Domain: wifi
     --columns-gap:30px;
 
 }
-/* charmonman-regular - latin */
+/* charmonman-regular - latin Schrift einbinden */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Charmonman';
@@ -114,7 +112,7 @@ body {
 
 }
 
-
+/*Definiert die Breite des Container/body*/
 .container {
     max-width: var(--container-max-width);
     margin-left:auto;
@@ -1129,6 +1127,17 @@ min-width:1000px;
     margin-top:60px;
     background-color: #00c0ff;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Animierte h1,posts*/

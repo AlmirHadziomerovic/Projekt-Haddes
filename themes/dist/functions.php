@@ -27,16 +27,19 @@ add_action('after_setup_theme',function(){
 
 });
 
+
+//Hauptmenü registrieren 
 register_nav_menus(array(
     'primary' =>__('Hauptmenü', 'wifi')
 ));
 
+//Footer Menü registrieren
 register_nav_menus(array(
     'footer' => __('footer', 'wifi')
 ));
 
 
-
+//svg & svgzip erlauben zum upload
 add_filter ('upload_mimes', function($mimes = array()){
     $mimes['svg'] = 'image/svg+xml';
     $mimes['svgz'] = 'image/svg-xml';
