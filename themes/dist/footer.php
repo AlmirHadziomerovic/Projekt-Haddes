@@ -1,17 +1,17 @@
 <footer id="footer-page" page="column container">
 
-<nav id="footer-nav" class="column">
+<nav id="nav-footer" class="column">
     
-<?php
- //Menü einrichten, depth untermenü ebenen
-    wp_nav_menu(array(
-        'theme_location' => 'footer',
-        'container' => false,
-        'menu_class'=> 'nav-menu',
-        'fallback_cb' => false,
-        'depth' =>2
-    ));
-?>
+    <?php
+    //Menü einrichten, depth untermenü ebenen
+        wp_nav_menu(array(
+            'theme_location' => 'footer',
+            'container' => false,
+            'menu_class'=> 'nav-menu',
+            'fallback_cb' => false,
+            'depth' =>1
+        ));
+    ?>
 </nav>
 <div class="social-links column">
     <a href="https://linkedin.com" target="_blank">
@@ -36,13 +36,13 @@
 
 
 
-<div class="copyright column">
-<?php
-    echo sprint(__('&copy; %1$s, %2$s'), date('Y'),get_bloginfo('name'));
-?>
+    <div class="copyright column">
+        <?php
+            echo sprint(__('&copy; %1$s, %2$s'), date('Y'),get_bloginfo('name'));
+        ?>
 
 
-</div>
+    </div>
 </footer>
 
 <div id="totop"><?php _e('top', 'wifi');?></div>

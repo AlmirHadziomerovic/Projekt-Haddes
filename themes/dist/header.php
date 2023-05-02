@@ -39,11 +39,7 @@
                     'depth' => 2
                 ));
                   ?>
-
-
         </div>
     </nav>
 
     
-    <?php wp_footer(); ?>
-</body>
