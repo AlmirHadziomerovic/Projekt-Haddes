@@ -12,12 +12,12 @@
         Lass und gemeinsam nachsehen!');
     ?>
     </p>
-
-    <?php 
-    if (function_exists('the_custom_logo')){
-        the_custom_logo();
-    }
-    ?>
+    <div class="error-logo">
+        <?php 
+        if (function_exists('the_custom_logo')){
+            the_custom_logo();
+        };
+        ?>
     </div>
     <nav class="error-menu">
 

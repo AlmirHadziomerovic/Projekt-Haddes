@@ -7,12 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Damit Plugin/Wordpress Daten in den Head spielen können-->
-   
+    <?php wp_head(); ?> 
 
 </head>
-
 <body <?php body_class();?>>
-<?php wp_head(); ?> 
     <a href="#content" class="screen-reader-text"><?php _e('Zum Inhalt Springen', 'wifi'); ?></a>
     <nav id="navbar">
         <div class="container">

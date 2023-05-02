@@ -1146,7 +1146,15 @@ min-width:1000px;
     color:#255991;
     font-size: 5rem;
     text-decoration: underline;
+    line-height: 1.5em;
 };
+
+.error-logo {
+    align-items: center;
+    background-color: #444;
+};
+
+/*Logo in die mitte setzten*/
 
 
 

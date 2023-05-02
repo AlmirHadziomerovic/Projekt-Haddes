@@ -33,9 +33,10 @@
         <span class="screen-reader-text">Follow on Facebook</span>
     </a>
 </div>
-<div class="copyright column">
-   
 
+
+
+<div class="copyright column">
 <?php
     echo sprint(__('&copy; %1$s, %2$s'), date('Y'),get_bloginfo('name'));
 ?>
@@ -50,5 +51,5 @@
 <?php
     wp_footer();
 ?>
-
+</body>
 </html>
