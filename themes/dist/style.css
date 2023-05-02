@@ -1129,6 +1129,24 @@ min-width:1000px;
 }
 
 
+/*Logo 404 Stylen*/
+
+#error {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#255991;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#error h1 {
+    color:#255991;
+    font-size: 5rem;
+    text-decoration: underline;
+};
 
 
 

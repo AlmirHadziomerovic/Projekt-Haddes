@@ -7,7 +7,7 @@
     </h1>
 
     <p>
-    <?php _e('Leider gibt es die Seite, die du gesucht hast, auf unserer Webseite nicht.
+    <?php _e('Leider gibt es die Seite, die du gesucht hast, auf unserer Webseite nicht.<br>
         Doch vielleicht haben wir trotzdem etwas für dich.
         Lass und gemeinsam nachsehen!');
     ?>
