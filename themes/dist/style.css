@@ -1138,7 +1138,7 @@ min-width:1000px;
     margin: 4rem auto;
 }
 
-/*Items centrieren*/
+/*Items zentrieren*/
 .error-menu #nav-error {
     display: flex;
     justify-content: center;
@@ -1149,7 +1149,7 @@ min-width:1000px;
     padding: 0 1rem;
 }
 
-/*Navbar hintergrundfarbe öndern*/
+/*Navbar Hintergrundfarbe ändern*/
 .error404 #navbar{
     background-color: rgb(0, 0, 0);
 }
@@ -1163,11 +1163,6 @@ min-width:1000px;
     line-height: 1.5em;
     text-align: center;
 }
-
-
-
-
-
 
 
 /*Animierte h1,posts*/
