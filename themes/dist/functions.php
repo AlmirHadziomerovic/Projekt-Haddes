@@ -25,19 +25,14 @@ add_action('after_setup_theme',function(){
 
     ));
 
+    //Hauptmenü registrieren 
+    register_nav_menus(array(
+        'primary' =>__('Hauptmenü', 'wifi'),
+        'footer' => __('Footermenü', 'wifi')
+    ));
+
+
 });
-
-
-//Hauptmenü registrieren 
-register_nav_menus(array(
-    'primary' =>__('Hauptmenü', 'wifi')
-));
-
-//Footer Menü registrieren
-register_nav_menus(array(
-    'footer' => __('footer', 'wifi')
-));
-
 
 
 

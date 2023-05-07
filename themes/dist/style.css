@@ -15,7 +15,7 @@ text Domain: wifi
 :root {
     --base-bg-color: #255991;
     --base-color: #ffffff;
-    --navbar-bg-color: rgba(0, 0, 0, 0);
+    --navbar-bg-color: rgba(0, 0, 0);
     --primary-color: #00c0ff;
     --navbar-height-mobile:60px;
     --navbar-height-desktop: 80px;
@@ -23,6 +23,14 @@ text Domain: wifi
     --columns-gap:30px;
 
 }
+
+/* MARKIERUNGS FARBE ÄNDERN VON CURSOR*/
+::selection {
+    background-color: #00c0ff;
+    color:#eee,
+}
+
+
 /* charmonman-regular - latin Schrift einbinden */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -1129,10 +1137,10 @@ min-width:1000px;
 }
 
 
-/*Logo 404 Stylen*/
+/*404 Stylen*/
 
 
-/*logo Größe verändern*/
+/*Logo Größe verändern*/
 .error-logo{
     width: 60%;
     margin: 4rem auto;
@@ -1163,6 +1171,10 @@ min-width:1000px;
     line-height: 1.5em;
     text-align: center;
 }
+
+
+
+
 
 
 /*Animierte h1,posts*/
