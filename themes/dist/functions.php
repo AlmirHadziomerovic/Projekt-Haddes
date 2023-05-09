@@ -62,7 +62,36 @@ add_action('wp_enqueue_scripts', function(){
 
     // CSS Datei wird nur registriert aber nicht in den Head geladen
     wp_register_style('splide.css', get_template_directory_uri() . 'assets/splide-4.1.3/dist/css/splide.min.css');
-})
+});
+
+if(function_exists('acf_add_options_page')){
+
+    acf_add_options_page(array(
+        'page_title' => 'Theme Einstellungen',
+        'menu_title' => 'ACF Theme Einstellungen',
+        'menu_slug' => 'webdev-theme-einstellungen',
+        'position' => 50,
+        'icon_url' => 'dashicons-art',
+        'update_button' => __('Einstellungen speichern', 'wifi'),
+        'update_message' => __('Einstellungen wurden gespeichert', 'wifi'),
+        'capibility' => 'edit_posts'
+
+    ));
+
+} else{
+    add_action('admin_notice', function(){
+        ?>
+        <div class="error notice">
+            <p><?php
+            _e('Achtung: Das Plugin ACF PRo muss Installiert werden', 'wifi');
+            ?></p>
+        </div>
+    <?php });
+}
+
+
+
+
 
 
 ?>

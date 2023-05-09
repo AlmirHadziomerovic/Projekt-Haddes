@@ -2,25 +2,22 @@
 
 
 <main id="container">
-    <?php
-    $error = get_field('Error', 'option');
-    ?>
+        <!--  Seite 404 Text/Textfeld einfügen und danach Textfeld ausgeben -->
 
+    <?php
+    $error = get_field('error', 'option');
+    ?>
+    <h1>
+        <?php echo $error['error_title']; ?>
+    </h1>
+    <p>
+        <?php echo $error['error_text']; ?>
+    </p>
     
 
-    <h1>
-        <?php _e('Ups, da ist was schief gegangen', 'wifi'); ?>
-    </h1>
+  
 
-    <p><?php _e('Leider gibt es die Seite, die du gesucht hast, auf unserer Webseite nicht.<br>
-        Doch vielleicht haben wir trotzdem etwas für dich.
-        Lass uns gemeinsam nachsehen!', 'wifi');?></p>
-
-
-
-
-
-
+    <!-- Logo auf der 404 ausgeben/ Schleife falls Logo vorhanden -->
     <div class="error-logo">
         <?php 
         if (function_exists('the_custom_logo')){

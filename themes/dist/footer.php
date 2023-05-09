@@ -13,24 +13,25 @@
         ));
     ?>
 </nav>
+
+        <!-- Icons im Footer ausgeben -->
 <div class="social-links column">
-    <a href="https://linkedin.com" target="_blank">
-        <span class="icon-linkedin" aria-hidden="true"></span>
-        <span class="screen-reader-text">Follow on Linked</span>
-    </a>
+    <?php 
+    $social_links = get_field('social_links', 'option');
+    ?>
+
+    <?php if($social_links['instagram']):?>
 
     <a href="https://instagram.com" target="_blank">
         <span class="icon-instagram" aria-hidden="true"></span>
-        <span class="screen-reader-text">Follow on Instagram</span>
+        <span class="screen-reader-text"><?php _e('Follow on Instagram', 'wifi');?></span>
     </a>
+    <?php endif;?>
 
-    <a href="https://github.com" target="_blank">
-        <span class="icon-github" aria-hidden="true"></span>
-        <span class="screen-reader-text">Follow on Github</span>
-    </a>
-    <a href="https://github.com" target="_blank">
+    <?php if($social_links['Facebook']):?>
+    <a href="https://facebook.com" target="_blank">
         <span class="icon-facebook" aria-hidden="true"></span>
-        <span class="screen-reader-text">Follow on Facebook</span>
+        <span class="screen-reader-text"><?php _e('Follow on Facebook', 'wifi');?></span>
     </a>
 </div>
 
