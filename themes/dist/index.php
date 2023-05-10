@@ -1,8 +1,11 @@
 <?php
 get_header(); ?>
 
+<?php $blogFields = get_field('header', 'option');?>
 
-
+<header id="blog-header" style="background-image: url('<?php echo $blogFields['header_image'];?>');">
+<span class="header-title"><?php echo $blogFields['header_description']; ?></span>
+</header>
 
 <main id="content" class="container">
         <h1 class="is-style-headline">
@@ -17,30 +20,30 @@ get_header(); ?>
             }
             ?>
         </h1>
-               
+        <!--Blog Inhalt einfügen -->
         <?php
         if(is_home()){
-            echo'<p>' . $blogFields['blog_description', 'option'] . '</p>';
+                echo '<p>' .get_field('blog_description', 'option') . '</p>';
             } else {
-                if (the_archive_description()) {
-                    <the_archive_description('<p>', '</p>');
+                if(the_archive_description()) {
+                    the_archive_description('<p>', '</p>');
                 }
             }
         ?>
 
         <?php
-        if(have_posts(  ));
-            while(have_posts());
+        if(have_posts()):
+            while(have_posts()):
             the_post();
             ?>
             <article class="post">
                 <h2 class="post-title">
-                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    <a href="<?php the_permalink();?>"><?php the_title();?></a>
                 </h2>
                 <div class="meta">
-                    <time class="date" datetime="<?php the_time('y-m-d'); ?>"><?php the_time('d.m.Y') ?></time>
+                    <time class="date" datetime="<?php the_time('Y-m-d');?>"><?php the_time('d.m.Y');?></time>
                     <?php
-                        the_category(', '),
+                        the_category(',');
                         ?>
                 </div>
             </article>
@@ -48,9 +51,7 @@ get_header(); ?>
             <?php
             endwhile;
         else:?>
-
-        <h2><?php _e('Es wurde kein Beitrag gefunden', 'wifi');?></h2>
-
+            <h2><?php _e('Es wurde kein Beitrag gefunden', 'wifi');?></h2>
         <?php endif;
         ?>
         <?php if(paginate_links());?>
@@ -59,10 +60,11 @@ get_header(); ?>
             <?php
             echo paginate_links(array(
                 'prev_text' => '<span class="icon-arrow-left" aria-label="' . __('Vorherige Seite', 'wifi') . '"></span>',
-                'next_text' => '<span class="icon-arrow-right" aria-label="' . __('Nächste Seite', 'wifi') . '"></span>'            ));
+                'next_text' => '<span class="icon-arrow-right" aria-label="'. __('Nächste Seite', 'wifi') . '"></span>'            
+            ));
             ?>
         </nav>
-        <?php endif;?>
+     
 
 
 
@@ -113,6 +115,4 @@ get_header(); ?>
         </ul>
     </main>
 
-<?php 
-get_footer();
-?>
+<?php get_footer();?>

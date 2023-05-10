@@ -28,9 +28,12 @@ add_action('after_setup_theme',function(){
     //Hauptmenü registrieren 
     register_nav_menus(array(
         'primary' =>__('Hauptmenü', 'wifi'),
-        'footer' => __('Footermenü', 'wifi')
+     
     ));
 
+    register_nav_menus(array(
+        'footer' => __('Footer', 'wifi')
+    ));
 
 });
 
@@ -64,6 +67,8 @@ add_action('wp_enqueue_scripts', function(){
     wp_register_style('splide.css', get_template_directory_uri() . 'assets/splide-4.1.3/dist/css/splide.min.css');
 });
 
+
+// ACF Plugin Installieren bzw. ACF Einstellungen hinzufügen im Menü
 if(function_exists('acf_add_options_page')){
 
     acf_add_options_page(array(
@@ -83,7 +88,7 @@ if(function_exists('acf_add_options_page')){
         ?>
         <div class="error notice">
             <p><?php
-            _e('Achtung: Das Plugin ACF PRo muss Installiert werden', 'wifi');
+            _e('Achtung: Das Plugin ACF Pro muss Installiert werden', 'wifi');
             ?></p>
         </div>
     <?php });

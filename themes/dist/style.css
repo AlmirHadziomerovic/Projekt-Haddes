@@ -1003,11 +1003,10 @@ min-width:1000px;
 .blog {
     display:grid;
     grid-template-columns: 1fr;
-    background-color: #eee;
+    background-color: #d31717;
     padding:1em;
     
 }
-
 
 
 
@@ -1019,6 +1018,7 @@ min-width:1000px;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #eee;
     padding:1em;
+    margin:5em;
     
 }
 
