@@ -883,12 +883,14 @@ min-width:1000px;
 }
 #page-footer > * {
     padding: 0 0;
+
 }
 
 #page-footer .social-links {
     list-style-type: none;
     margin: 0;
     font-size: 2em;
+   
 }
 
 #nav-footer ul {
@@ -902,6 +904,9 @@ min-width:1000px;
 #nav-footer li {
     display:inline-block;
     margin: 0 .5em;
+ 
+
+
 
 }
 

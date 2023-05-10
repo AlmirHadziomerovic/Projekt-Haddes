@@ -1,4 +1,4 @@
-<footer id="footer-page" page="column container">
+<footer id="page-footer" class="column container">
 
 <nav id="nav-footer" class="column">
     
@@ -22,17 +22,19 @@
 
     <?php if($social_links['instagram']):?>
 
-    <a href="https://instagram.com" target="_blank">
+    <a href="https://www.instagram.com" target="_blank">
         <span class="icon-instagram" aria-hidden="true"></span>
         <span class="screen-reader-text"><?php _e('Follow on Instagram', 'wifi');?></span>
     </a>
     <?php endif;?>
 
-    <?php if($social_links['Facebook']):?>
-    <a href="https://facebook.com" target="_blank">
+    <?php if($social_links['facebook']):?>
+    <a href="https://www.facebook.com" target="_blank">
         <span class="icon-facebook" aria-hidden="true"></span>
         <span class="screen-reader-text"><?php _e('Follow on Facebook', 'wifi');?></span>
-    </a>
+    </a>    
+    <?php endif;?>
+
 </div>
 
 
