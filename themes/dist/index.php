@@ -3,9 +3,7 @@ get_header(); ?>
 
 <?php $blogFields = get_field('header', 'option');?>
 
-<header id="blog-header" style="background-image: url('<?php echo $blogFields['header_image'];?>');">
-<span class="header-title"><?php echo $blogFields['header_description']; ?></span>
-</header>
+
 
 <main id="content" class="container">
         <h1 class="is-style-headline">
