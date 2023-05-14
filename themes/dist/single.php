@@ -6,7 +6,8 @@
 
             <div class="meta">
                 <time class="date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time ('d.m.Y');?></time>
-                <?phpthe_category(', ' );
+                <?php 
+                    the_category(', ' );
                 ?>
             </div>
 
@@ -20,10 +21,7 @@
                 }
             ?>
 
-                <!--Schlagwörter ausgeben/falls keine Schlagwörter vorhanden wird durch # nichts ausgegeben -->
-                <?php
-                    the_tags('<div class="meta tags">#', '#', '</div>')
-                ?>
+         
 
     </main>
 

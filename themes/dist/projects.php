@@ -1,7 +1,7 @@
 <?php
 
 /*
-Templaten Name: Haddes
+Templaten Name: Projekte
 
 */
 
@@ -22,7 +22,7 @@ get_header();?>
         'pages' => %paged
     ];
 
-    $project_query = new WP_Qeury($args);
+    $project_query = new WP_Query($args);
 
 ?>
 

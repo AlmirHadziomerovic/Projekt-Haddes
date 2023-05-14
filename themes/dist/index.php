@@ -5,7 +5,7 @@ get_header(); ?>
 
 
 
-<main id="content" class="container">
+<main id="content" class="container webseiten alignfull">
         <h1 class="is-style-headline">
             <?php
             $pagePosts = get_option('page_for_posts');
@@ -33,6 +33,7 @@ get_header(); ?>
         if(have_posts()):
             while(have_posts()):
             the_post();
+        
             ?>
             <article class="post">
                 <h2 class="post-title">
