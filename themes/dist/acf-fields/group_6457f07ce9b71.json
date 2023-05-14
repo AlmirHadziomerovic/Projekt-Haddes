@@ -3,6 +3,23 @@
     "title": "Theme Einstellungen",
     "fields": [
         {
+            "key": "field_646119b3c188a",
+            "label": "Error",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_6457f07d2892b",
             "label": "error",
             "name": "error",
@@ -59,6 +76,23 @@
                     "new_lines": ""
                 }
             ]
+        },
+        {
+            "key": "field_646119c86a801",
+            "label": "Social Links",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
         },
         {
             "key": "field_645a9e3794be2",
@@ -131,5 +165,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1683956090
+    "modified": 1684085207
 }
