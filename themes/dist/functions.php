@@ -42,6 +42,7 @@ add_action('after_setup_theme',function(){
 
 
 
+
 //svg & svgzip erlauben zum upload
 add_filter ('upload_mimes', function($mimes = array()){
     $mimes['svg'] = 'image/svg+xml';
