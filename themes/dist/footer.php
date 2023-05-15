@@ -1,4 +1,4 @@
-<footer id="page-footer" class="column container">
+<footer id="page-footer" class="columns container">
 
 <nav id="nav-footer" class="column">
     
@@ -9,7 +9,7 @@
             'container' => false,
             'menu_class'=> 'nav-menu',
             'fallback_cb' => false,
-            'depth' =>1
+            'depth' =>2
         ));
     ?>
 </nav>
@@ -21,15 +21,14 @@
     ?>
 
     <?php if($social_links['instagram']):?>
-
-    <a href="https://www.instagram.com" target="_blank">
+    <a href="<?php echo $social_links['instagram'];?>" target="_blank">
         <span class="icon-instagram" aria-hidden="true"></span>
         <span class="screen-reader-text"><?php _e('Follow on Instagram', 'wifi');?></span>
     </a>
     <?php endif;?>
 
     <?php if($social_links['facebook']):?>
-    <a href="https://www.facebook.com" target="_blank">
+    <a href="h<?php echo $social_links['facebook'];?>" target="_blank">
         <span class="icon-facebook" aria-hidden="true"></span>
         <span class="screen-reader-text"><?php _e('Follow on Facebook', 'wifi');?></span>
     </a>    
@@ -41,7 +40,7 @@
 
     <div class="copyright column">
         <?php
-            echo sprint(__('&copy; %1$s, %2$s'), date('Y'),get_bloginfo('name'));
+            echo sprintf(__('&copy; %1$s, %2$s'), date('Y'),get_bloginfo('name'));
         ?>
 
 
@@ -51,8 +50,8 @@
 <div id="totop"><?php _e('top', 'wifi');?></div>
 
 
-<?php
-    wp_footer();
+<?php 
+wp_footer();
 ?>
-</body>
+
 </html>

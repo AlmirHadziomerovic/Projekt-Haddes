@@ -53,7 +53,7 @@ add_filter ('upload_mimes', function($mimes = array()){
 //CSS Datei im Head einfügen
 add_action('wp_enqueue_scripts', function(){
     wp_enqueue_style( 'webdev-css', get_template_directory_uri(  ) . '/style.css');
-    wp_enqueue_Style( 'webdev-icons', get_template_directory_uri(  ) . '/icons/style.css');
+    wp_enqueue_Style( 'webdev-icons', get_template_directory_uri(  ) . '../dist/assets/font/icomoon-v1.0 Kopie/style.css');
 
 
 
@@ -67,6 +67,7 @@ add_action('wp_enqueue_scripts', function(){
 
 // Register Custom Post Type in WP
 function post_type_project() {
+    
 
 	$labels = array(
 		'name'                  => _x( 'Projekte', 'Post Type General Name', 'wifi' ),

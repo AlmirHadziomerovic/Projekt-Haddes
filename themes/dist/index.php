@@ -18,6 +18,9 @@ get_header(); ?>
             }
             ?>
         </h1>
+
+
+
         <!--Blog Inhalt einfügen -->
         <?php
         if(is_home()){
@@ -112,6 +115,20 @@ get_header(); ?>
                 <span class="icon-three-vertical" aria-hidden="false"></span>
             </li>
         </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
     </main>
 
 <?php get_footer();?>
