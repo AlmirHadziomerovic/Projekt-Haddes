@@ -559,7 +559,12 @@ input,
     background-color: rgb(0, 0, 0);
     color: var(--base-color);
 }
+.btn:hover {
+    background-color:#00c0ff;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px 0 #00c0ff inset, 0 0 10px 8px #00c0ff;
 
+}
 
 
 /*BG Image*/
@@ -1044,6 +1049,15 @@ min-width:1000px;
     margin-right: auto; 
 }
 }
+.blog-content1:hover,
+.blog-content2:hover,
+.blog-content4:hover,
+.blog-content5:hover,
+.blog-content3:hover,
+.blog-content6:hover {
+   background-color:#00bfff76;
+   transition: all 0.7s linear;
+}
 
 
 
@@ -1139,6 +1153,10 @@ min-width:1000px;
 .send {
     margin-top:60px;
     background-color: #00c0ff;
+}
+
+.send:hover {
+    background-color: black;
 }
 
 

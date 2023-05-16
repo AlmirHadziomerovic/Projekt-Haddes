@@ -13,7 +13,7 @@ function jsLoaded(){
 /*To Top Button Ausblenden ab ca. 300px */
 function toTopButton (){
     const toTopButton = document.getElementById('totop')
-    if ( window.scrollY > 300 ) {
+    if ( window.scrollY > 700 ) {
         toTopButton.classList.add('show')
     } else {
         toTopButton.classList.remove ('show')
