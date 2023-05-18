@@ -13,7 +13,7 @@ add_action('after_setup_theme',function(){
         'style',
         'script')
     );
-
+    //Zusätzliche Bildgröße einfügen
     add_image_size('projekt', 730, 487, array('center', 'center'));
 
     //Logo Größe 

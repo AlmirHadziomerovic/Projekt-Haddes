@@ -21,10 +21,20 @@
                 }
             ?>
 
-         
+    <?php the_tags('<div class="meta tags">#', ' #', '</div>'); ?>
+
 
     </main>
 
+
+    <!--  Im Blog einen Button zur Kontaktaufnahme--> 
+    <aside id="cta">
+    <?php $contact = get_field('contact', 'options'); ?>
+    <span class="cta-title">
+        <?php _e('Nimm jetzt Kontakt auf', 'wifi'); ?>
+    </span>
+    <a class="btn" href="mailto:<?php echo antispambot($contact['e-mail']); ?>"><?php _e('E-Mail schicken', 'wifi'); ?></a>
+</aside>
 
 
 

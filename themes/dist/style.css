@@ -149,7 +149,7 @@ body {
 #navbar .container {
     display:flex;
     align-items:center;
-    justify-content:center;
+    justify-content:space-between;
     height: var(--navbar-height-mobile);
 }
 @media screen and (min-width: 850px) {
@@ -1013,8 +1013,8 @@ min-width:1000px;
 .blog {
     display:grid;
     grid-template-columns: 1fr;
-    background-color: #d31717;
     padding:1em;
+    margin:5em;
     
 }
 
@@ -1029,6 +1029,7 @@ min-width:1000px;
     background-color: #eee;
     padding:1em;
     margin:5em;
+
     
 }
 
@@ -1048,15 +1049,6 @@ min-width:1000px;
     margin-left:auto;
     margin-right: auto; 
 }
-}
-.blog-content1:hover,
-.blog-content2:hover,
-.blog-content4:hover,
-.blog-content5:hover,
-.blog-content3:hover,
-.blog-content6:hover {
-   background-color:#00bfff76;
-   transition: all 0.7s linear;
 }
 
 
