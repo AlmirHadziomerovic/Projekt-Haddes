@@ -39,6 +39,10 @@ add_action('after_setup_theme',function(){
 
 });
 
+   //Backend in Wordpress einfügen und die CSS Datei ergänzen damit es gleich ausschaut wie in Fronted
+   add_theme_support('editor-styles');
+   add_editor_Style('assets/css/style-editor.css');
+   add_editor_Style('assets/font/icomoon-v1.0 Kopie/style.css');
 
 
 
@@ -53,13 +57,19 @@ add_filter ('upload_mimes', function($mimes = array()){
 
 //CSS Datei im Head einfügen
 add_action('wp_enqueue_scripts', function(){
+
+    //In der Variable die Theme Version
+    $version = wp_get_theme()->get('Version');
+
     wp_enqueue_style( 'webdev-css', get_template_directory_uri(  ) . '/style.css');
-    wp_enqueue_Style( 'webdev-icons', get_template_directory_uri(  ) . '../dist/assets/font/icomoon-v1.0 Kopie/style.css');
+    wp_enqueue_style( 'webdev-icons', get_template_directory_uri(  ) . '/assets/font/icomoon-v1.0 Kopie/style.css');
 
 
 
     // CSS Datei wird nur registriert aber nicht in den Head geladen
-    wp_register_style('splide.css', get_template_directory_uri() . 'assets/splide-4.1.3/dist/css/splide.min.css');
+    wp_register_style('splide.css', get_template_directory_uri() . '/assets/splide-4.1.3/dist/css/splide.min.css');
+
+    wp_enqueue_script('webdev-js', get_template_directory_uri(  ) . '/assets/js/scripts.js', [], $version, true);
 });
 
 
@@ -176,17 +186,17 @@ add_filter('acf/settings/load_json', function($paths){
 
 // ACF Plugin Installieren bzw. ACF Einstellungen hinzufügen im Menü
 
-    acf_add_options_page(array(
-        'page_title' => 'Theme Einstellungen',
-        'menu_title' => 'ACF Theme Einstellungen',
-        'menu_slug' => 'webdev-theme-einstellungen',
-        'position' => 50,
-        'icon_url' => 'dashicons-art',
-        'update_button' => __('Einstellungen speichern', 'wifi'),
-        'update_message' => __('Einstellungen wurden gespeichert', 'wifi'),
-        'capibility' => 'edit_posts'
+            acf_add_options_page(array(
+                'page_title' => 'Theme Einstellungen',
+                'menu_title' => 'ACF Theme Einstellungen',
+                'menu_slug' => 'webdev-theme-einstellungen',
+                'position' => 50,
+                'icon_url' => 'dashicons-art',
+                'update_button' => __('Einstellungen speichern', 'wifi'),
+                'update_message' => __('Einstellungen wurden gespeichert', 'wifi'),
+                'capibility' => 'edit_posts'
 
-    ));
+            ));
 
     add_filter('block_categories_all', function($categories){
         return array_merge(
@@ -224,6 +234,39 @@ add_filter('acf/settings/load_json', function($paths){
                 'icon' => 'welcome-widgets-menus',
                 'render_template' => 'template-parts/block-header.php'
         ));
+          //Projekte Block anlegen
+          acf_register_block_type(array(
+            'name' => 'webdev-projects',
+            'title' => __('Projekte Carousel', 'wifi'),
+            'description' => __('Das ist das Projekt Carousel', 'wifi'),
+            'supports' => array('anchor' => true),
+            'category' => 'wifi',
+            'keywords' => array('carousel', 'Projekte','wifi'),
+            'post_type' => array('page'),
+            'align' => false,
+            'mode' => false,
+            'icon' => 'buddicons-friends',
+            'render_template' => 'template-parts/blocks/block-projects.php', //Datei erstellen in Blocks
+            'enqueue_assets' => function(){ 
+                wp_enqueue_style('splideCss', get_template_directory_uri(). '/assets/CSS/splide.min.css');
+                wp_enqueue_script('splideMain', get_template_directory_uri(). '/assets/js/splide.min.js');
+                wp_enqueue_script('splideConfig', get_template_directory_uri(). '/assets/js/splideConfig.js');
+
+                }
+            )); 
+        acf_register_block_type(array(
+            'name' => 'webdev-spalten',
+            'title' => __('Spalten'),
+            'description' => __('Das ist der Spaltenblock', 'wifi'),
+            'supports' => array('anchor' => false),
+            'category' => 'wifi',
+            'keywords' => array('header', 'wifi', 'kopfbereich'),
+            'post_type' => array('page'),
+            'align' => false,
+            'mode' => false,
+            'icon' => 'welcome-widgets-menus',
+            'render_template' => 'template-parts/block-spalten.php'
+    ));
     }
 }); 
 
