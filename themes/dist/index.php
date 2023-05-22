@@ -1,7 +1,7 @@
 <?php
 get_header(); ?>
 
-<?php $blogFields = get_field('header', 'option');?>
+<?php $blogFields = get_field('header','option'); ?>
 
 
 
@@ -18,10 +18,7 @@ get_header(); ?>
             }
             ?>
         </h1>
-
-
-
-        <!--Blog Inhalt einfügen -->
+        <!--Blog Inhaaaalt einfügen -->
         <?php
         if(is_home()){
                 echo '<p>' .get_field('blog_description', 'option') . '</p>';
@@ -32,12 +29,16 @@ get_header(); ?>
             }
         ?>
 
-        <?php
-        if(have_posts()):
-            while(have_posts()):
+<?php
+
+
+// Ausgabe der Kategorie auf der Übersichtsseite des Blogs
+    if(have_posts()): 
+        while (have_posts()):
             the_post();
-        
-            ?>
+            include(get_template_directory() . '/template-parts/post-loop.php'); 
+        endwhile;
+    else:?>
             <article class="post">
                 <h2 class="post-title">
                     <a href="<?php the_permalink();?>"><?php the_title();?></a>
@@ -50,9 +51,7 @@ get_header(); ?>
                 </div>
             </article>
 
-            <?php
-            endwhile;
-        else:?>
+        
             <h2><?php _e('Es wurde kein Beitrag gefunden', 'wifi');?></h2>
         <?php endif;
         ?>
@@ -68,7 +67,23 @@ get_header(); ?>
         </nav>
      
 
+        <?php
 
+
+$paged = (get_query_var('paged')) ? get_query_var('pages') : 1;
+
+//Post abfragen
+
+$args = [
+    'post_type' => 'project',
+    'order' => 'rand',
+    'posts_per_page' => 3,     
+];
+
+$project_query = new WP_Query($args);
+
+
+?>
 
 
 
