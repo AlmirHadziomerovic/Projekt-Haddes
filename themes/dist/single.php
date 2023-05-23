@@ -1,6 +1,11 @@
 <?php get_header(); ?>
 
+<!-- Single Blog ausgeben-->
+
     <main id="content" class="container">
+      
+
+
             <h1 class="is-style-headline"><?php the_title();?></h1>
 
 
@@ -22,6 +27,7 @@
             ?>
 
     <?php the_tags('<div class="meta tags">#', ' #', '</div>'); ?>
+
 
 
     </main>

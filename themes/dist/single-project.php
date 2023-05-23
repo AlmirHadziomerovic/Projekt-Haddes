@@ -1,5 +1,8 @@
 <?php get_header();?>
-<main id="Content" class="container">
+
+<!-- Gesamten Blog ausgeben-->
+
+<main id="content" class="container">
 
 
 <?php the_title('<h1 class="is-style-headline">','</h1>');?>
@@ -20,6 +23,7 @@
     }
 ?>
 
+</main>
 
 
 <!-- Schlagwörter ausgeben falls vorhanden -->

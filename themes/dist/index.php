@@ -91,8 +91,15 @@ $project_query = new WP_Query($args);
 
 
 
+<!-- Gesamten Blog ausgeben-->
 
 
+
+
+<!-- Schlagwörter ausgeben falls vorhanden -->
+
+<?php the_tags('<div class="meta tags">#','#','</div>');
+?>
 
 
 

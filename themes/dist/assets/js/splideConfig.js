@@ -6,7 +6,7 @@ window.addEventListener( 'load', function() {
 
     const sliderInitialize = function(){
 
-    let splide = new Splide( '.projects .splide', {
+    let splide = new Splide( '.splide', {
         perPage: 1,
         perMove: 1,
         mediaQuery: 'min',
@@ -31,7 +31,7 @@ window.addEventListener( 'load', function() {
 
     sliderInitialize();
 
-    if(windows.acf){
-        windows.acf.addAction('render_block_preview/type=webdev-projects', sliderInitialize);
+    if(window.acf){
+        window.acf.addAction('render_block_preview/type=webdev-projects', sliderInitialize);
     }
 } )
