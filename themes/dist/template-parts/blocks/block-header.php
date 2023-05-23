@@ -7,6 +7,7 @@ if (!empty($block['className'])) {
 }
 
 
+<?php $header get_field('header', 'option');?>
 <?php if(!empty($header)): ?>
 
 <header class="<?php echo $class_name; ?>">

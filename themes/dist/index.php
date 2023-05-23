@@ -89,6 +89,18 @@ $project_query = new WP_Query($args);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
         <div style="height: 30px" aria-hidden="true"></div>
 
         <ul class="icon-three">
@@ -98,39 +110,8 @@ $project_query = new WP_Query($args);
         </ul>
 
 
-        <ul class="icon-three">
-            <li>
-                <span class="icon-three-vertical" aria-hidden="false"></span>
-            </li>
-            <li>
-                <span class="icon-three-vertical" aria-hidden="false"></span>
-            </li>
-        </ul>
-
-
 
         <h3 class="slider headline">Galerie</h3>
-
-
-
-
-
-
-
-
-        <ul class="icon-three">
-            <li>
-                <span class="icon-three-vertical" aria-hidden="false"></span>
-            </li>
-            <li>
-                <span class="icon-three-vertical" aria-hidden="false"></span>
-            </li>
-        </ul>
-        <ul class="icon-three">
-            <li>
-                <span class="icon-three-vertical" aria-hidden="false"></span>
-            </li>
-        </ul>
 
 
 
