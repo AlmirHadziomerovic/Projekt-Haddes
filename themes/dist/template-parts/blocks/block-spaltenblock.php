@@ -11,7 +11,7 @@ if(!empty($block['anchor'])) {
 
 
 
-$class_name = 'spaltenblock';
+$class_name = 'posts container ';
 
 if(!empty($block['className'])){
     $class_name .= '' . esc_attr($block['className']);
@@ -31,13 +31,14 @@ $class_name .= '' . $spaltenBlock['color'];
 if(!empty($spaltenBlock)):?>
 
 <section <?php echo $anchor; ?> class="<?php echo $class_name;?>">
+<div class="img-wrapper post-item">
+            <?php echo wp_get_attachment_image($spaltenBlock['block'], 'medium_large');?>
+            </div>
             <div class="content">
                 <span class="title"><?php echo $spaltenBlock['title'];?></span>
              <p class="description"><?php echo $spaltenBlock['content'];?></p>
             </div>
-            <div class="image">
-            <?php echo wp_get_attachment_image($spaltenBlock['block'], 'medium_large');?>
-            </div>
+            
 </section>
 
 

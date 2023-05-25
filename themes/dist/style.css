@@ -705,9 +705,7 @@ input,
 /*Posts Container Budget*/
 @media screen and (min-width: 850px) {
     .posts {
-        display:flex;
-        justify-content: center;
-        text-align: center;
+        
         vertical-align: bottom;
         margin-top:-80px;
         gap:1em;
