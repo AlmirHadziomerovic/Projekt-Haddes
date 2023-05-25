@@ -1,7 +1,7 @@
 
 <!--Abfrage der Kategorien im Gutenberg und ausgabe auf der BlogSeite -->
 
-<article class="post">
+<article class="post webseiten alignfull">
         <h2 class="post-title">
             <a href="<?php the_permalink();?>"><?php the_title();?></a>
         </h2>

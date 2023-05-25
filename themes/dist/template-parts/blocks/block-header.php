@@ -26,8 +26,8 @@
 
 <section>
     <header class="<?php echo $class_name;?>">
-        <div id="page-header" class="alignfull" class="column header-media">
-            <?php echo wp_get_attachment_image($header['image'],'medium_large', false, array('class' =>'column page-header header-media animate'));?>
+        <div id="page-header" class="alignfull column header-media">
+            <?php echo wp_get_attachment_image($header['image'],'medium_smal', false, array('class' =>'column page-header header-media animate'));?>
        
             <h1  class="headline"><?php echo $header['headline']; ?>
               
@@ -37,7 +37,7 @@
             </div>
         </div>
     </header>
- </section
+</section>
 
 
     <?php

@@ -1,3 +1,5 @@
+
+
 <?php
 
 $class_name = 'header-media-text columns reverse';
@@ -7,7 +9,7 @@ if (!empty($block['className'])) {
 }
 
 
-<?php if(!empty($header)): ?>
+<?phsp if(!empty($header)): ?>
 
 <header class="<?php echo $class_name; ?>">
     <div class="column header-media">
