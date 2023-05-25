@@ -573,8 +573,9 @@ input,
     justify-content: center;
     align-items:center;
     min-height: 100vh;
-    background-image: url(/assets/img/HADES\ LOGO\ 1NeuFoto-01.jpg);
+    background-image: url('/assets/img/HADES\ LOGO\ 1NeuFoto-01.jpg');
     background-size:cover;
+    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     padding: 2.5 1.5em;
