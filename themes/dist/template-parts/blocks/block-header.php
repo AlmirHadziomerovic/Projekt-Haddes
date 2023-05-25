@@ -1,40 +1,47 @@
+
+
+
 <?php
+    $class_name = 'header-media-text columns reverse';
 
-$class_name = 'header-media-text columns reverse';
+    if(!empty($block['className'])){
+        $class_name .= '' . esc_attr($block['className']);
+    }
+?>
 
-if (!empty($block['className'])) {
-    $class_name .= ' ' . esc_attr($block['className']);
-}
 
 
-<?php $header get_field('header', 'option');?>
+
+
+
+<?php $header = get_field('header'); ?>
+
+<!-- If Schleife wenn in den Felder nichts eingetragen wird-->
 <?php if(!empty($header)): ?>
 
-<header class="<?php echo $class_name; ?>">
-    <div class="column header-media">
-        <?php
-       echo wp_get_attachment_image($header['header_image'], 'medium_large', false, array('class' => 'column header-media animate'));
-        ?>
-    </div>
-    <div class="column header-text animate">
-        <h1 class="headline">
-            <?php echo $header['header_description'];
-            if ($header['header_description']) {
-                echo ' <span class="name">' . $header['header_description'] . '</span>';
-            }
-            if ($header['small']) {
-                echo ' <span class="work">' . $header['header_description'] . '</span>';
-            } ?>
-        </h1>
-        <?php
-        if ($header['link']) {
-                echo '<a href="' . $header['link'] . '" class="btn">' . $header['link_text'] . '</a>';
-            } ?>
-    </div>
-</header>
 
-<?php
-    elseif(is_admin()):
+
+
+    <!-- Startseite Aufbauen Image/Headline-->
+
+<section>
+    <header class="<?php echo $class_name;?>">
+        <div id="page-header" class="alignfull" class="column header-media">
+            <?php echo wp_get_attachment_image($header['image'],'medium_large', false, array('class' =>'column page-header header-media animate'));?>
+       
+            <h1  class="headline"><?php echo $header['headline']; ?>
+              
+            </h1>
+            <div class="actions">
+            <a href="contact.html" class="btn"><?php echo $header['link_text']; ?></a>
+            </div>
+        </div>
+    </header>
+ </section
+
+
+    <?php
+    elseif (is_admin()):
         echo '<h2>' . __('Bitte geben Sie einen Content ein', 'wifi') . '</h2>';
     endif;
-?>
+ ?>

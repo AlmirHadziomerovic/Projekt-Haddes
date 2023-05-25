@@ -1,27 +1,10 @@
 {
-    "key": "group_645bde8520fdf",
-    "title": "Header",
+    "key": "group_64563a128ed6f",
+    "title": "Header Bild",
     "fields": [
         {
-            "key": "field_64611990603b9",
-            "label": "Header",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_645bde852f2ae",
-            "label": "Header",
+            "key": "field_645642efec816",
+            "label": "header",
             "name": "header",
             "aria-label": "",
             "type": "group",
@@ -36,9 +19,9 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_645bde9ab2738",
-                    "label": "Header Image",
-                    "name": "header_image",
+                    "key": "field_64563a12da75d",
+                    "label": "Header Bild",
+                    "name": "header_bild",
                     "aria-label": "",
                     "type": "image",
                     "instructions": "",
@@ -49,7 +32,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "id",
+                    "return_format": "url",
                     "library": "all",
                     "min_width": "",
                     "min_height": "",
@@ -61,9 +44,9 @@
                     "preview_size": "medium"
                 },
                 {
-                    "key": "field_645bdeb2b2739",
-                    "label": "Header Description",
-                    "name": "header_description",
+                    "key": "field_64563a430e07c",
+                    "label": "Header Überschrift",
+                    "name": "header_ueberschrift",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -86,9 +69,9 @@
     "location": [
         [
             {
-                "param": "block",
+                "param": "options_page",
                 "operator": "==",
-                "value": "acf\/webdev-header"
+                "value": "webdev-theme-einstellungen"
             }
         ]
     ],
@@ -98,8 +81,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": false,
+    "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1684950289
+    "modified": 1684950508
 }

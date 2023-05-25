@@ -1,28 +1,11 @@
 {
-    "key": "group_645bde8520fdf",
-    "title": "Header",
+    "key": "group_645e7e5e9d019",
+    "title": "Contact",
     "fields": [
         {
-            "key": "field_64611990603b9",
-            "label": "Header",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_645bde852f2ae",
-            "label": "Header",
-            "name": "header",
+            "key": "field_645e7e5e56fb8",
+            "label": "Contact Me",
+            "name": "contact",
             "aria-label": "",
             "type": "group",
             "instructions": "",
@@ -36,11 +19,11 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_645bde9ab2738",
-                    "label": "Header Image",
-                    "name": "header_image",
+                    "key": "field_645e7e7156fb9",
+                    "label": "Email",
+                    "name": "email",
                     "aria-label": "",
-                    "type": "image",
+                    "type": "email",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -49,21 +32,15 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "id",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "preview_size": "medium"
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
                 },
                 {
-                    "key": "field_645bdeb2b2739",
-                    "label": "Header Description",
-                    "name": "header_description",
+                    "key": "field_645f0d37d84cf",
+                    "label": "Nimm jetzt Kontakt auf",
+                    "name": "contact",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -86,9 +63,9 @@
     "location": [
         [
             {
-                "param": "block",
+                "param": "options_page",
                 "operator": "==",
-                "value": "acf\/webdev-header"
+                "value": "webdev-theme-einstellungen"
             }
         ]
     ],
@@ -98,8 +75,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": false,
+    "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1684950289
+    "modified": 1684950508
 }

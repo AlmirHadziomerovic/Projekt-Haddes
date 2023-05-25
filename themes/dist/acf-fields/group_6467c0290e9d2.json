@@ -1,28 +1,11 @@
 {
-    "key": "group_645a94315d96b",
-    "title": "Blog",
+    "key": "group_6467c0290e9d2",
+    "title": "Block:Spaltenblock",
     "fields": [
         {
-            "key": "field_646119710b700",
-            "label": "Blog",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_645a9431c1a50",
-            "label": "Blog",
-            "name": "blog",
+            "key": "field_6467c029cb262",
+            "label": "Spaltenblock",
+            "name": "spaltenblock",
             "aria-label": "",
             "type": "group",
             "instructions": "",
@@ -36,11 +19,11 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_645a953c9f4f3",
-                    "label": "Blog Description",
-                    "name": "blog_description",
+                    "key": "field_6467c080a7665",
+                    "label": "Block_image",
+                    "name": "block",
                     "aria-label": "",
-                    "type": "text",
+                    "type": "image",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -49,16 +32,21 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium"
                 },
                 {
-                    "key": "field_645a95489f4f4",
-                    "label": "Blog Content",
-                    "name": "blog_content",
+                    "key": "field_6467c0b62b57f",
+                    "label": "Content",
+                    "name": "content",
                     "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
@@ -76,9 +64,35 @@
                     "new_lines": ""
                 },
                 {
-                    "key": "field_646a5ca9348bd",
-                    "label": "Blog Überschrift",
-                    "name": "blog_title",
+                    "key": "field_6467c0c2bed8b",
+                    "label": "color",
+                    "name": "color",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "primary-color": "Blau",
+                        "secondary-color": "Grün"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_64684cc855c8c",
+                    "label": "Title",
+                    "name": "title",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -101,9 +115,9 @@
     "location": [
         [
             {
-                "param": "options_page",
+                "param": "block",
                 "operator": "==",
-                "value": "webdev-theme-einstellungen"
+                "value": "acf\/webdev-spalten"
             }
         ]
     ],
@@ -113,8 +127,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": false,
+    "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1684950294
+    "modified": 1684950508
 }

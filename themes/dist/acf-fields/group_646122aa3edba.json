@@ -106,9 +106,9 @@
     "location": [
         [
             {
-                "param": "page_template",
+                "param": "options_page",
                 "operator": "==",
-                "value": "default"
+                "value": "webdev-theme-einstellungen"
             }
         ]
     ],
@@ -118,8 +118,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1684431204
+    "modified": 1684950291
 }
