@@ -9,7 +9,7 @@ if (!empty($block['className'])) {
 }
 
 
-<?phsp if(!empty($header)): ?>
+<?php if(!empty($header)): ?>
 
 <header class="<?php echo $class_name; ?>">
     <div class="column header-media">

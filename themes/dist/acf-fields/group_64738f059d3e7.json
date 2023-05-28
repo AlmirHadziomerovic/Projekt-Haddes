@@ -1,27 +1,27 @@
 {
-    "key": "group_6467c0290e9d2",
-    "title": "Block:Spaltenblock",
+    "key": "group_64738f059d3e7",
+    "title": "Block: About",
     "fields": [
         {
-            "key": "field_6467c029cb262",
-            "label": "Spaltenblock",
-            "name": "spaltenblock",
+            "key": "field_64738f05e5a86",
+            "label": "About",
+            "name": "about",
             "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "",
                 "class": "",
                 "id": ""
             },
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_6467c080a7665",
-                    "label": "Block_image",
-                    "name": "block",
+                    "key": "field_64738f3697d68",
+                    "label": "About Image",
+                    "name": "about_image",
                     "aria-label": "",
                     "type": "image",
                     "instructions": "",
@@ -44,29 +44,9 @@
                     "preview_size": "medium"
                 },
                 {
-                    "key": "field_64684cc855c8c",
-                    "label": "Title",
-                    "name": "title",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_6467c0b62b57f",
-                    "label": "Content",
-                    "name": "content",
+                    "key": "field_64738f5e2afd7",
+                    "label": "About Description",
+                    "name": "about_description",
                     "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
@@ -91,7 +71,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/webdev-spalten"
+                "value": "acf\/webdev-about"
             }
         ]
     ],
@@ -104,5 +84,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1685288313
+    "modified": 1685295075
 }

@@ -1128,14 +1128,15 @@ min-width:1000px;
     .about {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     text-align: center;
     background-color: #eee;
     color:black;
 }
 
 .about-img {
-    max-width: 50%;
-    width: auto;
+    max-width: 100%;
+    height: auto;
 }
 }
 
@@ -1143,9 +1144,11 @@ min-width:1000px;
 
 .about-text {
     padding-top:5%;
-    padding-right: 10%;
+    padding-right: 5%;
 }
 }
+
+
 
 .send {
     margin-top:60px;

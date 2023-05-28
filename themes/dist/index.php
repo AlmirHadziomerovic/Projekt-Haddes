@@ -36,6 +36,7 @@ get_header(); ?>
     if(have_posts()): 
         while (have_posts()):
             the_post();
+         
             include(get_template_directory() . '/template-parts/post-loop.php'); 
         endwhile;
     else:?>

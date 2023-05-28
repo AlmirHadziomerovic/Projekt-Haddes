@@ -1,5 +1,6 @@
 
 <!-- Projekt Holen von WP-->
+<div style="height: 30px" aria-hidden="true"></div>
 
 <figure class="project">
     <a href="<?php echo esc_url(get_permalink()); ?>">
@@ -15,11 +16,10 @@
 
         ?>
     </a>
-    <figcaption class="project-caption">
-        <h3 class="project-title">
-            <a href="<?php echo esc_url(get_permalink()); ?>"><?php the_title(); ?></a>
-        </h3>
-    </figcaption>
+    
 </figure>
+
+<div style="height: 30px" aria-hidden="true"></div>
+
 
 <!-- Projekte-->

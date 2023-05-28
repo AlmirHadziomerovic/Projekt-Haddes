@@ -30,16 +30,25 @@ $class_name .= '' . $spaltenBlock['color'];
 
 if(!empty($spaltenBlock)):?>
 
+<div style="height: 50px" aria-hidden="true"></div>
+
 <section <?php echo $anchor; ?> class="<?php echo $class_name;?>">
-<div class="img-wrapper post-item">
-            <?php echo wp_get_attachment_image($spaltenBlock['block'], 'medium_large');?>
-            </div>
-            <div class="content">
-                <span class="title"><?php echo $spaltenBlock['title'];?></span>
-             <p class="description"><?php echo $spaltenBlock['content'];?></p>
-            </div>
+    <article class="post-item">
+        <div class="img-wrapper">
+                    <?php echo wp_get_attachment_image($spaltenBlock['block'], 'medium_large');?>
+        </div>
+
+
+
+                    <div class="content">
+                        <span class="content-headline"><?php echo $spaltenBlock['title'];?></span>
+                    <p><?php echo $spaltenBlock['content'];?></p>
+                    </div>
+    </article>
             
 </section>
+
+<div style="height: 0px" aria-hidden="true"></div>
 
 
 

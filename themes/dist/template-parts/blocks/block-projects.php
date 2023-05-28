@@ -22,6 +22,7 @@ $project_query = new WP_Query($args);
 if($project_query->have_posts()):
 ?>
 
+<div style="height: 50px" aria-hidden="true"></div>
 
 <section id="<?php echo $anchor; ?>" class="<?php echo $class_name; ?>">
             <h2 class="is-style-headline"><?php echo $projects['ueberschrift'];?></h2>
@@ -40,6 +41,8 @@ if($project_query->have_posts()):
             </div>
 
 </section>
+<div style="height: 50px" aria-hidden="true"></div>
+
 <?php endif;
 wp_reset_postdata();
 ?>

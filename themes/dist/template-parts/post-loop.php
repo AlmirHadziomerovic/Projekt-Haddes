@@ -12,6 +12,9 @@
                             the_category(',');
                         ?>
         </div>
+        
     </article>
+
+    
 
     <!-- Blog Beitrag --> 
