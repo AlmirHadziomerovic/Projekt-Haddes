@@ -47,7 +47,7 @@
     </div>
 </footer>
 
-<div id="totop"><?php _e('top', 'wifi');?></div>
+<div id="totop"><span class="icon-top" aria-hidden="true"></span><?php _e(' ', 'wifi');?></div>
 
 
 <?php 

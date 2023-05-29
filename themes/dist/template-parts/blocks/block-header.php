@@ -1,4 +1,4 @@
-
+<!-- Header Background Image-->
 
 
 <?php
@@ -10,10 +10,6 @@
 ?>
 
 
-
-
-
-
 <?php $header = get_field('header'); ?>
 
 <!-- If Schleife wenn in den Felder nichts eingetragen wird-->
@@ -22,19 +18,16 @@
 
 
 
+
     <!-- Startseite Aufbauen Image/Headline-->
 
 <section>
     <header class="<?php echo $class_name;?>">
-        <div id="page-header" class="alignfull column header-media">
-            <?php echo wp_get_attachment_image($header['image'],'medium_smal', false, array('class' =>'column page-header header-media animate'));?>
-       
-            <h1  class="headline"><?php echo $header['headline']; ?>
-              
-            </h1>
-            <div class="actions">
-            <a href="contact.html" class="btn"><?php echo $header['link_text']; ?></a>
-            </div>
+        <div id="page-header" style="background-image:url('<?php echo $header['image'];?>');" class="alignfull">
+                <h1  class="headline"><?php echo $header['headline']; ?> </h1>
+                    <div class="actions">
+                    <a href="contact.html" class="btn"><?php echo $header['link_text']; ?></a>
+                </div>
         </div>
     </header>
 </section>

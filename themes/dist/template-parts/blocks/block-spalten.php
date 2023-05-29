@@ -11,7 +11,7 @@ if (!empty($block['className'])) {
 
 <?php if(!empty($header)): ?>
 
-<header class="<?php echo $class_name; ?>">
+<header class="<?  php echo $class_name; ?>">
     <div class="column header-media">
         <?php
        echo wp_get_attachment_image($header['header_image'], 'medium_large', false, array('class' => 'column header-media animate'));

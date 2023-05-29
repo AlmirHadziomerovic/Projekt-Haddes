@@ -577,7 +577,6 @@ input,
     justify-content: center;
     align-items:center;
     min-height: 1000vh;
-    background-image: url('/assets/img/HADES\ LOGO\ 1NeuFoto-01.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     background-position: cover;
@@ -705,7 +704,9 @@ input,
 /*Posts Container Budget*/
 @media screen and (min-width: 850px) {
     .posts {
-        
+          display:flex;
+        justify-content: center;
+        text-align: center;
         vertical-align: bottom;
         margin-top:-80px;
         gap:1em;
@@ -720,13 +721,14 @@ input,
         overflow: hidden;
     }
     
-    .post-item .img-wrapper > a:hover img {
+    .post-item .img-wrapper:hover img {
         transform: scale(1.1);
+        cursor:pointer;
     }
 
     
-    .post-item .img-wrapper > a img {
-        transition: all 0.3s;
+    .post-item .img-wrapper img {
+        transition: all 0.5s;
 
 
     }
@@ -855,20 +857,20 @@ min-width:1000px;
     border-radius: 50%;
     text-align: center;
     line-height: 50px;
-    text-transform: uppercase;
     position: fixed;
     font-size: 1.5em;
     opacity:0;
-}
-#totop > a {
-    color:white;
+   
 }
 
 #totop.show {
     opacity:1;
     pointer-events: auto;
+    color:white;
 }
-
+#totop.show:hover{
+    cursor:pointer;
+}
 
 
 #page-footer {
@@ -981,7 +983,7 @@ min-width:1000px;
 .headline {
     font-size: 3rem;
     color:var(--base-color);
-    text-align: right;
+    text-align: center;
 }
 
 
