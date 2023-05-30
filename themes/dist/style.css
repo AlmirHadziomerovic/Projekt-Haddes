@@ -1139,16 +1139,28 @@ min-width:1000px;
 .about-img {
     max-width: 100%;
     height: auto;
+    margin:20px;
+ 
+}
+.about-text {
+    padding:5%;
+   
 }
 }
 
-@media screen and (min-width: 768px) {
+
+.about-img {
+    margin:0.5em;
+ 
+}
 
 .about-text {
     padding-top:5%;
-    padding-right: 5%;
+    margin:0.5em;
 }
-}
+
+
+
 
 
 
