@@ -5,11 +5,6 @@
 
 <main id="content" class="container">
 
-
-
-
-<?php the_title('<h1 class="is-style-headline">','</h1>'); ?>
-
 <?php
         if(have_posts()){
             while(have_posts()){
@@ -18,11 +13,6 @@
             }
     }
 ?>
-
-
-
-
-
 
 </main>
 

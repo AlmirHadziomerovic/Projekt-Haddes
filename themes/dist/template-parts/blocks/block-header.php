@@ -26,7 +26,7 @@
         <div id="page-header" style="background-image:url('<?php echo $header['image'];?>');" class="alignfull">
                 <h1  class="headline"><?php echo $header['headline']; ?> </h1>
                     <div class="actions">
-                    <a href="contact.html" class="btn"><?php echo $header['link_text']; ?></a>
+                    <a href class="btn"><?php echo $header['link_text']; ?></a>
                 </div>
         </div>
     </header>

@@ -1,4 +1,4 @@
-<!--   //Projekte Ausgeben Slider-->
+<!--Projekte Ausgeben Slider-->
 <?php
   
     $class_name = 'projects space-top ';
