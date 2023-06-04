@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('fonts/icomoon.ttf?q978us') format('truetype'),
-    url('fonts/icomoon.woff?q978us') format('woff'),
-    url('fonts/icomoon.svg?q978us#icomoon') format('svg');
+    url('fonts/icomoon.ttf?6lfl8r') format('truetype'),
+    url('fonts/icomoon.woff?6lfl8r') format('woff'),
+    url('fonts/icomoon.svg?6lfl8r#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -36,15 +36,15 @@
 .icon-top:before {
   content: "\e902";
 }
+.icon-mail:before {
+  content: "\e906";
+}
+.icon-phone:before {
+  content: "\e905";
+}
 .icon-facebook:before {
   content: "\e900";
   color: #1877f2;
-}
-.icon-instagram:before {
-  content: "\ea92";
-}
-.icon-forward:before {
-  content: "\e969";
 }
 .icon-facebook1:before {
   content: "\ea90";

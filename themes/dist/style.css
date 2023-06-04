@@ -147,6 +147,9 @@ body {
     min-height: auto;
 
 }
+h2 {
+    color:white;
+}
 
 /*Definiert die Breite des Container/body*/
 .container {
@@ -945,7 +948,7 @@ h1 {
 #page-footer .social-links {
     list-style-type: none;
     margin: 0;
-    font-size: 2em;
+    font-size: 1.5em;
 
 }
 
@@ -960,9 +963,6 @@ h1 {
 #nav-footer li {
     display: inline-block;
     margin: 0 .5em;
-
-
-
 
 }
 
@@ -1270,16 +1270,40 @@ h1 {
 }
 
 
-
+/*Sidebar Social Links Icons*/
 
 .social-link{
     display:flex;
     justify-content: center;
     align-items: center;
-    flex-direction:column-reverse;
-font-size: 2rem;
-line-height: 3rem;
-position: fixed;
-margin: 20px;
-margin-top: 400px;
+    flex-direction:column;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    position: fixed;
+    margin: 10px;
+    margin-top: 250px;
+    z-index:9999;
+    padding:0.5rem;
+    
 }
+
+
+
+.icon-facebook1,
+.icon-mail,
+.icon-instagram,
+.icon-phone {
+    background-color:var(--primary-color);
+    color:white;
+    border-radius: 40%;
+    font-size:1.5rem;
+    padding:0.1em;
+}
+
+.icon-facebook1:hover,
+.icon-mail:hover,
+.icon-instagram:hover,
+.icon-phone:hover{
+    color:black;
+} 
+
