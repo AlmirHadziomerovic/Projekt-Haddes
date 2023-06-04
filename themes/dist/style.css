@@ -1162,7 +1162,7 @@ h1 {
 
     .about {
         text-align: center;
-        color: var(--base-color)
+        color: var(--base-color);
     }
 
     @media screen and (min-width: 768px) {
@@ -1198,7 +1198,6 @@ h1 {
         padding-top: 5%;
         margin: 0.5em;
     }
-
 
 
 
@@ -1252,7 +1251,7 @@ h1 {
 
 
 
-
+ 
 
     /*Animierte h1,posts*/
 
@@ -1268,4 +1267,19 @@ h1 {
         transform: translateY(0);
 
     }
+}
+
+
+
+
+.social-link{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column-reverse;
+font-size: 2rem;
+line-height: 3rem;
+position: fixed;
+margin: 20px;
+margin-top: 400px;
 }

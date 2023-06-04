@@ -1,8 +1,5 @@
 <!-- About Seite-->
 
-
-
-
 <?php 
 
     $class_name = ' about alignfull';

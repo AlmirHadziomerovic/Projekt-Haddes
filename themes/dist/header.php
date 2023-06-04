@@ -40,6 +40,26 @@
                 ));
                   ?>
         </div>
+
+<sidebar class="social-link columns">
+<?php 
+    $social_links = get_field('social_links', 'option');
+    ?>
+<?php if($social_links['facebook']):?>
+    
+    <a href="<?php echo $social_links['facebook'];?>" target="_blank">
+        <span class="icon-facebook1" aria-hidden="true"></span>
+        <span class="screen-reader-text"><?php _e('Follow on Facebook', 'wifi');?></span>
+    </a>    
+    <?php endif;?>
+    <?php if($social_links['email']):?>
+    
+    <a href="<?php echo $social_links['email'];?>" target="_blank">
+        <span class="icon-email" aria-hidden="true"></span>
+        <span class="screen-reader-text"><?php _e('Contact Me', 'wifi');?></span>
+    </a>    
+    <?php endif;?>
+</sidebar>
     </nav>
 
     

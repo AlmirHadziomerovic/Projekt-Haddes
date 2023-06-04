@@ -11,7 +11,7 @@ if (!empty($block['className'])) {
 
 <?php if(!empty($header)): ?>
 
-<header class="<?  php echo $class_name; ?>">
+<div class="<?  php echo $class_name; ?>">
     <div class="column header-media">
         <?php
        echo wp_get_attachment_image($header['header_image'], 'medium_large', false, array('class' => 'column header-media animate'));
@@ -32,7 +32,7 @@ if (!empty($block['className'])) {
                 echo '<a href="' . $header['link'] . '" class="btn">' . $header['link_text'] . '</a>';
             } ?>
     </div>
-</header>
+</div>
 
 <?php
     elseif(is_admin()):

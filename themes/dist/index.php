@@ -119,18 +119,6 @@ $project_query = new WP_Query($args);
 
 
 
-        <h3 class="slider headline">Galerie</h3>
-
-
-
-
-
-
-
-
-
-
-
 
 
         

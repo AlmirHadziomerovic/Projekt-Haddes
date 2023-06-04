@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('fonts/icomoon.ttf?cf9q45') format('truetype'),
-    url('fonts/icomoon.woff?cf9q45') format('woff'),
-    url('fonts/icomoon.svg?cf9q45#icomoon') format('svg');
+    url('fonts/icomoon.ttf?q978us') format('truetype'),
+    url('fonts/icomoon.woff?q978us') format('woff'),
+    url('fonts/icomoon.svg?q978us#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-email:before {
+  content: "\e904";
+}
 .icon-three-vertical:before {
   content: "\e901";
 }
@@ -37,12 +40,11 @@
   content: "\e900";
   color: #1877f2;
 }
-.icon-top:before {
-  content: "\e902";
+.icon-instagram:before {
+  content: "\ea92";
 }
-.icon-facebook:before {
-  content: "\e900";
-  color: #1877f2;
+.icon-forward:before {
+  content: "\e969";
 }
 .icon-facebook1:before {
   content: "\ea90";
