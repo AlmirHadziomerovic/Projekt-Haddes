@@ -11,6 +11,7 @@
                                 //Seperator kann angegeben werden
                                 the_content();
                             ?>
+                            
         </div>
   
 

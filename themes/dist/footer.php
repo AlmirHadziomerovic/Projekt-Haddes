@@ -29,7 +29,7 @@
 
     <?php if($social_links['facebook']):?>
     <a href="h<?php echo $social_links['facebook'];?>" target="_blank">
-        <span class="icon-facebook" aria-hidden="true"></span>
+        <span class="icon-facebook1" aria-hidden="true"></span>
         <span class="screen-reader-text"><?php _e('Follow on Facebook', 'wifi');?></span>
     </a>    
     <?php endif;?>

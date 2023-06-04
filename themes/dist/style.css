@@ -905,7 +905,9 @@ h1 {
     position: fixed;
     font-size: 1.5em;
     opacity: 0;
-
+}
+.icon-top {
+color:black;
 }
 
 #totop.show {
@@ -916,8 +918,11 @@ h1 {
 
 #totop.show:hover {
     cursor: pointer;
+    background-color:black;
+.icon-top{
+    color:var(--primary-color);
+    }
 }
-
 
 #page-footer {
     background-color: rgba(0, 2, 8, 0);
