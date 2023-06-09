@@ -151,6 +151,7 @@ h2 {
     color:white;
 }
 
+
 /*Definiert die Breite des Container/body*/
 .container {
     max-width: var(--container-max-width);
@@ -919,9 +920,12 @@ color:black;
 #totop.show:hover {
     cursor: pointer;
     background-color:black;
-.icon-top{
-    color:var(--primary-color);
-    }
+    transition: 0.7s ease-in-out;
+    .icon-top{
+        color:var(--primary-color);
+        }
+        box-shadow: 0 0 10px 0 #00c0ff inset, 0 0 10px 8px #00c0ff;
+
 }
 
 #page-footer {
@@ -1014,6 +1018,7 @@ color:black;
         justify-content: left;
         flex-direction: row-reverse;
         padding: 2em;
+        margin:2rem;
 
 
     }
@@ -1168,6 +1173,7 @@ color:black;
     .about {
         text-align: center;
         color: var(--base-color);
+
     }
 
     @media screen and (min-width: 768px) {
@@ -1178,6 +1184,7 @@ color:black;
             text-align: center;
             background-color: #eee;
             color: black;
+            margin-top:2rem;
         }
 
         .about-img {
@@ -1189,14 +1196,14 @@ color:black;
 
         .about-text {
             padding: 5%;
-
+            color:black;
         }
     }
 
+    
 
     .about-img {
         margin: 0.5em;
-
     }
 
     .about-text {
@@ -1256,7 +1263,6 @@ color:black;
 
 
 
- 
 
     /*Animierte h1,posts*/
 
@@ -1274,6 +1280,9 @@ color:black;
     }
 }
 
+.about {
+    color:white;
+}
 
 /*Sidebar Social Links Icons*/
 
@@ -1282,14 +1291,13 @@ color:black;
     justify-content: center;
     align-items: center;
     flex-direction:column;
+    position: fixed;
     font-size: 1.5rem;
     line-height: 2.5rem;
-    position: fixed;
     margin: 10px;
     margin-top: 250px;
     z-index:9999;
     padding:0.5rem;
-    
 }
 
 

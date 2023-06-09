@@ -5,7 +5,6 @@
     <main id="content" class="container">
       
 
-
             <h1 class="is-style-headline"><?php the_title();?></h1>
 
 
