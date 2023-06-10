@@ -21,9 +21,6 @@ if(!empty($block['className'])){
 
 $spaltenBlock = get_field('spaltenblock');
 
-
-
-
 if(!empty($spaltenBlock)):?>
 
 <div style="height: 50px" aria-hidden="true"></div>
@@ -31,6 +28,7 @@ if(!empty($spaltenBlock)):?>
 <section <?php echo $anchor; ?> class="<?php echo $class_name;?>">
     
     <article class="post-item">
+    
         <div class="img-wrapper">
                     <?php echo wp_get_attachment_image($spaltenBlock['block'], 'medium_large');?>
         </div>

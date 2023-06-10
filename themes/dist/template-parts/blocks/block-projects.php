@@ -21,6 +21,11 @@ $project_query = new WP_Query($args);
 
 if($project_query->have_posts()):
 ?>
+<ul class="icon-three">
+            <li>
+                <span class="icon-three-vertical" aria-hidden="false"></span>
+            </li>
+</ul>
 
 <div style="height: 50px" aria-hidden="true"></div>
 
@@ -42,6 +47,7 @@ if($project_query->have_posts()):
 
 </section>
 <div style="height: 50px" aria-hidden="true"></div>
+
 
 <?php endif;
 wp_reset_postdata();

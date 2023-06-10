@@ -14,6 +14,12 @@
 <?php 
 $about = get_field('about');
 ?>
+<ul class="icon-three">
+            <li>
+                <span class="icon-three-vertical" aria-hidden="false"></span>
+            </li>
+</ul>
+
 <div class="<?php echo $class_name; ?>">
     <div>
                 <?php
@@ -31,3 +37,8 @@ $about = get_field('about');
             </div>
      </div>
 </div>
+<ul class="icon-three">
+            <li>
+                <span class="icon-three-vertical" aria-hidden="false"></span>
+            </li>
+</ul>

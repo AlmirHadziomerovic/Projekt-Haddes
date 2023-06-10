@@ -9,7 +9,6 @@ text Domain: wifi
 
 
 
-
 :root {
     --base-bg-color: #255991;
     --base-color: #ffffff;
@@ -36,7 +35,7 @@ text Domain: wifi
     font-family: 'Charmonman';
     font-style: normal;
     font-weight: 400;
-    src: url('assets/fonts/charmonman-v18-latin-regular.eot');
+    src: url('assets/fonts/charmonman-v18-latin/charmonman-v18-latin-700.eot');
     /* IE9 Compat Modes */
     src: url('assets/fonts/charmonman-v18-latin-regular.eot?#iefix') format('embedded-opentype'),
         /* IE6-IE8 */
@@ -57,17 +56,17 @@ text Domain: wifi
     font-family: 'Charmonman';
     font-style: normal;
     font-weight: 700;
-    src: url('assets/fonts/charmonman-v18-latin-700.eot');
+    src: url('assets/fonts/charmonman-v18-latin/charmonman-v18-latin-700.eot');
     /* IE9 Compat Modes */
-    src: url('assets/fonts/charmonman-v18-latin-700.eot?#iefix') format('embedded-opentype'),
+    src: url('assets/fonts/charmonman-v18-latin/charmonman-v18-latin-700.eot?#iefix') format('embedded-opentype'),
         /* IE6-IE8 */
-        url('assets/fonts/charmonman-v18-latin-700.woff2') format('woff2'),
+        url('assets/fonts/charmonman-v18-latin/charmonman-v18-latin-700.woff2') format('woff2'),
         /* Super Modern Browsers */
-        url('assets/fonts/charmonman-v18-latin-700.woff') format('woff'),
+        url('assets/fonts/charmonman-v18-latin/charmonman-v18-latin-700.woff') format('woff'),
         /* Modern Browsers */
-        url('assets/fonts/charmonman-v18-latin-700.ttf') format('truetype'),
+        url('assets/fonts/charmonman-v18-latin/charmonman-v18-latin-700.ttf') format('truetype'),
         /* Safari, Android, iOS */
-        url('assets/fonts/charmonman-v18-latin-700.svg#Charmonman') format('svg');
+        url('assets/fonts/charmonman-v18-latin/charmonman-v18-latin-700.svg#Charmonman') format('svg');
     /* Legacy iOS */
 }
 
@@ -78,17 +77,17 @@ text Domain: wifi
     font-family: 'Cinzel Decorative';
     font-style: normal;
     font-weight: 400;
-    src: url('assets/fonts/cinzel-decorative-v14-latin-regular.eot');
+    src: url('assets/fonts/cinzel-decorative-v14-latin/cinzel-decorative-v14-latin-700.eot');
     /* IE9 Compat Modes */
-    src: url('assets/fonts/cinzel-decorative-v14-latin-regular.eot?#iefix') format('embedded-opentype'),
+    src: url('assets/fonts/cinzel-decorative-v14-latin/cinzel-decorative-v14-latin-regular.eot?#iefix') format('embedded-opentype'),
         /* IE6-IE8 */
-        url('assets/fonts/cinzel-decorative-v14-latin-regular.woff2') format('woff2'),
+        url('assets/fonts/cinzel-decorative-v14-latin/cinzel-decorative-v14-latin-regular.woff2') format('woff2'),
         /* Super Modern Browsers */
-        url('assets/fonts/cinzel-decorative-v14-latin-regular.woff') format('woff'),
+        url('assets/fonts/cinzel-decorative-v14-latin/cinzel-decorative-v14-latin-regular.woff') format('woff'),
         /* Modern Browsers */
-        url('assets/fonts/cinzel-decorative-v14-latin-regular.ttf') format('truetype'),
+        url('assets/fonts/cinzel-decorative-v14-latin/cinzel-decorative-v14-latin-regular.ttf') format('truetype'),
         /* Safari, Android, iOS */
-        url('assets/fonts/cinzel-decorative-v14-latin-regular.svg#CinzelDecorative') format('svg');
+        url('assets/fonts/cinzel-decorative-v14-latin/cinzel-decorative-v14-latin-regular.svg#CinzelDecorative') format('svg');
     /* Legacy iOS */
 }
 
@@ -99,17 +98,17 @@ text Domain: wifi
     font-family: 'Cinzel Decorative';
     font-style: normal;
     font-weight: 700;
-    src: url('assets/fonts/cinzel-decorative-v14-latin-700.eot');
+    src: url('assets/fonts/cinzel-decorative-v14-latin/cinzel-decorative-v14-latin-700.eot');
     /* IE9 Compat Modes */
-    src: url('assets/fonts/cinzel-decorative-v14-latin-700.eot?#iefix') format('embedded-opentype'),
+    src: url('assets/fonts/cinzel-decorative-v14-latin/cinzel-decorative-v14-latin-700.eot?#iefix') format('embedded-opentype'),
         /* IE6-IE8 */
-        url('assets/fonts/cinzel-decorative-v14-latin-700.woff2') format('woff2'),
+        url('assets/fonts/cinzel-decorative-v14-latin/cinzel-decorative-v14-latin-700.woff2') format('woff2'),
         /* Super Modern Browsers */
-        url('assets/fonts/cinzel-decorative-v14-latin-700.woff') format('woff'),
+        url('assets/fonts/cinzel-decorative-v14-latin/cinzel-decorative-v14-latin-700.woff') format('woff'),
         /* Modern Browsers */
-        url('assets/fonts/cinzel-decorative-v14-latin-700.ttf') format('truetype'),
+        url('assets/fonts/cinzel-decorative-v14-latin/cinzel-decorative-v14-latin-700.ttf') format('truetype'),
         /* Safari, Android, iOS */
-        url('assets/fonts/cinzel-decorative-v14-latin-700.svg#CinzelDecorative') format('svg');
+        url('assets/fonts/cinzel-decorative-v14-latin/cinzel-decorative-v14-latin-700.svg#CinzelDecorative') format('svg');
     /* Legacy iOS */
 }
 
@@ -134,10 +133,20 @@ html {
 
 a:hover {
     text-decoration: underline;
+
+}
+
+a:link {
+    text-decoration: none;
+
 }
 
 a:active {
     color: var(--base-color)
+}
+
+a:link {
+    text-decoration: none;
 }
 
 body {
@@ -147,8 +156,9 @@ body {
     min-height: auto;
 
 }
+
 h2 {
-    color:white;
+    color: white;
 }
 
 
@@ -158,11 +168,9 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     padding-left: calc(var(--columns-gap) / 5);
-    padding-right: calc(var(--columns-gap) / 2);
+    padding-right: calc(var(--columns-gap) / 5);
 
 }
-
-
 
 .columns>.column {
     margin-bottom: calc(var(--columns-gap));
@@ -585,26 +593,27 @@ h1 {
 }
 
 
-    /*Button Stylen*/
-    button,
-    input,
-    .btn {
-        display: inline-block;
-        text-decoration: none;
-        padding: 0 1.7em;
-        height: 50px;
-        line-height: 50px;
-        transition: var(--base-bg-color) 200ms ease-in-out, color 200ms linear, box-shadow 200ms linear;
-        font-size: 1rem;
-        font-weight: 400;
-        text-align: center;
-        cursor: pointer;
-        border: none;
-        border-radius: 25px;
-        background-color: rgb(0, 0, 0);
-        color: var(--base-color);
-        transition: 0.7s ease-in-out;
+/*Button Stylen*/
+button,
+input,
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 1.7em;
+    height: 50px;
+    line-height: 50px;
+    transition: var(--base-bg-color) 200ms ease-in-out, color 200ms linear, box-shadow 200ms linear;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0);
+    color: var(--base-color);
+    transition: 0.7s ease-in-out;
 }
+
 .btn:hover {
     background-color: #00c0ff;
     letter-spacing: 1px;
@@ -768,13 +777,10 @@ h1 {
         cursor: pointer;
     }
 
-
     .post-item .img-wrapper img {
         transition: all 0.5s;
 
-
     }
-
 
     .post-item .content {
         display: block;
@@ -784,8 +790,6 @@ h1 {
         padding: 1em 5%;
 
     }
-
-
 }
 
 
@@ -829,6 +833,8 @@ h1 {
     color: rgb(1, 0, 0);
     text-decoration: underline;
     font-size: 2rem;
+    font-family: 'Cinzel Decorative';
+    font-weight: 400;
 
 
 }
@@ -907,8 +913,9 @@ h1 {
     font-size: 1.5em;
     opacity: 0;
 }
+
 .icon-top {
-color:black;
+    color: black;
 }
 
 #totop.show {
@@ -919,12 +926,15 @@ color:black;
 
 #totop.show:hover {
     cursor: pointer;
-    background-color:black;
+    background-color: black;
     transition: 0.7s ease-in-out;
-    .icon-top{
-        color:var(--primary-color);
-        }
-        box-shadow: 0 0 10px 0 #00c0ff inset, 0 0 10px 8px #00c0ff;
+
+    .icon-top {
+        color: var(--primary-color);
+    }
+
+    box-shadow: 0 0 10px 0 #00c0ff inset,
+    0 0 10px 8px #00c0ff;
 
 }
 
@@ -1018,7 +1028,7 @@ color:black;
         justify-content: left;
         flex-direction: row-reverse;
         padding: 2em;
-        margin:2rem;
+        margin: 2rem;
 
 
     }
@@ -1078,12 +1088,18 @@ color:black;
 .blog-wrapper {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 10px;
     padding: 1em;
-    margin: 50em;
-
+    margin: 0.5em;
+    font-family: 'Cinzel Decorative';
+    font-weight: 400;
+    background-color: var(--base-color);
 }
 
-
+.blog-content1 {
+    padding: 1em;
+    border-bottom: 1px solid black;
+}
 
 /*Blog Abtrennungen fixieren*/
 
@@ -1091,7 +1107,7 @@ color:black;
     .blog-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        background-color: #eee;
+        background-color: var(--base-color);
         padding: 1em;
         margin: 5em;
     }
@@ -1170,153 +1186,159 @@ color:black;
     }
 
 
+
+}
+
+/*About Seite Mobile*/
+
+
+.about {
+    text-align: center;
+    color: var(--base-color);
+}
+
+.about-img {
+    margin: 0.5em;
+}
+
+.about-text {
+    padding-top: 5%;
+    margin: 0.5em;
+    font-family: 'Cinzel Decorative';
+    font-weight: 400;
+    font-size: clamp(12px, 1vw, 18px);
+    background-color: white;
+    text-align: center;
+
+
+}
+
+@media screen and (min-width: 768px) {
     .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         text-align: center;
-        color: var(--base-color);
+        background-color: #eee;
+        color: black;
+        margin-top: 2rem;
 
     }
-
-    @media screen and (min-width: 768px) {
-        .about {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
-            background-color: #eee;
-            color: black;
-            margin-top:2rem;
-        }
-
-        .about-img {
-            max-width: 100%;
-            height: auto;
-            margin: 20px;
-
-        }
-
-        .about-text {
-            padding: 5%;
-            color:black;
-        }
-    }
-
-    
 
     .about-img {
-        margin: 0.5em;
+        max-width: 100%;
+        height: auto;
+        margin: 20px;
+
     }
 
     .about-text {
-        padding-top: 5%;
-        margin: 0.5em;
-    }
-
-
-
-
-
-    .send {
-        margin-top: 60px;
-        background-color: #00c0ff;
-    }
-
-    .send:hover {
-        background-color: black;
-    }
-
-
-    /*404 Stylen*/
-
-
-    /*Logo Größe verändern*/
-    .error-logo {
-        width: 60%;
-        margin: 4rem auto;
-    }
-
-    /*Items zentrieren*/
-    .error-menu #nav-error {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .error-menu #nav-error>li {
-        padding: 0 1rem;
-    }
-
-    /*Navbar Hintergrundfarbe ändern*/
-    .error404 #navbar {
-        background-color: rgb(0, 0, 0);
-    }
-
-    #container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: 2rem;
-        line-height: 1.5em;
-        text-align: center;
-    }
-
-
-
-
-
-    /*Animierte h1,posts*/
-
-    .js .animate {
-        opacity: 0;
-        transform: translateY(2rem);
-        transition: opacity 200ms linear transform 200ms linear;
-        transition-delay: 200ms;
-    }
-
-    .js .animate.animated {
-        opacity: 1;
-        transform: translateY(0);
+        padding: 5%;
+        color: black;
 
     }
 }
 
-.about {
-    color:white;
+
+
+
+
+.send {
+    margin-top: 60px;
+    background-color: #00c0ff;
+}
+
+.send:hover {
+    background-color: black;
+}
+
+
+
+/*404 Stylen*/
+
+/*Logo Größe verändern*/
+.error-logo {
+    width: 60%;
+    margin: 4rem auto;
+}
+
+/*Items zentrieren*/
+.error-menu #nav-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-menu #nav-error>li {
+    padding: 0 1rem;
+}
+
+/*Navbar Hintergrundfarbe ändern*/
+.error404 #navbar {
+    background-color: rgb(0, 0, 0);
+
+
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+
+
+
+
+/*Animierte h1,posts*/
+
+.js .animate {
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: opacity 200ms linear transform 200ms linear;
+    transition-delay: 200ms;
+}
+
+.js .animate.animated {
+    opacity: 1;
+    transform: translateY(0);
+
 }
 
 /*Sidebar Social Links Icons*/
 
-.social-link{
-    display:flex;
+.social-link {
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction:column;
+    flex-direction: column;
     position: fixed;
     font-size: 1.5rem;
     line-height: 2.5rem;
-    margin: 10px;
     margin-top: 250px;
-    z-index:9999;
-    padding:0.5rem;
+    z-index: 9999;
+    padding: 0.5rem;
+
 }
-
-
 
 .icon-facebook1,
 .icon-mail,
 .icon-instagram,
 .icon-phone {
-    background-color:var(--primary-color);
-    color:white;
+    background-color: var(--primary-color);
+    color: white;
     border-radius: 40%;
-    font-size:1.5rem;
-    padding:0.1em;
+    font-size: 1.5rem;
+    padding: 0.1em;
 }
 
 .icon-facebook1:hover,
 .icon-mail:hover,
 .icon-instagram:hover,
-.icon-phone:hover{
-    color:black;
-} 
-
+.icon-phone:hover {
+    color: black;
+}
