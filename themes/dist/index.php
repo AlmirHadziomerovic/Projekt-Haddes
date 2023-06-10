@@ -16,10 +16,11 @@ get_header(); ?>
             }
             ?>
     </h1>
-    <!--Blog Inhaaaalt einfügen -->
+    
+    <?php $blog = get_field('blog', 'option')?>
     <?php
         if(is_home()){
-                echo '<p>' .get_field('blog_description', 'option') . '</p>';
+                echo '<span>' .$blog['blog_description1'] . '</span>';
             } else {
                 if(the_archive_description()) {
                     the_archive_description('<p>', '</p>');

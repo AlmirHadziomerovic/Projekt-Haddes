@@ -38,7 +38,7 @@
                 {
                     "key": "field_645a953c9f4f3",
                     "label": "Blog Description",
-                    "name": "blog_description",
+                    "name": "blog_description1",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -113,8 +113,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": false,
+    "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1684950294
+    "modified": 1686404321
 }
