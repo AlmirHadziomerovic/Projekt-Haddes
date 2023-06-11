@@ -8,6 +8,20 @@ function jsLoaded(){
     htmlTag.classList.add ('js')
 
 }
+/*Pfeil beim Header um nach unten zu Scrollen wenn geclickt wird
+  */
+
+
+
+ function scrollDown(){
+    const scrollDown = document.getElementById('scroll')
+    if (window.scrollY > 250 ) {
+      scrollDown.style.opacity = "0";
+    } else {
+      scrollDown.style.opacity = "1";
+    }
+  }
+
 
 
 /*To Top Button Ausblenden ab ca. 300px */
@@ -18,11 +32,8 @@ function toTopButton (){
     } else {
         toTopButton.classList.remove ('show')
     }
+    
 }
-
-
-
-
 
 
 function elementsInViewport() {
@@ -77,10 +88,16 @@ document.addEventListener('DOMContentLoaded', function() {
     toTopButton()
     addAnimateClass()
     elementsInViewport()
+    scrollDown()
+  
 
     document.getElementById('totop').addEventListener('click',function(){
         document.body.scrollTop = 0
         document.documentElement.scrollTop = 0
+    })
+    document.getElementById('scroll').addEventListener('click',function(){
+        document.body.scrollTop = 700
+        document.documentElement.scrollTop = 700
     })
 
 }, false ) 
@@ -91,9 +108,14 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('scroll', function(){
     toTopButton()
     elementsInViewport()
+    scrollDown()
+ 
+
 })
 
 
 window.addEventListener ('resize', function(){
     elementsInViewport()
 })
+
+

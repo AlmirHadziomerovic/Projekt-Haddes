@@ -1,8 +1,16 @@
 <?php
 get_header(); ?>
 
+<ul class="icon-three">
+    <li>
+        <span class="icon-three-vertical" aria-hidden="false"></span>
+    </li>
+</ul>
 <?php $blogFields = get_field('header','option'); ?>
+
+
 <main id="content" class="container webseiten alignfull">
+
 
     <h1 class="is-style-headline">
         <?php
@@ -16,7 +24,7 @@ get_header(); ?>
             }
             ?>
     </h1>
-    
+
     <?php $blog = get_field('blog', 'option')?>
     <?php
         if(is_home()){
@@ -84,15 +92,13 @@ $project_query = new WP_Query($args);
     <?php the_tags('<div class="meta tags">#','#','</div>');
 ?>
 
-    <div style="height: 30px" aria-hidden="true"></div>
 
-    <ul class="icon-three">
-        <li>
-            <span class="icon-three-vertical" aria-hidden="false"></span>
-        </li>
-    </ul>
 
 
 </main>
-
+<ul class="icon-three">
+    <li>
+        <span class="icon-three-vertical" aria-hidden="false"></span>
+    </li>
+</ul>
 <?php get_footer();?>

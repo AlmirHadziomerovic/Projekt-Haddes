@@ -396,13 +396,12 @@ h2 {
     #nav-main>li {
         position: relative;
         margin-left: 2em;
-
     }
 
     #nav-main .sub-menu {
         position: absolute;
         top: 100%;
-        left: -50%;
+        left: -70%;
         width: 200px;
         padding: 0 0.5em;
         background-color: transparent;
@@ -412,8 +411,6 @@ h2 {
         transition: opacity 200ms ease-in-out, transform 150ms linear;
         font-size: 1.5em;
     }
-
-
 
     #nav-main li:hover>.sub-menu {
         opacity: 1;
@@ -738,10 +735,25 @@ input,
 
 }
 
+#scroll {
+    position:absolute;
+    color: grey;
+    font-size: 5rem;
+    list-style: none;
+    bottom:0;
+}
+#scroll:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    color:var(--primary-color);
+}
+
+
+
 .posts .content {
+    position:bottom;
     background-color: #dddddd53;
     padding: 1em 5%;
-
 }
 
 
@@ -803,18 +815,11 @@ input,
     list-style: none;
     padding: 02em;
     font-size: 1.5em;
-
-
 }
 
 .icon-three :first-child {
     margin-bottom: 1em;
 }
-
-
-
-
-
 
 
 .budget {
@@ -826,7 +831,6 @@ input,
     padding: 2em;
     color: black;
 
-
 }
 
 .budget h2 {
@@ -835,7 +839,6 @@ input,
     font-size: 2rem;
     font-family: 'Cinzel Decorative';
     font-weight: 400;
-
 
 }
 

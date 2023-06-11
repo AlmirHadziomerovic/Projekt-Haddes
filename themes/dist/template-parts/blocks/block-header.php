@@ -28,7 +28,13 @@
                     <div class="actions">
                     <a href class="btn"><?php echo $header['link_text']; ?></a>
                 </div>
+                <ul id="scroll">
+                    <li>
+                        <span class="icon-down" aria-hidden="false"></span>
+                    </li>
+                </ul>
         </div>
+      
     </header>
 </section>
 
