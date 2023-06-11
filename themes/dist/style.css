@@ -942,6 +942,9 @@ input,
 }
 
 #page-footer {
+ 
+    font-family: 'Cinzel Decorative';
+    font-weight: 400;
     background-color: rgba(0, 2, 8, 0);
     color: #fff;
     text-align: center;
@@ -974,10 +977,13 @@ input,
 
 }
 
-#nav-footer ul {
+.footer-menu{
+  
     list-style-type: none;
     padding: 0;
     margin: 0;
+    gap:10px;
+
 
 }
 
@@ -1244,17 +1250,14 @@ input,
 
 
 
-
-
-.send {
-    margin-top: 60px;
-    background-color: #00c0ff;
+.portfolio {
+    text-align: end;
 }
 
-.send:hover {
-    background-color: black;
-}
 
+.contact{
+    background-color:white;
+}
 
 
 /*404 Stylen*/

@@ -37,6 +37,15 @@
 </div>
 
 
+            <ul class="footer-menu">
+                <li>
+                    <a href="#">Daaaatenschutz</a>
+                </li>
+                <li>
+                    <a href="#">Impressum</a>
+                </li>
+            </ul>
+
 
     <div class="copyright column">
         <?php
