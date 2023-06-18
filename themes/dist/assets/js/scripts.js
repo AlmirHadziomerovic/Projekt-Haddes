@@ -8,6 +8,8 @@ function jsLoaded(){
     htmlTag.classList.add ('js')
 
 }
+
+
 /*Pfeil beim Header um nach unten zu Scrollen wenn geclickt wird
   */
 
@@ -24,7 +26,7 @@ function jsLoaded(){
 
 
 
-/*To Top Button Ausblenden ab ca. 300px */
+/*To Top Button Ausblenden ab ca. 250px */
 function toTopButton (){
     const toTopButton = document.getElementById('totop')
     if ( window.scrollY > 250 ) {

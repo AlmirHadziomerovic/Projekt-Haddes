@@ -1,7 +1,7 @@
 <!--Projekte Ausgeben Slider-->
 <?php
   
-    $class_name = 'projects space-top ';
+    $class_name = 'projects space-top';
 
 
     if(wp_is_mobile()){
