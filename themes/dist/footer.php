@@ -14,6 +14,9 @@
     ?>
 </nav>
 
+
+
+
         <!-- Icons im Footer ausgeben -->
 <div class="social-links column">
     <?php 

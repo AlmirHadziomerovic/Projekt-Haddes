@@ -184,7 +184,6 @@ h2 {
     left: 0;
     z-index: 1000;
     background-color: linear-gradient (12deg, var(--base-bg-color) 0, var(--navbar-bg-color) 100%)fixed;
-
 }
 
 #navbar .container {
@@ -210,7 +209,6 @@ h2 {
 @media screen and (min-width: 768px) {
     .logo {
         margin-bottom: 2.5em;
-
     }
 }
 
@@ -219,7 +217,6 @@ h2 {
 @media screen and (min-width: 768px) {
     #brand {
         height: calc(var(--navbar-height-desktop));
-
     }
 }
 
@@ -578,6 +575,7 @@ input,
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    min-width:100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: cover;
@@ -607,6 +605,7 @@ input,
 #page-header .actions {
     display: inline-block;
     justify-content: center;
+    width:100%;
 }
 
 
@@ -808,6 +807,10 @@ input,
 }
 
 #page-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
     font-family: 'Cinzel Decorative';
     font-weight: 400;
     background-color: rgba(0, 2, 8, 0);
@@ -815,6 +818,10 @@ input,
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    margin:0;
+    border-top: solid 1px rgba(0, 0, 0, 0.205);
+
+    
 
 }
 
@@ -869,6 +876,7 @@ input,
 @media screen and (min-width:768px) {
     #page-footer {
         display: flex;
+        flex-direction: row;
         align-items: center;
         gap: 1.5rem;
         border-top: solid 1px rgba(0, 0, 0, 0.205);
@@ -890,6 +898,7 @@ input,
     #page-footer .copyright {
         order: -1;
         text-align: left;
+        margin:0;
 
     }
 }

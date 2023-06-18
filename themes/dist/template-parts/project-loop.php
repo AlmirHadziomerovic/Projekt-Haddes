@@ -11,13 +11,16 @@
             echo wp_get_attachment_image($projekt_image, 'projekt');
         } else {
             echo wp_get_attachment_image(get_field('default-project-image', 'options'), 'projekt');
-
         }
-
         ?>
     </a>
-    
 </figure>
+
+<span>
+<?php the_field('project_description', 'projekt');?>
+
+?>
+    </span>
 
 <div style="height: 30px" aria-hidden="true"></div>
 
