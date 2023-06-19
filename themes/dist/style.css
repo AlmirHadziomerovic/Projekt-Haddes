@@ -175,7 +175,9 @@ font-size:3rem;
     }
 }
 
-
+.date {
+    color:black;
+}
 
 /*Definiert die Breite des Container/body*/
 .container {
@@ -1019,13 +1021,7 @@ input,
     border-bottom: 1px solid black;
 }
 
-.blog-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: var(--base-color);
-    padding: 1em;
-    margin: 5em;
-}
+
 
 @media screen and (min-width: 768px) {
     .blog-wrapper {
@@ -1220,3 +1216,6 @@ input,
 
 }
 
+.wpforms-submit {
+    background-color:white;
+}

@@ -2,7 +2,6 @@
 <!-- Projekt Holen von WP-->
 <div style="height: 30px" aria-hidden="true"></div>
 
-<?php $projekt_description = get_Field('project_description'); ?>
 
 <figure class="project">
     <a href="<?php echo esc_url(get_permalink()); ?>">
@@ -18,9 +17,6 @@
         ?>
     </a>
 </figure>
-<span>
-<?php echo the_Field($projekt_description, 'projekt'); ?>
-    </span>
 
 <div style="height: 30px" aria-hidden="true"></div>
 
