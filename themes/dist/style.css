@@ -646,10 +646,6 @@ input,
 
 }
 
-
-
-
-
 @media screen and (min-width: 768px) {
 
     #page-header h1,
@@ -902,7 +898,6 @@ input,
 }
 
 .footer-menu{
-  
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -966,8 +961,6 @@ input,
         margin: 2rem;
     }
 
-    /*Zwischenabstand in farbe*/
-
     /*Webseite/Wordpress Startseite*/
     .post-item1 {
         display: flex;
@@ -1015,14 +1008,6 @@ input,
     font-weight: 400;
     background-color: var(--base-color);
 }
-
-.blog-content1 {
-    padding: 1em;
-    border-bottom: 1px solid black;
-}
-
-
-
 @media screen and (min-width: 768px) {
     .blog-wrapper {
         display: grid;
@@ -1035,10 +1020,13 @@ input,
 
 
 .blog-content1 {
+    padding: 1em;
+    border-bottom: 1px solid black;
     border-right: 1px rgba(0, 0, 0, 0.145) solid;
     border-bottom: 1px rgba(0, 0, 0, 0.145) solid;
     padding: 1em;
 }
+
 
 .blog-content1:hover {
     background-color: #00bfff76;
@@ -1122,8 +1110,6 @@ input,
     background-color: var(--base-color);
     text-align: center;
     color:black;
-
-
 }
 
 @media screen and (min-width: 768px) {
@@ -1158,7 +1144,11 @@ input,
     text-align: end;
 }
 
-
+/*Slider Title stylen*/
+.project-title a {
+    color:white;
+    text-decoration: underline;
+}
 
 
 /*404 Stylen*/
@@ -1196,10 +1186,6 @@ input,
     line-height: 1.5em;
     text-align: center;
 }
-
-
-
-
 
 /*Animierte h1,posts*/
 
