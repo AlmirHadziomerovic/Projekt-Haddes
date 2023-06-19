@@ -8,7 +8,6 @@ text Domain: wifi
 */
 
 
-
 :root {
     --base-bg-color: #255991;
     --base-color: #ffffff;
@@ -157,15 +156,21 @@ body {
 
 }
 
-h2 {
+h2,
+.portfolio {
     color: var(--base-color);
-    font-size:3rem;
-    line-height: 1.3rem;
+    line-height: 2rem;
 }
+.portfolio {
+font-size:3rem;
+}
+
+
+
 @media screen and (min-width: 768px) {
-    h2 .portfolio,
+    h2,
     .blog-content {
-        font-size:1.5em;
+        font-size:1.5rem;
         line-height:1.4em;
     }
 }
@@ -179,6 +184,7 @@ h2 {
     margin-right: auto;
     padding-left: calc(var(--columns-gap) / 5);
     padding-right: calc(var(--columns-gap) / 5);
+    color:white;
 
 }
 
@@ -718,6 +724,7 @@ input,
     position:bottom;
     background-color: #dddddd53;
     padding: 1em 5%;
+    color:black;
 }
 
 
@@ -1014,11 +1021,22 @@ input,
 
 .blog-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     background-color: var(--base-color);
     padding: 1em;
     margin: 5em;
 }
+
+@media screen and (min-width: 768px) {
+    .blog-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: var(--base-color);
+        padding: 1em;
+        margin: 5em;
+    }
+}
+
 
 .blog-content1 {
     border-right: 1px rgba(0, 0, 0, 0.145) solid;
@@ -1107,6 +1125,7 @@ input,
     font-size: clamp(12px, 1vw, 18px);
     background-color: var(--base-color);
     text-align: center;
+    color:black;
 
 
 }
