@@ -1,7 +1,4 @@
 <footer id="page-footer" class="columns container">
-
-<nav id="nav-footer" class="column">
-    
     <?php
     //Menü einrichten, depth untermenü ebenen
         wp_nav_menu(array(
@@ -12,10 +9,6 @@
             'depth' =>2
         ));
     ?>
-</nav>
-
-
-
 
         <!-- Icons im Footer ausgeben -->
 <div class="social-links column">
@@ -40,14 +33,14 @@
 </div>
 
 
-            <ul class="footer-menu">
-                <li>
-                    <a href="#">Daaaatenschutz</a>
-                </li>
-                <li>
-                    <a href="#">Impressum</a>
-                </li>
-            </ul>
+    <ul class="footer-menu">
+        <li>
+            <a href="#">Daaaatenschutz</a>
+        </li>
+        <li>
+            <a href="#">Impressum</a>
+        </li>
+    </ul>
 
 
     <div class="copyright column">
