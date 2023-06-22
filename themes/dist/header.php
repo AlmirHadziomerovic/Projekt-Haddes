@@ -5,7 +5,10 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Sie Benötigen einen NEUEN Webauftritt? Ich helfe Ihnen dabei ganz unkompliziert">
+    <title>
+            Haddes übernimmt für Sie die Herausforderung Webauftritt!
+    </title>
     <!-- Damit Plugin/Wordpress Daten in den Head spielen können-->
     <?php wp_head(); ?> 
 
