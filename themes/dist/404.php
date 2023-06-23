@@ -7,10 +7,10 @@
     <?php
     $error = get_field('error', 'option');
     ?>
-    <h1>
+    <h1 class="error-title">
         <?php echo $error['error_title']; ?>
     </h1>
-    <p>
+    <p class="error-text">
         <?php echo $error['error_text']; ?>
     </p>
     

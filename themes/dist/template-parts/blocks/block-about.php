@@ -31,7 +31,7 @@ $about = get_field('about');
             
                 <?php echo $about['about_description'];
                     if($about['about_description']) {
-                        echo ' <article class="about-text">' . $about['about_description'] . '</article>';
+                       
                     }
                     ?>
             </div>
