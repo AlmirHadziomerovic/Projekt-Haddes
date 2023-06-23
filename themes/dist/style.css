@@ -7,7 +7,6 @@ text Domain: wifi
 
 */
 
-
 :root {
     --base-bg-color: #255991;
     --base-color: #ffffff;
@@ -897,8 +896,6 @@ input,
     padding: 0;
     margin: 0;
     gap:10px;
-
-
 }
 
 #page-footer .social-links li,
@@ -922,19 +919,16 @@ input,
         align-items: center;
         gap: 1.5rem;
         border-top: solid 1px rgba(0, 0, 0, 0.205);
-
     }
 
     #page-footer>* {
         flex-grow: 1;
         flex-basis: right;
-
     }
 
     #nav-footer {
         order: 2;
         text-align: right;
-
     }
 
     #page-footer .copyright {
@@ -985,11 +979,8 @@ input,
 }
 
 
-
-
 .columns {
     display: flex;
-
 }
 
 /*Blog Grid Container*/
@@ -1003,6 +994,11 @@ input,
     font-weight: 400;
     background-color: var(--base-color);
 }
+
+.blog-wrapper a:visited {
+    color:black;
+}
+
 @media screen and (min-width: 768px) {
     .blog-wrapper {
         display: grid;

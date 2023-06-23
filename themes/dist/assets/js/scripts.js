@@ -16,12 +16,13 @@ function jsLoaded(){
 
 
  function scrollDown(){
-    const scrollDown = document.getElementById('scroll')
+    const scrollDown = document.querySelector('#page-header #scroll')
+    if(scrollDown) {
     if (window.scrollY > 250 ) {
       scrollDown.style.opacity = "0";
     } else {
       scrollDown.style.opacity = "1";
-    }
+    }}
   }
 
 
@@ -97,10 +98,12 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.scrollTop = 0
         document.documentElement.scrollTop = 0
     })
+    const scrollDownn = document.querySelector('#page-header #scroll')
+    if(scrollDownn){
     document.getElementById('scroll').addEventListener('click',function(){
         document.body.scrollTop = 700
         document.documentElement.scrollTop = 700
-    })
+    })}
 
 }, false ) 
 

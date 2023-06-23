@@ -35,7 +35,7 @@
 <!--  Im Blog einen Button zur Kontaktaufnahme-->
 <aside id="cta">
     <?php $contact = get_field('contact', 'options'); ?>
-    <span class="cta-title">
+    <span class="cta-title btn">
         <?php _e('Nimm jetzt Kontakt auf', 'wifi'); ?>
     </span>
     <a class="btn"

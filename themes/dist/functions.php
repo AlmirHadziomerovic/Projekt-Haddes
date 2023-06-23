@@ -393,7 +393,22 @@ if(function_exists('acf_add_options_page')){
                 'icon' => 'admin-users',
                 'render_template' => 'template-parts/blocks/block-about.php' //Datei erstellen in Blocks
 
-    ));
+            ));
+            //SEO
+            acf_register_block_type(array(
+                'name' => 'webdev-SEO',
+                'title' => __('SEO', 'wifi'),
+                'description' => __('Das ist der Seo Bereich', 'wifi'),
+                'supports' => array('anchor' => true),
+                'category' => 'wifi',
+                'keywords' => array('About Me', 'Haddes', 'news', 'wifi'),
+                'post_type' => array('page', 'posts'),
+                'align' => false,
+                'mode' => false,
+                'icon' => 'admin-users',
+                'render_template' => 'template-parts/blocks/block-seo.php' //Datei erstellen in Blocks
+
+            ));
         }
 
     }   ); 
