@@ -1148,6 +1148,30 @@ input,
     color:white;
     text-decoration: underline;
 }
+.seo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px) {
+    .seo {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom:1rem;
+    }
+
+    .seo-img {
+        min-width:50%;
+        height: auto;
+    } 
+
+}
+
+
 
 
 /*404 Stylen*/

@@ -405,7 +405,7 @@ if(function_exists('acf_add_options_page')){
                 'post_type' => array('page', 'posts'),
                 'align' => false,
                 'mode' => false,
-                'icon' => 'admin-users',
+                'icon' => 'paperclip',
                 'render_template' => 'template-parts/blocks/block-seo.php' //Datei erstellen in Blocks
 
             ));
