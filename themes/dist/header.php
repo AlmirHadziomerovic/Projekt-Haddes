@@ -60,12 +60,12 @@
     <?php endif;?>
     <?php if($social_links['email']):?>
     
-    <a href="<?php echo $social_links['email'];?>" target="_blank">
+    <a href="mailto:<?php echo antispambot('almir_hadziomerovic@hotmail.com'); ?><?php echo $social_links['email'];?>" target="_blank">
         <span class="icon-mail" aria-hidden="true"></span>
         <span class="screen-reader-text"><?php _e('Contact Me', 'wifi');?></span>
     </a>  
     <?php endif;?>
-  
+
     <?php if($social_links['instagram']):?>
     
     <a href="<?php echo $social_links['instagram'];?>" target="_blank">
