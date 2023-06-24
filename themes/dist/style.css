@@ -1093,7 +1093,7 @@ input,
 }
 
 .about-text {
-    padding-top: 5%;
+    padding: 5%;
     margin: 0.5em;
     font-family: 'Cinzel Decorative';
     font-weight: 400;
@@ -1154,6 +1154,11 @@ input,
     align-items: center;
     flex-direction: column;
 }
+.seo-img {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media screen and (min-width:768px) {
     .seo {
@@ -1168,7 +1173,10 @@ input,
         min-width:50%;
         height: auto;
     } 
-
+    .reverse {
+        display:flex;
+        flex-direction:row-reverse;
+    }
 }
 
 

@@ -1,17 +1,30 @@
 
+
 <?php 
-$seo = get_field('block_seo');
+
+
+$class_name = ' seo ' 
+
 ?>
 
-<?php $class_name = ' seo' ?>
+<?php 
+$seo = get_field('block_seo');
+
+
+if($seo['seo_direction']){
+    $class_name .=' reverse';
+}
+?>
 <ul class="icon-three">
             <li>
                 <span class="icon-three-vertical" aria-hidden="false"></span>
             </li>
 </ul>
 
-<div class="<?php echo $class_name; ?>">
-    <div class="seo-img">
+
+
+<section class="<?php echo $class_name; ?>">
+    <div class="seo-img alignfull">
                 <?php
                  echo wp_get_attachment_image($seo['seo_img'], 'medium-large', false, array('class' => 'seo-img animate'));
                 ?>
@@ -21,9 +34,8 @@ $seo = get_field('block_seo');
             
                 <?php echo $seo['seo_description'];
                     if($seo['seo_description']) {
-                       
                     }
                     ?>
             </div>
      </div>
-</div>
+</section>
