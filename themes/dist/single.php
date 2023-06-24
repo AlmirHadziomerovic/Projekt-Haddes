@@ -39,7 +39,7 @@
         <?php _e('Nimm jetzt Kontakt auf', 'wifi'); ?>
     </span>
     <a class="btn"
-        href="mailto:<?php echo antispambot($contact['e-mail']); ?>"><?php _e('E-Mail schicken', 'wifi'); ?></a>
+        href="mailto:<?php echo antispambot('almir_hadziomerovic@hotmail.com');  ?>"><?php _e('E-Mail schicken', 'wifi'); ?></a>
 </aside>
 
 

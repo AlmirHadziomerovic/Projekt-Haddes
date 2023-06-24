@@ -25,8 +25,9 @@
     <header class="<?php echo $class_name;?>">
         <div id="page-header" style="background-image:url('<?php echo $header['image'];?>');" class="alignfull">
                 <h1  class="headline"><?php echo $header['headline']; ?> </h1>
-                    <div class="actions">
-                    <a href class="btn"><?php echo $header['link_text']; ?></a>
+                <div class="actions">
+                    <a href="mailto:<?php echo antispambot('almir_hadziomerovic@hotmail.com'); ?>" 
+                        class="btn"><?php echo $header['link_text']; ?></a>
                 </div>
                 <ul id="scroll">
                     <li>

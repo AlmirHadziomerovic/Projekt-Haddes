@@ -37,6 +37,11 @@ $about = get_field('about');
             </div>
      </div>
 </div>
+<div class="actions">
+                    <a href="mailto:<?php echo antispambot('almir_hadziomerovic@hotmail.com'); ?>" 
+                        class="btn"><?php echo $about['about_link']; ?></a>
+                </div>
+
 <ul class="icon-three">
             <li>
                 <span class="icon-three-vertical" aria-hidden="false"></span>
