@@ -43,6 +43,18 @@ function jsLoaded(){
     }}
   }
 
+const myTags = [
+    'HTML', 'CSS','JavaScript', 'Phyton', 'SCSS', 'JQery', 'Django', 'PHP', 'NodeJs',
+    'ReactJs'
+];
+ var tagCloud = TagCloud(' .seo-content', myTags,{
+
+     radius:200,
+     maxSpeed: 'fast',
+
+     direction:135,
+     keep:true,
+ });
 
 
 /*To Top Button Ausblenden ab ca. 250px */

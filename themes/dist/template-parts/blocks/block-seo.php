@@ -15,6 +15,10 @@ if($seo['seo_direction']){
     $class_name .=' reverse';
 }
 ?>
+
+
+
+<span class="seo-content"></span>
 <ul class="icon-three">
             <li>
                 <span class="icon-three-vertical" aria-hidden="false"></span>

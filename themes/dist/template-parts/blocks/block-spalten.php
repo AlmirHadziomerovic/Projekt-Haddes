@@ -4,14 +4,14 @@
 
 $class_name = 'header-media-text columns reverse';
 
-if (!empty($block['className'])) {
+if (!empty($block['className'])){
     $class_name .= ' ' . esc_attr($block['className']);
 }
-
+?>
 
 <?php if(!empty($header)): ?>
 
-<div class="<?  php echo $class_name; ?>">
+<div class="<?php echo $class_name; ?>">
     <div class="column header-media">
         <?php
        echo wp_get_attachment_image($header['header_image'], 'medium_large', false, array('class' => 'column header-media animate'));

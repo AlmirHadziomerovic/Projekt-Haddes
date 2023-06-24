@@ -1,14 +1,5 @@
 <footer id="page-footer" class="columns container">
-    <?php
-    //Menü einrichten, depth untermenü ebenen
-        wp_nav_menu(array(
-            'theme_location' => 'footer',
-            'container' => false,
-            'menu_id'=> 'nav-menu',
-            'fallback_cb' => false,
-            'depth' =>2
-        ));
-    ?>
+
 
         <!-- Icons im Footer ausgeben -->
      
@@ -30,10 +21,17 @@
             <span class="screen-reader-text"><?php _e('Follow on Facebook', 'wifi');?></span>
         </a>    
         <?php endif;?>
-
-
     </div>
-
+    <?php
+    //Menü einrichten, depth untermenü ebenen
+    wp_nav_menu(array(
+        'theme_location' => 'footer',
+        'container' => false,
+        'menu_id'=> 'nav-menu',
+        'fallback_cb' => false,
+        'depth' =>2
+    ));
+    ?>
 <div class="copyright column">
     <?php
         echo sprintf(__('&copy; %1$s, %2$s'), date('Y'),get_bloginfo('name'));
