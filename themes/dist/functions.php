@@ -33,19 +33,14 @@
 
 
     register_nav_menus(array(
-        'primary' => __('Hauptmenü', 'wifi')
-
-    ));
-
-
-    register_nav_menus (array(
-        'footer' => __('Footer', 'wifi')
-
-    ));
-
-    register_nav_menus (array(
+        'primary' => __('Hauptmenü', 'wifi'),
+        'footer' => __('Footer', 'wifi'),
         'two-menu' => __('two-menu', 'wifi')
+
+
     ));
+
+
 
     //Backend in Wordpress einfügen und die CSS Datei ergänzen damit es gleich ausschaut wie in Fronted
     add_theme_support('editor-styles');
@@ -82,7 +77,7 @@
 
 
     // JS einbinden 
-    wp_enqueue_script('webdev-js', get_template_directory_uri(  ) . '/assets/js/scripts.js', [], $version, true);
+    wp_enqueue_script('webdev-js', get_template_directory_uri(  ) . '/assets/js/scripts.js', array('jquery'), $version, true);
 
     });
 

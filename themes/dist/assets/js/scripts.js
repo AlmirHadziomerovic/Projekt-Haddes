@@ -10,10 +10,28 @@ function jsLoaded(){
 }
 
 
-/*Pfeil beim Header um nach unten zu Scrollen wenn geclickt wird
+(function ($) {
+
+    $(document).ready(function () {
+
+        $('#nav-main .menu-item-has-children > a').each(function (index, element) {
+
+            var id = $(this).parent().attr('id') + '-toggle';
+
+            $(this).after('<input type="checkbox" id="' + id + '"><label for="' + id + '" class="menu-toggle"><em area-hidden="true"></em><span class="screen-reader-text">open</span></label>');
+
+        });
+
+        $('#nav-main .current-menu-ancestor input[type="checkbox"], #nav-main .current-menu-parent input[type="checkbox"]').attr("checked", "checked");
+
+    });
+
+})(jQuery);
+
+
+
+/*Pfeil beim Header um nach unten zu Scrollen wenn geklickt wird
   */
-
-
 
  function scrollDown(){
     const scrollDown = document.querySelector('#page-header #scroll')

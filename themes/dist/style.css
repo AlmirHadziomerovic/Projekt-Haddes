@@ -251,6 +251,7 @@ font-size:3rem;
     list-style-type: none;
     color: var(--base-color);
 
+
 }
 
 .sub-menu {
@@ -303,7 +304,6 @@ font-size:3rem;
         font-weight: 400;
         gap: 0;
     }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -319,13 +319,18 @@ font-size:3rem;
     }
 }
 
+#nav-main input[type=“checkbox“] {
+    display:none;
+}
+
+
+
 #nav-main a {
     display: inline-block;
     color: var(--base-color);
     text-decoration: none;
     padding: 0.75em 0;
     list-style: none;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -863,9 +868,11 @@ input,
     padding-bottom: 1rem;
     margin:0;
     border-top: solid 1px rgba(0, 0, 0, 0.205);
+}
 
-    
 
+#page-footer ul{
+    list-style:none;
 }
 
 #page-footer a {
@@ -892,12 +899,7 @@ input,
 
 }
 
-.footer-menu{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    gap:10px;
-}
+
 
 #page-footer .social-links li,
 #nav-footer li {
