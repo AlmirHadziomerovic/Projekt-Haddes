@@ -9,7 +9,7 @@ get_header(); ?>
 <?php $blogFields = get_field('header','option'); ?>
 
 
-<main id="content" class="container webseiten alignfull">
+<main id="content" class="container blog-wrapper alignfull">
 
 
     <h1 class="is-style-headline">

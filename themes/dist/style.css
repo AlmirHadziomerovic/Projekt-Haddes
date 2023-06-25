@@ -156,6 +156,7 @@ h2,
 .portfolio {
     color: var(--base-color);
     line-height: 2rem;
+    text-align: end;
 }
 .portfolio {
 font-size:3rem;
@@ -175,7 +176,7 @@ font-size:3rem;
 
 
 .date {
-    color:black;
+    color:var(--navbar-bg-color);
 }
 
 /*Definiert die Breite des Container/body*/
@@ -185,7 +186,7 @@ font-size:3rem;
     margin-right: auto;
     padding-left: calc(var(--columns-gap) / 5);
     padding-right: calc(var(--columns-gap) / 5);
-    color:white;
+    color:var(--base-color);
 
 }
 
@@ -266,7 +267,7 @@ font-size:3rem;
         padding: 0;
         list-style-type: none;
         background-color: transparent;
-        color: black;
+        color:var(--navbar-bg-color);
         font-size: 1em;
     }
 }
@@ -544,7 +545,6 @@ input[type="checkbox"] {
 /*Menü von oben einblenden
 */
 
-
 h1 {
     color: var(--base-color);
     font-family: 'Charmonman';
@@ -707,7 +707,7 @@ input,
 .icon-mail:hover,
 .icon-instagram:hover,
 .icon-phone:hover {
-    color: black;
+    color: var(--navbar-bg-color);
 }
 
 #scroll {
@@ -728,7 +728,7 @@ input,
     position:bottom;
     background-color: #dddddd53;
     padding: 1em 5%;
-    color:black;
+    color:var(--navbar-bg-color);
 }
 
 
@@ -790,30 +790,6 @@ input,
     margin-bottom: 1em;
 }
 
-
-.budget {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    background-color: var(--base-color);
-    gap: 1em;
-    padding: 2em;
-    color: black;
-
-}
-
-.budget h2 {
-    color: rgb(1, 0, 0);
-    text-decoration: underline;
-    font-size: 2rem;
-    font-family: 'Cinzel Decorative';
-    font-weight: 400;
-
-}
-
-
-
-
 /*ToTop Button Stylen*/
 #totop {
     background-color: var(--primary-color);
@@ -839,7 +815,7 @@ input,
 
 #totop.show:hover {
     cursor: pointer;
-    background-color: black;
+    background-color:var(--navbar-bg-color);
     transition: 0.7s ease-in-out;
     box-shadow: 0 0 10px 0 var(--primary-color) inset, 0 0 10px 8px var(--primary-color);
 
@@ -940,14 +916,7 @@ input,
 
 
 
-@media screen and (min-width: 768px) {
-    .webseiten {
-        display: flex;
-        justify-content: left;
-        flex-direction: row-reverse;
-        padding: 2em;
-        margin: 2rem;
-    }
+
 
     /*Webseite/Wordpress Startseite*/
     .post-item1 {
@@ -975,7 +944,7 @@ input,
         background-color: #ffffff;
         text-align: center;
     }
-}
+
 
 
 .columns {
@@ -996,7 +965,7 @@ input,
 }
 
 .blog-wrapper a:visited {
-    color:black;
+    color:var(--navbar-bg-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -1012,7 +981,7 @@ input,
 
 .blog-content1 {
     padding: 1em;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--navbar-bg-color);
     border-right: 1px rgba(0, 0, 0, 0.145) solid;
     border-bottom: 1px rgba(0, 0, 0, 0.145) solid;
     padding: 1em;
@@ -1066,20 +1035,7 @@ input,
     max-width: 100vw;
     width: 100vw;
 }
-.webseiten {
-    background-color: var(--base-color);
-    display: block;
-}
 
-@media screen and (min-width: 768px) {
-    .webseiten {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1px;
-        background-color: var(--base-color);
-        border-right: solid 1px rgba(0, 0, 0, 0.222);
-    }
-}
 /*About Seite Mobile*/
 
 
@@ -1100,7 +1056,7 @@ input,
     font-size: clamp(12px, 1vw, 18px);
     background-color: var(--base-color);
     text-align: center;
-    color:black;
+    color:var(--navbar-bg-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -1110,7 +1066,7 @@ input,
         align-items: center;
         text-align: center;
         background-color: #eee;
-        color: black;
+        color: var(--navbar-bg-color);
         margin-top: 2rem;
 
     }
@@ -1124,33 +1080,17 @@ input,
 
     .about-text {
         padding: 5%;
-        color: black;
+        color: var(--navbar-bg-color);
 
     }
 }
 
-@media screen and (min-width: 768px) {
-    .wpforms-field-container {
-    display:flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-}
-}
-
-
-.portfolio {
-    text-align: end;
-}
 
 /*Slider Title stylen*/
 .project-title a {
-    color:white;
+    color:var(--base-color);
     text-decoration: underline;
 }
-
-
-
 .seo {
     display:flex;
     justify-content: center;
@@ -1210,7 +1150,7 @@ input,
 
 }
 .error-text {
-    color:white;
+    color:var(--base-color);
 }
 .error-title {
     color:red;
