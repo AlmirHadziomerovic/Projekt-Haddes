@@ -297,7 +297,7 @@ font-size:3rem;
         bottom: 0;
         padding: 0;
         background-color: transparent;
-        opacity: 0; box-shadow: 0 0 10px 0 var(--primary-color) inset, 0 0 10px 8px var(--primary-color);
+        opacity: 0;
         pointer-events: none;
         overflow-y: auto;
         text-align: center;
@@ -993,6 +993,7 @@ input,
     margin: 0.5em;
     font-family: 'Cinzel Decorative';
     font-weight: 400;
+    font-size:0.5em;
     background-color: var(--base-color);
 }
 
@@ -1151,18 +1152,7 @@ input,
 }
 
 
-.seo-content {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Charmonman';
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height:100vh;
-    background:transparent;
-    color:white;
-}
+
 .seo {
     display:flex;
     justify-content: center;

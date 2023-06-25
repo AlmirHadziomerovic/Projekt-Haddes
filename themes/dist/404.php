@@ -20,7 +20,7 @@
     <!-- Logo auf der 404 ausgeben/ Schleife falls Logo vorhanden -->
     <div class="error-logo">
         <?php 
-        if (function_exists('the_custom_logo')){
+        if (function_exists('the_custom_logo')) {
             the_custom_logo();
         };
         ?>

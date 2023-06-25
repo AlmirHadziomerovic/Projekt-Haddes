@@ -10,25 +10,6 @@ function jsLoaded(){
 }
 
 
-(function ($) {
-
-    $(document).ready(function () {
-
-        $('#nav-main .menu-item-has-children > a').each(function (index, element) {
-
-            var id = $(this).parent().attr('id') + '-toggle';
-
-            $(this).after('<input type="checkbox" id="' + id + '"><label for="' + id + '" class="menu-toggle"><em area-hidden="true"></em><span class="screen-reader-text">open</span></label>');
-
-        });
-
-        $('#nav-main .current-menu-ancestor input[type="checkbox"], #nav-main .current-menu-parent input[type="checkbox"]').attr("checked", "checked");
-
-    });
-
-})(jQuery);
-
-
 
 /*Pfeil beim Header um nach unten zu Scrollen wenn geklickt wird
   */
@@ -42,20 +23,6 @@ function jsLoaded(){
       scrollDown.style.opacity = "1";
     }}
   }
-
-const myTags = [
-    'HTML', 'CSS','JavaScript', 'Phyton', 'SCSS', 'JQery', 'Django', 'PHP', 'NodeJs',
-    'ReactJs'
-];
- var tagCloud = TagCloud(' .seo-content', myTags,{
-
-     radius:200,
-     maxSpeed: 'fast',
-
-     direction:135,
-     keep:true,
- });
-
 
 /*To Top Button Ausblenden ab ca. 250px */
 function toTopButton (){

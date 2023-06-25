@@ -33,14 +33,10 @@
 
 
 <!--  Im Blog einen Button zur Kontaktaufnahme-->
-<aside id="cta">
-    <?php $contact = get_field('contact', 'options'); ?>
-    <span class="cta-title btn">
-        <?php _e('Nimm jetzt Kontakt auf', 'wifi'); ?>
-    </span>
+
     <a class="btn"
-        href="mailto:<?php echo antispambot('almir_hadziomerovic@hotmail.com');  ?>"><?php _e('E-Mail schicken', 'wifi'); ?></a>
-</aside>
+        href="mailto:<?php echo antispambot('almir_hadziomerovic@hotmail.com');  ?>"><?php _e('Jetzt Kontaktieren', 'wifi'); ?></a>
+
 
 
 
