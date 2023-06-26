@@ -42,6 +42,6 @@
 
     <?php
     elseif (is_admin()):
-        echo '<h2>' . __('Bitte geben Sie einen Content ein', 'wifi') . '</h2>';
+        echo '<span>' . __('Bitte geben Sie einen Content ein', 'wifi') . '</span>';
     endif;
  ?>

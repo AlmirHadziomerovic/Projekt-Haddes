@@ -45,9 +45,9 @@ get_header(); ?>
         endwhile;
     else:?>
     <article class="post">
-        <h2 class="post-title">
+        <h3 class="post-title">
             <a href="<?php the_permalink();?>"><?php the_title();?></a>
-        </h2>
+        </h3>
         <div class="meta">
             <time class="date" datetime="<?php the_time('Y-m-d');?>"><?php the_time('d.m.Y');?></time>
             <?php
@@ -56,7 +56,7 @@ get_header(); ?>
         </div>
     </article>
 
-    <h2><?php _e('Es wurde kein Beitrag gefunden', 'wifi');?></h2>
+    <h4><?php _e('Es wurde kein Beitrag gefunden', 'wifi');?></h4>
     <?php endif;
         ?>
     <?php if(paginate_links());?>

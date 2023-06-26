@@ -45,7 +45,9 @@
         </div>
 
 
-
+        <?php
+        $telefonnummer = "+436769195203";
+        ?>
 
 <sidebar class="social-link columns">
 <?php 
@@ -60,7 +62,7 @@
     <?php endif;?>
     <?php if($social_links['email']):?>
     
-    <a href="mailto:<?php echo antispambot('almir_hadziomerovic@hotmail.com'); ?><?php echo $social_links['email'];?>" target="_blank">
+    <a href="mailto:<?php echo $social_links['email'];?>" target="_blank">
         <span class="icon-mail" aria-hidden="true"></span>
         <span class="screen-reader-text"><?php _e('Contact Me', 'wifi');?></span>
     </a>  
@@ -75,7 +77,7 @@
     <?php endif;?>
     <?php if($social_links['instagram']):?>
     
-    <a href="<?php echo $social_links['phone'];?>" target="_blank">
+    <a href="tel:<?php echo $social_links['phone'];?>" target="_blank">
         <span class="icon-phone" aria-hidden="true"></span>
         <span class="screen-reader-text"><?php _e('Call us', 'wifi');?></span>
     </a>    

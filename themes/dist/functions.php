@@ -44,7 +44,7 @@
 
     //Backend in Wordpress einfügen und die CSS Datei ergänzen damit es gleich ausschaut wie in Fronted
     add_theme_support('editor-styles');
-    add_editor_Style('assets/CSS/style-editor.css');
+    add_editor_Style('assets/css/style-editor.css');
     add_editor_Style('assets/icons/style.css');
 
 
@@ -396,12 +396,27 @@ if(function_exists('acf_add_options_page')){
                 'description' => __('Das ist der Seo Bereich', 'wifi'),
                 'supports' => array('anchor' => true),
                 'category' => 'wifi',
-                'keywords' => array('About Me', 'Haddes', 'news', 'wifi'),
+                'keywords' => array('SEO', 'Reichweite', 'news', 'wifi'),
                 'post_type' => array('page', 'posts'),
                 'align' => false,
                 'mode' => false,
                 'icon' => 'paperclip',
                 'render_template' => 'template-parts/blocks/block-seo.php' //Datei erstellen in Blocks
+
+            ));
+            //Portfolio
+            acf_register_block_type(array(
+                'name' => 'webdev-Portfolio',
+                'title' => __('Portfolio', 'wifi'),
+                'description' => __('Das ist der Portfolio Bereich', 'wifi'),
+                'supports' => array('anchor' => true),
+                'category' => 'wifi',
+                'keywords' => array('Portfolio', 'Haddes', 'news', 'wifi'),
+                'post_type' => array('page', 'posts'),
+                'align' => false,
+                'mode' => false,
+                'icon' => 'gallery',
+                'render_template' => 'template-parts/blocks/block-portfolio.php' //Datei erstellen in Blocks
 
             ));
         }

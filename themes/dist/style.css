@@ -596,25 +596,26 @@ input,
 }
 
 /*BG Image*/
-#page-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    min-width:100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: cover;
-    background-attachment: fixed;
-    padding: 2.5 1.5em;
-    line-height: 1.4;
-    text-align: center;
-    position: relative;
-    flex-direction: column;
-    margin-top: -100px;
+
+@media screen and (min-width: 768px){
+    #page-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        min-width:100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: cover;
+        background-attachment: fixed;
+        padding: 2.5 1.5em;
+        line-height: 1.4;
+        text-align: center;
+        position: relative;
+        flex-direction: column;
+        margin-top: -100px;
+    }
 }
-
-
 @media screen and (min-width: 768px) {
 
     #page-header h1 {
@@ -624,9 +625,6 @@ input,
 
     }
 }
-
-
-
 
 #page-header .actions {
     display: inline-block;
@@ -1181,4 +1179,23 @@ input,
     opacity: 1;
     transform: translateY(0);
 
+}
+
+
+.portfolio-wrapper {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.portfolio-img {
+    max-width:50%;
+    grid-area: 2fr;
+    grid-template-columns: 2fr;
+}
+.portfolio-img1 {
+    max-width:60%;
+    grid-column: 3 / 4;
+    grid-row: 3 /4;
 }
