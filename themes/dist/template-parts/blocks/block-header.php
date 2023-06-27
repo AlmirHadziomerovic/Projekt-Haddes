@@ -31,7 +31,7 @@
                 </div>
                 <ul id="scroll">
                     <li>
-                        <span class="icon-down" aria-hidden="false"></span>
+                        <span class="icon-down is-mobile" aria-hidden="false"></span>
                     </li>
                 </ul>
         </div>

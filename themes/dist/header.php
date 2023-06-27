@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sie Benötigen einen NEUEN Webauftritt? Ich helfe Ihnen dabei ganz unkompliziert">
     <title>
-            Haddes übernimmt für Sie die Herausforderung Webauftritt!
+            Haddes übernimmt für Sie die Herausforderung Webseiten erstellung!
     </title>
     <!-- Damit Plugin/Wordpress Daten in den Head spielen können-->
     <?php wp_head(); ?> 
@@ -44,10 +44,6 @@
                   ?>
         </div>
 
-
-        <?php
-        $telefonnummer = "+436769195203";
-        ?>
 
 <sidebar class="social-link columns">
 <?php 

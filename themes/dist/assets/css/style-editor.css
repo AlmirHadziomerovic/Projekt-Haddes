@@ -652,61 +652,7 @@ input,
 
 }
 
-@media screen and (min-width: 768px) {
 
-    #page-header h1,
-    #page-header1 h1 {
-        color: grey;
-        font-size: 5rem;
-        font-family: 'Charmonman';
-
-    }
-
-}
-
-@media screen and (min-width: 768px) {
-
-    #page-header h1,
-    #page-header1 h1 {
-        color: grey;
-        font-size: 3rem;
-        font-family: 'Charmonman';
-    }
-
-}
-/*Sidebar Social Links Icons*/
-
-.social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: fixed;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    margin-top: 250px;
-    z-index: 9999;
-    padding: 0.5rem;
-
-}
-
-.icon-facebook1,
-.icon-mail,
-.icon-instagram,
-.icon-phone {
-    background-color: var(--primary-color);
-    color: var(--base-color);
-    border-radius: 40%;
-    font-size: 1.5rem;
-    padding: 0.1em;
-}
-
-.icon-facebook1:hover,
-.icon-mail:hover,
-.icon-instagram:hover,
-.icon-phone:hover {
-    color: var(--navbar-bg-color);
-}
 
 #scroll {
     position:absolute;
@@ -912,23 +858,6 @@ input,
     }
 }
 
-
-
-
-
-/*Webseite/Wordpress Startseite*/
-.post-item1 {
-    display: flex;
-    justify-content: left;
-    flex-direction: row;
-    padding-bottom: 1em;
-
-}
-
-.post-item1 .headline {
-    padding-left: 0.5em;
-}
-
 .headline {
     font-size: 3rem;
     color: var(--base-color);
@@ -977,7 +906,7 @@ input,
 }
 
 
-.blog-content1 {
+.blog-content {
     padding: 1em;
     border-bottom: 1px solid var(--navbar-bg-color);
     border-right: 1px rgba(0, 0, 0, 0.145) solid;
@@ -986,7 +915,7 @@ input,
 }
 
 
-.blog-content1:hover {
+.blog-content:hover {
     background-color: #00bfff76;
     transition: all 1s linear;
 }
@@ -1164,21 +1093,6 @@ input,
     font-size: 2rem;
     line-height: 1.5em;
     text-align: center;
-}
-
-/*Animierte h1,posts*/
-
-.js .animate {
-    opacity: 0;
-    transform: translateY(2rem);
-    transition: opacity 200ms linear transform 200ms linear;
-    transition-delay: 200ms;
-}
-
-.js .animate.animated {
-    opacity: 1;
-    transform: translateY(0);
-
 }
 
 

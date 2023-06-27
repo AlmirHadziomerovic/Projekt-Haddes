@@ -163,18 +163,6 @@ font-size:3rem;
 }
 
 
-
-@media screen and (min-width: 768px) {
-    h2,
-    .blog-content {
-        font-size:1.5rem;
-        line-height:1.4em;
-    }
-}
-
-
-
-
 .date {
     color:var(--navbar-bg-color);
 }
@@ -550,10 +538,6 @@ h1 {
     font-family: 'Charmonman';
 }
 
-.work {
-    color: var(--primary-color);
-}
-
 .content {
     width: 100%;
     height: auto;
@@ -596,7 +580,32 @@ input,
 }
 
 /*BG Image*/
+#page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    min-width:100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-attachment: fixed;
+    padding: 2.5 1.5em;
+    line-height: 1.4;
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+    margin-top: -100px;
+}
+.icon-down {
+    display:none;
+}
 
+@media screen and (min-width: 768px) {
+    .icon-down {
+        display: block;
+    }
+}
 @media screen and (min-width: 768px){
     #page-header {
         display: flex;
@@ -649,6 +658,7 @@ input,
     font-family: 'Charmonman';
     text-decoration: underline;
     text-decoration-color: #eeeeee29;
+    margin-top:3.2em;
 
 }
 
@@ -912,23 +922,6 @@ input,
     }
 }
 
-
-
-
-
-    /*Webseite/Wordpress Startseite*/
-    .post-item1 {
-        display: flex;
-        justify-content: left;
-        flex-direction: row;
-        padding-bottom: 1em;
-
-    }
-
-    .post-item1 .headline {
-        padding-left: 0.5em;
-    }
-
     .headline {
         font-size: 3rem;
         color: var(--base-color);
@@ -977,7 +970,7 @@ input,
 }
 
 
-.blog-content1 {
+.blog-content {
     padding: 1em;
     border-bottom: 1px solid var(--navbar-bg-color);
     border-right: 1px rgba(0, 0, 0, 0.145) solid;
@@ -986,9 +979,16 @@ input,
 }
 
 
-.blog-content1:hover {
-    background-color: #00bfff76;
+.blog-content:hover {
+    background-color: var(--primary-color);
     transition: all 1s linear;
+}
+@media screen and (min-width: 768px) {
+    h2,
+    .blog-headline {
+        font-size:1.5rem;
+        line-height:1.4em;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -1089,6 +1089,7 @@ input,
     color:var(--base-color);
     text-decoration: underline;
 }
+
 .seo {
     display:flex;
     justify-content: center;
