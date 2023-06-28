@@ -1,6 +1,4 @@
 
-<!--Abfrage der Kategorien im Gutenberg und ausgabe auf der BlogSeite -->
-
         <div class="blog-content">
             <h2 class="blog-headline">
                 <a href="<?php the_permalink();?>"><?php the_title();?></a>

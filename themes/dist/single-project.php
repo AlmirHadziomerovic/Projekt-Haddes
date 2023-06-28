@@ -1,7 +1,5 @@
 <?php get_header();?>
 
-<!-- Gesamten Blog ausgeben-->
-
 <main id="content" class="container">
 
 
@@ -24,8 +22,6 @@
 
 </main>
 
-
-<!-- Schlagwörter ausgeben falls vorhanden -->
 
 <?php the_tags('<div class="meta tags">#','#','</div>');
 ?>

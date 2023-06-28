@@ -2,8 +2,6 @@
 
 
 <main id="container">
-        <!--  Seite 404 Text/Textfeld einfügen und danach Textfeld ausgeben -->
-
     <?php
     $error = get_field('error', 'option');
     ?>
@@ -13,11 +11,7 @@
     <p class="error-text">
         <?php echo $error['error_text']; ?>
     </p>
-    
 
-  
-
-    <!-- Logo auf der 404 ausgeben/ Schleife falls Logo vorhanden -->
     <div class="error-logo">
         <?php 
         if (function_exists('the_custom_logo')) {

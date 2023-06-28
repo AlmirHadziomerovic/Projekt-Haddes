@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<!-- Single Blog ausgeben-->
-
 <main id="content" class="container">
 
 
@@ -15,7 +13,6 @@
                 ?>
     </div>
 
-    <!-- Post/blog ausgeben-->
     <?php
                 if(have_posts()){
                     while(have_posts()){
@@ -30,9 +27,6 @@
 <?php echo the_field('project_image', 'projekt') ?>
 
 </main>
-
-
-<!--  Im Blog einen Button zur Kontaktaufnahme-->
 
     <a class="btn"
         href="mailto:<?php echo antispambot('almir_hadziomerovic@hotmail.com');  ?>"><?php _e('Jetzt Kontaktieren', 'wifi'); ?></a>

@@ -1,4 +1,3 @@
-<!-- About Seite-->
 
 <?php 
 

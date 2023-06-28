@@ -9,7 +9,6 @@
     <title>
             Haddes übernimmt für Sie die Herausforderung Webseiten erstellung!
     </title>
-    <!-- Damit Plugin/Wordpress Daten in den Head spielen können-->
     <?php wp_head(); ?> 
 
 </head>

@@ -1,5 +1,4 @@
 
-<!-- Projekt Holen von WP-->
 <div style="height: 30px" aria-hidden="true"></div>
 
 
@@ -25,5 +24,3 @@
 
 <div style="height: 30px" aria-hidden="true"></div>
 
-
-<!-- Projekte-->

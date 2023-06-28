@@ -36,7 +36,7 @@ get_header(); ?>
             }
         ?>
     <?php
-// Ausgabe der Kategorie auf der Übersichtsseite des Blogs
+
     if(have_posts()): 
         while (have_posts()):
             the_post();
@@ -76,7 +76,6 @@ get_header(); ?>
 
 $paged = (get_query_var('paged')) ? get_query_var('pages') : 1;
 
-//Post abfragen
 
 $args = [
     'post_type' => 'project',

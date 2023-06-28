@@ -1,8 +1,5 @@
 <footer id="page-footer" class="columns container">
 
-
-        <!-- Icons im Footer ausgeben -->
-     
     <div class="social-links column">
         <?php 
         $social_links = get_field('social_links', 'option');
@@ -23,7 +20,6 @@
         <?php endif;?>
     </div>
     <?php
-    //Menü einrichten, depth untermenü ebenen
     wp_nav_menu(array(
         'theme_location' => 'footer',
         'container' => false,

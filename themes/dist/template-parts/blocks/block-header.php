@@ -12,14 +12,7 @@
 
 <?php $header = get_field('header'); ?>
 
-<!-- If Schleife wenn in den Felder nichts eingetragen wird-->
 <?php if(!empty($header)): ?>
-
-
-
-
-
-    <!-- Startseite Aufbauen Image/Headline-->
 
 <section>
     <header class="<?php echo $class_name;?>">

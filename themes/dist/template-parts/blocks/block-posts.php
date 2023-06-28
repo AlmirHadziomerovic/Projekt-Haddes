@@ -1,6 +1,5 @@
 
 
-<!-- Post des Blogs auf der Startseite ausgeben welche im Backend der Kunde erfassen kann-->
 <?php
 $anchor = '';
 
@@ -20,7 +19,7 @@ if(!empty($block['className'])) {
 
 $args = [
     'post_type' => 'post',
-    'posts_per_page' => $posts['post_per_page'],     //durch die Variable kann der Kunde die Posts definieren
+    'posts_per_page' => $posts['post_per_page'],
 ];
 
 
@@ -46,7 +45,7 @@ if($post_query->have_posts()): ?>
             endwhile;?>
     </div>
         <?php
-        // get_option -> page_for_posts gibt die ID der Beitragseite zurück
+
         $page_for_posts = get_option('page_for_posts'); ?>
     <div class="actions">
             <a href="<?php the_permalink($page_for_posts); ?>" class="btn"><?php _e('All Posts', 'wifi');?></a>   

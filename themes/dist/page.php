@@ -1,5 +1,5 @@
 <?php
-    // Header erstellt um mit seiten zu verbinden
+
     get_header();?>
 
 
@@ -17,6 +17,6 @@
 </main>
 
 <?php
-    //footer erstellt um mit seiten zu verbinden
+
     get_footer();
 ?>

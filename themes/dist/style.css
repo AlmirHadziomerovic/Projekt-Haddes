@@ -19,14 +19,12 @@ text Domain: wifi
 
 }
 
-/* MARKIERUNGS FARBE ÄNDERN VON CURSOR*/
 ::selection {
     background-color: var(--primary-color);
     color: #eee;
 }
 
 
-/* charmonman-regular - latin Schrift einbinden */
 @font-face {
     font-display: swap;
     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -68,7 +66,7 @@ text Domain: wifi
     /* Legacy iOS */
 }
 
-/* cinzel-decorative-regular - latin */
+
 @font-face {
     font-display: swap;
     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -89,7 +87,7 @@ text Domain: wifi
     /* Legacy iOS */
 }
 
-/* cinzel-decorative-700 - latin */
+
 @font-face {
     font-display: swap;
     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -167,7 +165,6 @@ font-size:3rem;
     color:var(--navbar-bg-color);
 }
 
-/*Definiert die Breite des Container/body*/
 .container {
     max-width: var(--container-max-width);
     margin-left: auto;
@@ -182,7 +179,7 @@ font-size:3rem;
     margin-bottom: calc(var(--columns-gap));
 }
 
-/*Navigation*/
+
 #navbar {
     position: absolute;
     top: 0;
@@ -469,8 +466,6 @@ input[type="checkbox"] {
     }
 }
 
-/*3 Striche beim Button*/
-
 #nav-button-icon::before,
 #nav-button-icon::after {
     content: "";
@@ -530,12 +525,13 @@ input[type="checkbox"] {
 
 }
 
-/*Menü von oben einblenden
-*/
-
 h1 {
     color: var(--base-color);
     font-family: 'Charmonman';
+}
+
+.work {
+    color: var(--primary-color);
 }
 
 .content {
@@ -548,8 +544,6 @@ h1 {
     height: auto;
 }
 
-
-/*Button Stylen*/
 button,
 input,
 .btn,
@@ -579,7 +573,6 @@ input,
     box-shadow: 0 0 10px 0 var(--primary-color) inset, 0 0 10px 8px var(--primary-color);
 }
 
-/*BG Image*/
 #page-header {
     display: flex;
     justify-content: center;
@@ -684,7 +677,6 @@ input,
     }
 
 }
-/*Sidebar Social Links Icons*/
 
 .social-link {
     display: flex;
@@ -750,7 +742,7 @@ input,
     display:flex;
     justify-content: center;
 }
-/*Posts Container Budget*/
+
 @media screen and (min-width: 768px) {
     .posts {
         display: flex;
@@ -798,7 +790,7 @@ input,
     margin-bottom: 1em;
 }
 
-/*ToTop Button Stylen*/
+
 #totop {
     background-color: var(--primary-color);
     right: 20px;
@@ -942,7 +934,6 @@ input,
     display: flex;
 }
 
-/*Blog Grid Container*/
 .blog-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1034,8 +1025,6 @@ input,
     width: 100vw;
 }
 
-/*About Seite Mobile*/
-
 
 .about {
     text-align: center;
@@ -1083,8 +1072,6 @@ input,
     }
 }
 
-
-/*Slider Title stylen*/
 .project-title a {
     color:var(--base-color);
     text-decoration: underline;
@@ -1121,18 +1108,12 @@ input,
     }
 }
 
-
-
-
-/*404 Stylen*/
-
-/*Logo Größe verändern*/
 .error-logo {
     width: 60%;
     margin: 4rem auto;
 }
 
-/*Items zentrieren*/
+
 .error-menu #nav-error {
     display: flex;
     justify-content: center;
@@ -1143,7 +1124,6 @@ input,
     padding: 0 1rem;
 }
 
-/*Navbar Hintergrundfarbe ändern*/
 .error404 #navbar {
     background-color: rgb(0, 0, 0);
 
@@ -1166,8 +1146,6 @@ input,
     line-height: 1.5em;
     text-align: center;
 }
-
-/*Animierte h1,posts*/
 
 .js .animate {
     opacity: 0;

@@ -1,4 +1,4 @@
-<!--Projekte Ausgeben Slider-->
+
 <?php
   
     $class_name = 'projects space-top';
@@ -13,7 +13,7 @@
 
 $args = [
             'post_type' => 'project',
-            'posts_per_page' => $projects['post_per_page'],     //durch die Variable kann der Kunde die Posts definieren
+            'posts_per_page' => $projects['post_per_page'],
 ];
 $project_query = new WP_Query($args);
 
