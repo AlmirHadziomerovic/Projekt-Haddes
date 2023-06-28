@@ -22,6 +22,8 @@ if($seo['seo_direction']){
             </li>
 </ul>
 
+
+
 <section class="<?php echo $class_name; ?>">
     <div class="seo-img alignfull">
                 <?php

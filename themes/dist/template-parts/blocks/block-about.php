@@ -18,7 +18,7 @@ $about = get_field('about');
                 <span class="icon-three-vertical" aria-hidden="false"></span>
             </li>
 </ul>
-
+<h1 class="is-style-headline"><?php the_title();?></h1>
 <div class="<?php echo $class_name; ?>">
     <div>
                 <?php
