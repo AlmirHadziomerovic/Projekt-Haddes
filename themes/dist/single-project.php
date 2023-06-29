@@ -3,7 +3,7 @@
 <main id="content" class="container">
 
 
-<?php the_title('<h1 class="is-style-headline">','</h1>');?>
+
     <div class="meta">
         <time class="date" datetime="<?php the_time('Y-md'); ?>"><?php the_time('d.m.Y');?></time>
         <?php   

@@ -1,5 +1,4 @@
-
-        <div class="blog-content">
+<div class="blog-content">
             <h4 class="blog-headline">
                 <a href="<?php the_permalink();?>"><?php the_title();?></a>
             </h4>

@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('fonts/icomoon.ttf?3qgrtp') format('truetype'),
-    url('fonts/icomoon.woff?3qgrtp') format('woff'),
-    url('fonts/icomoon.svg?3qgrtp#icomoon') format('svg');
+    url('fonts/icomoon.ttf?nwn6gy') format('truetype'),
+    url('fonts/icomoon.woff?nwn6gy') format('woff'),
+    url('fonts/icomoon.svg?nwn6gy#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -57,4 +57,7 @@
 }
 .icon-forward:before {
   content: "\e969";
+}
+.icon-arrow-down:before {
+  content: "\ea3e";
 }

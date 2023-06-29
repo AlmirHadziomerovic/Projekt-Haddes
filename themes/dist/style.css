@@ -696,18 +696,20 @@ input,
 .icon-mail,
 .icon-instagram,
 .icon-phone {
-    background-color: var(--primary-color);
+    display:inline-block;
     color: var(--base-color);
     border-radius: 40%;
     font-size: 1.5rem;
     padding: 0.1em;
+
 }
 
 .icon-facebook1:hover,
 .icon-mail:hover,
 .icon-instagram:hover,
 .icon-phone:hover {
-    color: var(--navbar-bg-color);
+    color: var(--primary-color);
+
 }
 
 #scroll {

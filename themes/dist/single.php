@@ -24,7 +24,7 @@
 
     <?php the_tags('<div class="meta tags">#', ' #', '</div>'); ?>
 
-<?php echo the_field('project_image', 'projekt') ?>
+<?php the_field('project_image', 'projekt') ?>
 
 </main>
 
