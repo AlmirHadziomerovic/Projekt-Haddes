@@ -7,7 +7,7 @@ $anchor = '';
         $anchor = 'id="' . esc_attr($block['anchor']) . '"';
     }
 
-    $class_name = 'blog-wrapper columns alignfull';
+    $class_name = 'blog-wrapper alignfull';
 
 if(!empty($block['className'])) {
     $class_name .= ' ' . esc_attr($block['className']);
@@ -27,11 +27,6 @@ $post_query = new WP_Query($args);
 
 
 if($post_query->have_posts()): ?>
-  <ul class="icon-three">
-            <li>
-                <span class="icon-three-vertical" aria-hidden="false"></span>
-            </li>
-</ul>
 
   <h2 class="is-style-headline"><?php echo $posts['ueberschrift'];?></h2>
 
@@ -54,7 +49,7 @@ if($post_query->have_posts()): ?>
 
 <ul class="icon-three">
             <li>
-                <span class="icon-three-vertical" aria-hidden="false"></span>
+                <span class="icon-arrow-down" aria-hidden="false"></span>
             </li>
 </ul>
 

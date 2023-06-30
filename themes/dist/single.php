@@ -8,9 +8,7 @@
 
     <div class="meta">
         <time class="date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time ('d.m.Y');?></time>
-        <?php 
-                    the_category(', ' );
-                ?>
+
     </div>
 
     <?php
@@ -21,11 +19,6 @@
                     }
                 }
             ?>
-
-    <?php the_tags('<div class="meta tags">#', ' #', '</div>'); ?>
-
-<?php the_field('project_image', 'projekt') ?>
-
 </main>
 
     <a class="btn"

@@ -15,7 +15,7 @@ $about = get_field('about');
 ?>
 <ul class="icon-three">
             <li>
-                <span class="icon-three-vertical" aria-hidden="false"></span>
+                <span class="icon-arrow-down" aria-hidden="false"></span>
             </li>
 </ul>
 <h1 class="is-style-headline"><?php the_title();?></h1>
@@ -43,6 +43,6 @@ $about = get_field('about');
 
 <ul class="icon-three">
             <li>
-                <span class="icon-three-vertical" aria-hidden="false"></span>
+                <span class="icon-arrow-down" aria-hidden="false"></span>
             </li>
 </ul>

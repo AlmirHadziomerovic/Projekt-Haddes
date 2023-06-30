@@ -23,7 +23,6 @@ $spaltenBlock = get_field('spaltenblock');
 
 if(!empty($spaltenBlock)):?>
 
-<div style="height: 50px" aria-hidden="true"></div>
 
 <section <?php echo $anchor; ?> class="<?php echo $class_name;?>">
     

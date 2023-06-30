@@ -3,13 +3,13 @@ get_header(); ?>
 
 <ul class="icon-three">
     <li>
-        <span class="icon-three-vertical" aria-hidden="false"></span>
+        <span class="icon-arrow-down" aria-hidden="false"></span>
     </li>
 </ul>
 <?php $blogFields = get_field('header','option'); ?>
 
 
-<main id="content" class="container blog-wrapper alignfull">
+<main id="content" class="container alignfull">
 
 
     <h1 class="is-style-headline">
@@ -37,12 +37,15 @@ get_header(); ?>
         ?>
     <?php
 
-    if(have_posts()): 
-        while (have_posts()):
+    if(have_posts()): ?>
+    <div class="blog-wrapper">
+        <?php while (have_posts()):
             the_post();
          
             include(get_template_directory() . '/template-parts/post-loop.php'); 
-        endwhile;
+        endwhile; ?>
+        </div>
+   <?php
     else:?>
     <article class="post">
         <h3 class="post-title">
@@ -97,7 +100,7 @@ $project_query = new WP_Query($args);
 </main>
 <ul class="icon-three">
     <li>
-        <span class="icon-three-vertical" aria-hidden="false"></span>
+        <span class="icon-arrow-down" aria-hidden="false"></span>
     </li>
 </ul>
 <?php get_footer();?>

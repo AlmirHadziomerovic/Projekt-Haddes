@@ -1,6 +1,6 @@
 
 <?php
-  
+    $anchor = '';
     $class_name = 'projects space-top';
 
 
@@ -23,11 +23,11 @@ if($project_query->have_posts()):
 ?>
 <ul class="icon-three">
             <li>
-                <span class="icon-three-vertical" aria-hidden="false"></span>
+                <span class="icon-arrow-down" aria-hidden="false"></span>
             </li>
 </ul>
 
-<div style="height: 50px" aria-hidden="true"></div>
+
 
 <section id="<?php echo $anchor; ?>" class="<?php echo $class_name; ?>">
             <h2 class="is-style-headline portfolio"><?php echo $projects['ueberschrift'];?></h2>
@@ -46,10 +46,10 @@ if($project_query->have_posts()):
             </div>
 
 </section>
-<div style="height: 50px" aria-hidden="true"></div>
+
 <ul class="icon-three">
             <li>
-                <span class="icon-three-vertical" aria-hidden="false"></span>
+                <span class="icon-arrow-down" aria-hidden="false"></span>
             </li>
 </ul>
 
