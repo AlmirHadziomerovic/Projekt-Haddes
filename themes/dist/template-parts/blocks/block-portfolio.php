@@ -3,7 +3,7 @@
 <?php
 
 
-$class_name = 'portfolio-wrapper'
+$class_name = 'portfolio-wrapper allProjects'
 
 ?>
 

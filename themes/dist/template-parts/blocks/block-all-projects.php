@@ -16,7 +16,7 @@ if($project_query->have_posts()): ?>
 
 
     <a href="<?php the_permalink();?>">
-    <figure>
+    <figure class="allProjectsImg">
         <?php
         echo wp_get_attachment_image($allProjects['project_image'], 'Projects', false, array('class' => 'animate'));
         ?>
