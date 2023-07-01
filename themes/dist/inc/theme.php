@@ -45,6 +45,6 @@ register_nav_menus(array(
 //Backend in Wordpress einfügen und die CSS Datei ergänzen damit es gleich ausschaut wie in Fronted
 add_theme_support('editor-styles');
 add_editor_Style('assets/css/style-editor.css');
-add_editor_Style('assets/icons/style.css');
+add_editor_Style('assets/font/style.css');
 
 

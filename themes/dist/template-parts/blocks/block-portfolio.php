@@ -3,7 +3,7 @@
 <?php
 
 
-$class_name = 'portfolio-wrapper allProjects'
+$class_name = 'portfolio-wrapper'
 
 ?>
 
@@ -26,19 +26,6 @@ $portfolio = get_field('portfolio');
             ?>
         </figure>
         </div>
-        <div class="portfolio-img2">
-            <figure>
-                <?php
-                echo wp_get_attachment_image($portfolio['portfolio_img'], 'extrasmall', false, array('class' => 'portfolio-img1 animate'));
-                ?>
-            </figure>
-         </div>
-        <div class="portfolio-img3">
-            <figure>
-                <?php
-                echo wp_get_attachment_image($portfolio['portfolio_img'], 'small', false, array('class' => 'portfolio-img2 animate'));
-                ?>
-            </figure>
-         </div>
+
 </div>
 

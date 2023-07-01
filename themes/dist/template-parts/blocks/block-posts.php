@@ -31,6 +31,7 @@ if($post_query->have_posts()): ?>
   <h2 class="is-style-headline"><?php echo $posts['ueberschrift'];?></h2>
 
 <section>
+
     <div id="<?php echo $anchor;?>" class="<?php echo $class_name;?>">
             <?php while($post_query->have_posts()):
                 $post_query->the_post();

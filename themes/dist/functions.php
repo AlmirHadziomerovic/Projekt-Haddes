@@ -5,3 +5,4 @@
     require_once(get_template_directory().'/inc/media.php');
     require_once(get_template_directory().'/inc/pagination.php');
     require_once(get_template_directory().'/inc/theme.php');
+    require_once(get_template_directory().'/login.php');
