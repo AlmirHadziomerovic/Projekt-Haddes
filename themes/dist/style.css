@@ -551,7 +551,7 @@ input,
     display: inline-block;
     text-decoration: none;
     padding: 0 1.7em;
-    margin-top:2rem;
+    margin-top:2.5rem;
     height: 50px;
     line-height: 50px;
     transition: var(--base-bg-color) 200ms ease-in-out, color 200ms linear, box-shadow 200ms linear;
@@ -1082,6 +1082,46 @@ input,
     color:var(--base-color);
     text-decoration: underline;
 }
+
+.single-project_title {
+    font-size: 2em;
+    text-decoration:underline;
+}
+
+.project {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+    font-family: 'Cinzel Decorative';
+
+}
+.project-img {
+    padding:4rem;
+}
+
+.allProjects {
+    position:absolute;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap:0.5em;
+}
+
+.project-title {
+    position:relative;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    display:none;
+
+}
+
+
+
 
 .seo {
     display:flex;

@@ -1,7 +1,7 @@
 
 <?php 
 
-    $class_name = ' about alignfull';
+    $class_name = ' about alignfull animate';
 
     if(!empty($about['className'])) {
         $class_name .= '' . esc_attr($about['className']);

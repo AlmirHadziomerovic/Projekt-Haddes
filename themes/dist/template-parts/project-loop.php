@@ -1,6 +1,6 @@
 
 
-<figure class="projsect">
+<figure class="project">
     <a href="<?php echo esc_url(get_permalink()); ?>">
         <?php
         $projekt_image = get_field('project_image', get_the_ID());

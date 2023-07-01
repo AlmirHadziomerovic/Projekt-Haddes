@@ -178,9 +178,23 @@ if(function_exists('acf_add_options_page')){
                 'post_type' => array('page', 'posts'),
                 'align' => false,
                 'mode' => false,
-                'icon' => 'gallery',
+                'icon' => 'paperclip',
                 'render_template' => 'template-parts/blocks/block-portfolio.php' //Datei erstellen in Blocks
 
+            ));
+            //Projects
+            acf_register_block_type(array(
+                'name' => 'webdev-AllProjects',
+                'title' => __('All Projects', 'wifi'),
+                'description' => __('Das ist der Projekte Bereich', 'wifi'),
+                'supports' => array('anchor' => true),
+                'category' => 'wifi',
+                'keywords' => array('Projects', 'Haddes', 'news', 'wifi'),
+                'post_type' => array('page', 'posts'),
+                'align' => false,
+                'mode' => false,
+                'icon' => 'paperclip',
+                'render_template' => 'template-parts/blocks/block-all-projects.php'
             ));
         }
 

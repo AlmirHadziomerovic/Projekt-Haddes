@@ -16,7 +16,7 @@ add_action( 'after_setup_theme',function(){
 
     //Bildgröße für Wordpress hinzufügen
     add_image_size('projekt', 730, 487, array('center', 'center'));
-    add_image_size('projekt', 1200, 700, array('center', 'center'));
+    add_image_size('Projects', 1200, 700, array('center', 'center'));
 
 
 

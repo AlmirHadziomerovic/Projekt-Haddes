@@ -4,26 +4,28 @@
 
     <?php
     $project = get_field('project', get_the_ID()); ?>
-
-    <div class="meta">
-
-        <div class="meta">
-            <time class="date" datetime="<?php the_time('Y-md'); ?>"><?php the_time('d.m.Y');?></time>
-            <div class="portfolio">
+    <ul class="icon-three">
+        <li>
+            <span class="icon-arrow-down" aria-hidden="false"></span>
+        </li>
+    </ul>
+    <div class="project animate">
+            <h1 class="single-project_title">
+                <?php echo $project['project_title'];?>
+            </h1>
+            <div class="project_img">
                 <?php echo wp_get_attachment_image($project['project_image'], 'medium_large');?>
             </div>
-
-        </div>
+            <span class="project_description">
+                <?php echo $project['project_description'];?>
+            </span>
     </div>
+    <ul class="icon-three">
+        <li>
+            <span class="icon-arrow-down" aria-hidden="false"></span>
+        </li>
+    </ul>
 
-    <?php
-    if(have_posts()) {
-        while (have_posts()) {
-            the_post();
-            the_content();
-        }
-    }
-?>
 
 </main>
 
