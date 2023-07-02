@@ -14,8 +14,8 @@
         ?>
     </a>
     <figcaption class="project-caption">
-        <h3 class="project-title">
+        <h4 class="project-title">
             <a href="<?php echo esc_url(get_permalink()); ?>"><?php the_title(); ?></a>
-        </h3>
+        </h4>
     </figcaption>
 </figure>

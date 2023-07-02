@@ -151,6 +151,7 @@ body {
 }
 
 h2,
+h3,
 .portfolio {
     color: var(--base-color);
     line-height: 2rem;
@@ -940,6 +941,9 @@ input,
 .columns {
     display: flex;
 }
+.meta >ul {
+    list-style: none;
+}
 
 .blog-wrapper {
     gap: 10px;
@@ -962,6 +966,7 @@ input,
         background-color: #8080804a;
         padding: 1em;
         margin: 5em;
+        font-size:1em;
     }
 }
 

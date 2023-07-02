@@ -27,11 +27,15 @@ $post_query = new WP_Query($args);
 
 
 if($post_query->have_posts()): ?>
+  <ul class="icon-three">
+            <li>
+                <span class="icon-arrow-down" aria-hidden="false"></span>
+            </li>
+</ul>
 
   <h2 class="is-style-headline"><?php echo $posts['ueberschrift'];?></h2>
 
 <section>
-
     <div id="<?php echo $anchor;?>" class="<?php echo $class_name;?>">
             <?php while($post_query->have_posts()):
                 $post_query->the_post();
