@@ -1,6 +1,3 @@
-<!-- Header Background Image-->
-
-
 <?php
     $class_name = 'header-media-text columns reverse';
 

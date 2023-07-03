@@ -951,12 +951,12 @@ input,
     margin: 0.5em;
     font-family: 'Cinzel Decorative';
     font-weight: 400;
-    font-size:0.5em;
+    font-size:1em;
     background-color: var(--base-color);
 }
 
 .blog-wrapper a:visited {
-    color:var(--base-color);
+    color:var(--navbar-bg-color);
 }
 
 @media screen and (min-width: 768px) {
