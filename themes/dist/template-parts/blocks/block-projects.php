@@ -30,7 +30,7 @@ if($project_query->have_posts()):
 
 
 <section id="<?php echo $anchor; ?>" class="<?php echo $class_name; ?>">
-            <h2 class="is-style-headline portfolio"><?php echo $projects['ueberschrift'];?></h2>
+            <h3 class="is-style-headline portfolio"><?php echo $projects['ueberschrift'];?></h3>
             <div class="columns splide">
                 <div class="splide__track">
                     <ul class="splide__list">
@@ -46,12 +46,6 @@ if($project_query->have_posts()):
             </div>
 
 </section>
-
-<ul class="icon-three">
-            <li>
-                <span class="icon-arrow-down" aria-hidden="false"></span>
-            </li>
-</ul>
 
 <?php endif;
 wp_reset_postdata();

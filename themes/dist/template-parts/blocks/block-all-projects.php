@@ -5,7 +5,14 @@ $class_name = ' allProjects';
 $args = [
     'post_type' => 'project'
 ];
-$project_query = new WP_Query($args);
+$project_query = new WP_Query($args); ?>
+
+<ul class="icon-three">
+    <li>
+        <span class="icon-arrow-down" aria-hidden="false"></span>
+    </li>
+</ul>
+<?php
 
 if($project_query->have_posts()): ?>
    <div class="<?php echo $class_name ?>">
@@ -34,3 +41,8 @@ if($project_query->have_posts()): ?>
 
 wp_reset_postdata();
 ?>
+<ul class="icon-three">
+    <li>
+        <span class="icon-arrow-down" aria-hidden="false"></span>
+    </li>
+</ul>

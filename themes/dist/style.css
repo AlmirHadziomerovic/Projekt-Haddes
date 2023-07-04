@@ -526,9 +526,15 @@ input[type="checkbox"] {
 
 }
 
-h1 {
+h1,
+.portfolio {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     color: var(--base-color);
     font-family: 'Charmonman';
+    font-size: 3em;
+    padding: 1rem;
 }
 
 .work {
@@ -789,7 +795,7 @@ input,
     flex-direction: column;
     color: var(--base-color);
     list-style: none;
-    padding: 5em;
+    padding: 2em;
     font-size: 1.5em;
 
 }
@@ -944,7 +950,12 @@ input,
 .meta >ul {
     list-style: none;
 }
-
+.blog_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:underline;
+}
 .blog-wrapper {
     gap: 10px;
     padding: 1em;
@@ -1232,8 +1243,6 @@ input,
     transform: translateY(0);
 
 }
-
-
 .portfolio{
   margin-top:100px;
     padding:100px;
@@ -1248,4 +1257,8 @@ input,
     max-width:60%;
     grid-column: 3 / 4;
     grid-row: 3 /4;
+}
+
+.portfolio-galerie {
+    padding:3rem;
 }

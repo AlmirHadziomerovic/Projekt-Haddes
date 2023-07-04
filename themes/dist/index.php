@@ -28,7 +28,7 @@ get_header(); ?>
     <?php $blog = get_field('blog', 'option')?>
     <?php
         if(is_home()){
-                echo '<span>' .$blog['blog_description1'] . '</span>';
+                echo '<h2 class="blog_title">' .$blog['blog_description1'] . '</h2>';
             } else {
                 if(the_archive_description()) {
                     the_archive_description('<p>', '</p>');

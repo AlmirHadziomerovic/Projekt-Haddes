@@ -9,7 +9,7 @@
     ?>
 
 
-
+<h1 class="is-style-headline"><?php the_title();?></h1>
 <?php 
 $about = get_field('about');
 ?>
@@ -18,7 +18,7 @@ $about = get_field('about');
                 <span class="icon-arrow-down" aria-hidden="false"></span>
             </li>
 </ul>
-<h1 class="is-style-headline"><?php the_title();?></h1>
+
 <div class="<?php echo $class_name; ?>">
     <div>
                 <?php
