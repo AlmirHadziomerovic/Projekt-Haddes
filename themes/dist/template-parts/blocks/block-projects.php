@@ -30,7 +30,7 @@ if($project_query->have_posts()):
 
 
 <section id="<?php echo $anchor; ?>" class="<?php echo $class_name; ?>">
-            <h3 class="is-style-headline portfolio"><?php echo $projects['ueberschrift'];?></h3>
+            <h2 class="is-style-headline portfolio"><?php echo $projects['ueberschrift'];?></h2>
             <div class="columns splide">
                 <div class="splide__track">
                     <ul class="splide__list">

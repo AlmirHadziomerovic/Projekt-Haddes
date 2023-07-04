@@ -29,10 +29,7 @@ $about = get_field('about');
             <div class="about-text">
             
                 <?php echo $about['about_description'];
-                    if($about['about_description']) {
-                       
-                    }
-                    ?>
+                ?>
             </div>
      </div>
 </div>
