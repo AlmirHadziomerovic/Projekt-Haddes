@@ -1,11 +1,7 @@
 <?php
 get_header(); ?>
 
-<ul class="icon-three">
-    <li>
-        <span class="icon-arrow-down" aria-hidden="false"></span>
-    </li>
-</ul>
+
 <?php $blogFields = get_field('header','option'); ?>
 
 
@@ -35,13 +31,17 @@ get_header(); ?>
                 }
             }
         ?>
+    <ul class="icon-three">
+        <li>
+            <span class="icon-arrow-down" aria-hidden="false"></span>
+        </li>
+    </ul>
     <?php
 
     if(have_posts()): ?>
     <div class="blog-wrapper">
         <?php while (have_posts()):
             the_post();
-         
             include(get_template_directory() . '/template-parts/post-loop.php'); 
         endwhile; ?>
         </div>

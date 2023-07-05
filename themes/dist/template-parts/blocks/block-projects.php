@@ -21,12 +21,6 @@ $project_query = new WP_Query($args);
 
 if($project_query->have_posts()):
 ?>
-<ul class="icon-three">
-            <li>
-                <span class="icon-arrow-down" aria-hidden="false"></span>
-            </li>
-</ul>
-
 
 
 <section id="<?php echo $anchor; ?>" class="<?php echo $class_name; ?>">

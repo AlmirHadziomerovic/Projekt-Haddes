@@ -14,7 +14,11 @@ if(!empty($block['className'])) {
 }
 
 ?>
-
+<ul class="icon-three">
+    <li>
+        <span class="icon-arrow-down" aria-hidden="false"></span>
+    </li>
+</ul>
 <?php $posts = get_field('posts'); 
 
 $args = [
@@ -27,11 +31,6 @@ $post_query = new WP_Query($args);
 
 
 if($post_query->have_posts()): ?>
-  <ul class="icon-three">
-            <li>
-                <span class="icon-arrow-down" aria-hidden="false"></span>
-            </li>
-</ul>
 
   <h2 class="is-style-headline"><?php echo $posts['ueberschrift'];?></h2>
 

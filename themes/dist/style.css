@@ -568,7 +568,7 @@ input,
     cursor: pointer;
     border: none;
     border-radius: 25px;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--navbar-bg-color);
     color: var(--base-color);
     transition: 0.7s ease-in-out;
 }
@@ -578,6 +578,7 @@ input,
     background-color: var(--primary-color);
     letter-spacing: 1px;
     box-shadow: 0 0 10px 0 var(--primary-color) inset, 0 0 10px 8px var(--primary-color);
+    color:var(--navbar-bg-color);
 }
 
 #page-header {
