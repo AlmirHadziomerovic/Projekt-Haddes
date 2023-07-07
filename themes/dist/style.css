@@ -157,9 +157,6 @@ h3,
     line-height: 2rem;
     text-align: end;
 }
-.portfolio {
-font-size:3rem;
-}
 
 
 .date {
@@ -533,10 +530,12 @@ h1,
     align-items: center;
     color: var(--base-color);
     font-family: 'Charmonman';
-    font-size: 3em;
     padding: 1rem;
+    font-size:3rem;
 }
-
+.is-style-headline {
+    line-height:5rem;
+}
 .work {
     color: var(--primary-color);
 }
@@ -579,6 +578,13 @@ input,
     letter-spacing: 1px;
     box-shadow: 0 0 10px 0 var(--primary-color) inset, 0 0 10px 8px var(--primary-color);
     color:var(--navbar-bg-color);
+}
+.wpforms-container {
+    max-width: 700px;
+}
+
+#wpforms-form-361 {
+    margin-top:5em;
 }
 
 #page-header {
@@ -697,6 +703,8 @@ input,
     margin-top: 250px;
     z-index: 9999;
     padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 50%);
+    border-radius: 20px;
 
 }
 
@@ -968,14 +976,14 @@ input,
 }
 
 .blog-wrapper a:visited {
-    color:var(--navbar-bg-color);
+    color:blue;
 }
 
 @media screen and (min-width: 768px) {
     .blog-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        background-color: #8080804a;
+        background-color: white;
         padding: 1em;
         margin: 5em;
         font-size:1em;
@@ -995,6 +1003,9 @@ input,
 .blog-content:hover {
     background-color: grey;
     transition: all 1s linear;
+}
+.post-categories{
+    padding:0;
 }
 @media screen and (min-width: 768px) {
     h4,
@@ -1191,6 +1202,15 @@ input,
         display:flex;
         flex-direction:row-reverse;
     }
+    .seo_direction_column {
+        flex-direction: column;
+    }
+    .seo_direction_column {
+        flex-direction: column;
+    }
+    .seo-direction-row {
+        flex-direction:column-reverse;
+    }
 }
 
 .error-logo {
@@ -1263,3 +1283,4 @@ input,
 .portfolio-galerie {
     padding:3rem;
 }
+

@@ -34,7 +34,6 @@ if($project_query->have_posts()):
                         <?php include(get_template_directory() . '/template-parts/project-loop.php'); ?>
                         </li>
                         <?php endwhile;?>
-                    
                     </ul>
                 </div>
             </div>

@@ -16,7 +16,18 @@ if($seo['seo_direction']){
     $class_name .=' reverse';
 }
 ?>
+<?php
 
+    if($seo['seo_direction_column']){
+        $class_name .=' seo_direction_column';
+    }
+?>
+<?php
+
+    if($seo['seo-direction-row']){
+        $class_name .=' seo-direction-row';
+    }
+?>
 <ul class="icon-three">
             <li>
                 <span class="icon-arrow-down" aria-hidden="false"></span>
@@ -35,10 +46,8 @@ if($seo['seo_direction']){
     </div>
     <div>
             <div class="about-text">
-            
                 <?php echo $seo['seo_description'];
-                    if($seo['seo_description']) {
-                    }
+                    if($seo['seo_description'])
                     ?>
             </div>
      </div>

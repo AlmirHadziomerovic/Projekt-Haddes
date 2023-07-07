@@ -39,7 +39,7 @@ get_header(); ?>
     <?php
 
     if(have_posts()): ?>
-    <div class="blog-wrapper">
+    <div class="blog-wrapper alignfull">
         <?php while (have_posts()):
             the_post();
             include(get_template_directory() . '/template-parts/post-loop.php'); 
