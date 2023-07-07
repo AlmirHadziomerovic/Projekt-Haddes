@@ -31,7 +31,7 @@ if($project_query->have_posts()):
                        <?php while($project_query->have_posts()):
                        $project_query->the_post();?>
                        <li class="splide__slide">
-                        <?php include(get_template_directory() . '/template-parts/project-loop.php'); ?>
+                        <?php include(locate_template( '/template-parts/project-loop.php')); ?>
                         </li>
                         <?php endwhile;?>
                     </ul>

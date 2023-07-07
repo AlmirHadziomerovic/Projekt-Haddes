@@ -3,10 +3,9 @@
 <figure class="project">
     <a href="<?php echo esc_url(get_permalink()); ?>">
         <?php
-        $projekt_image = get_field('project_image', get_the_ID());
-
-        if ($projekt_image) {
-            echo wp_get_attachment_image($projekt_image, 'projekt');
+        $projekt = get_field('project', get_the_ID());
+        if ($projekt['project_image']) {
+            echo wp_get_attachment_image($projekt['project_image'], 'projekt');
         }
         ?>
     </a>
