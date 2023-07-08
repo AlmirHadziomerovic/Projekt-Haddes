@@ -7,7 +7,6 @@ get_header(); ?>
 
 <main id="content" class="container alignfull">
 
-
     <h1 class="is-style-headline">
         <?php
             $pagePosts = get_option('page_for_posts');

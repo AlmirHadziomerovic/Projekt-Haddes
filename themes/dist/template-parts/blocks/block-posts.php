@@ -32,7 +32,7 @@ $post_query = new WP_Query($args);
 
 if($post_query->have_posts()): ?>
 
-  <h2 class="is-style-headline"><?php echo $posts['ueberschrift'];?></h2>
+  <h2 class="is-style-headline portfolio"><?php echo $posts['ueberschrift'];?></h2>
 
 <section>
     <div id="<?php echo $anchor;?>" class="<?php echo $class_name;?>">

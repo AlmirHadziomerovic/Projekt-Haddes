@@ -49,7 +49,7 @@ function elementsInViewport() {
 
 
 function addAnimateClass (){
-    let elements = document.querySelectorAll ('h1,h2,p,.post,.project,.column,.blog-wrapper,.blog-content6')
+    let elements = document.querySelectorAll ('h1,h2,p,.post,.seo,.about,.span,.project,.allProjects,.projects,.column,.blog-wrapper,.blog-content6')
     for (let i = 0; i < elements.length; i++) {
      elements[i].classList.add('animate')
     }

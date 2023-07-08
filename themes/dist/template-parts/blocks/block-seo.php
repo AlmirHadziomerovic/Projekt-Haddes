@@ -28,6 +28,7 @@ if($seo['seo_direction']){
         $class_name .=' seo-direction-row';
     }
 ?>
+
 <ul class="icon-three">
             <li>
                 <span class="icon-arrow-down" aria-hidden="false"></span>
