@@ -1,6 +1,4 @@
-<!--
-Foto auf der Startseite Webseiten/Wordpress
--->
+
 <?php
 
 $anchor = '';
