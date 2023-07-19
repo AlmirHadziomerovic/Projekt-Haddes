@@ -97,9 +97,5 @@ $project_query = new WP_Query($args);
 
 
 </main>
-<ul class="icon-three">
-    <li>
-        <span class="icon-arrow-down" aria-hidden="false"></span>
-    </li>
-</ul>
+
 <?php get_footer();?>
