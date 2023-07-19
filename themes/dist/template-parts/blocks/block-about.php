@@ -6,11 +6,7 @@
     if(!empty($about['className'])) {
         $class_name .= '' . esc_attr($about['className']);
     }
-    ?>
 
-
-<h1 class="is-style-headline"><?php the_title();?></h1>
-<?php 
 $about = get_field('about');
 ?>
 <ul class="icon-three">
@@ -27,7 +23,7 @@ $about = get_field('about');
     </div>
     <div>
             <div class="about-text">
-            
+                <h2 class="titleabout"> HALLO</h2>
                 <?php echo $about['about_description'];
                 ?>
             </div>

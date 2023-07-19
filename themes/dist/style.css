@@ -93,7 +93,7 @@ h2, h3, .portfolio {
     color: var(--navbar-bg-color);
 }
 .container {
-    max-width: var(--container-max-width);
+
     margin-left: auto;
     margin-right: auto;
     padding-left: calc(var(--columns-gap) / 5);
@@ -272,6 +272,7 @@ h2, h3, .portfolio {
     #nav-main .sub-menu a {
         display: block;
     }
+
 }@media screen and (min-width:768px) {
     #column-header-text {
         display: flex;
@@ -343,6 +344,7 @@ h2, h3, .portfolio {
 #nav-main {
     transform: translateY(-100%);
     transition: all 1.5s;
+    max-height:40%;
 }
 #nav-toggle:checked~#nav-main {
     opacity: 1;
@@ -353,6 +355,7 @@ h2, h3, .portfolio {
 @media screen and (min-width:768px) {
     #nav-main {
         transform: translateY(0);
+        max-height:100%;
     }
 }h1, .portfolio {
      display: flex;
@@ -391,7 +394,7 @@ button, input, .btn, #wpforms-submit-361 {
     cursor: pointer;
     border: none;
     border-radius: 25px;
-    background-color: var(--navbar-bg-color);
+    background-color: rgba(0, 0, 0, 50%);
     color: var(--base-color);
     transition: 0.7s ease-in-out;
 }
@@ -461,8 +464,7 @@ button, input, .btn, #wpforms-submit-361 {
 @media screen and (min-width:768px) {
     #page-header .actions {
         position: absolute;
-        margin-right: 70%;
-        margin-top: 10em;
+        margin-top: 15rem;
     }
 }#page-header h1 {
      color: var(--base-color);
@@ -524,6 +526,7 @@ button, input, .btn, #wpforms-submit-361 {
     background-color: #dddddd53;
     padding: 1em 5%;
     color: var(--navbar-bg-color);
+    border-radius: 0 0 20px 20px ;
 }
 .content-headline {
     color: var(--base-color);
@@ -989,4 +992,20 @@ row {
 .js .animate.animated {
     opacity: 1;
     transform: translateY(0);
+}
+.titleabout {
+    color:black;
+    font-size:5em;
+}
+.kontakt-title,
+.dsgvo{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Cinzel Decorative';
+    line-height: 1.5em;
+    color:white;
+    padding:1.5em;
+    margin:1em;
+    font-size:2em;
 }

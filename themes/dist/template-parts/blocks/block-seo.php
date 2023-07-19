@@ -53,9 +53,3 @@ if($seo['seo_direction']){
             </div>
      </div>
 </section>
-
-<ul class="icon-three">
-    <li>
-        <span class="icon-arrow-down" aria-hidden="false"></span>
-    </li>
-</ul>
