@@ -116,7 +116,7 @@ h2, h3, .portfolio {
     align-items: center;
     justify-content: space-between;
     height: var(--navbar-height-mobile);
-    position:fixed;
+    position:relative;
     width:100%;
 }
 @media screen and (min-width:768px) {
@@ -997,15 +997,29 @@ row {
     color:black;
     font-size:5em;
 }
-.kontakt-title,
-.dsgvo{
+
+#wpforms-361-field_3-container,
+.dsgvo {
     display:flex;
     justify-content: center;
     align-items:center;
     font-family: 'Cinzel Decorative';
     line-height: 1.5em;
     color:white;
-    padding:1.5em;
+    padding:.5em;
     margin:1em;
-    font-size:2em;
+    font-size: 2em;
+    background-color:white;
+
+}
+.kontakt-title1{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Cinzel Decorative';
+    line-height: 1.5em;
+    color:white;
+    padding:.5em;
+    margin:1em;
+    font-size: 2em;
 }

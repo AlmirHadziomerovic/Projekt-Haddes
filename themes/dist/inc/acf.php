@@ -196,6 +196,20 @@ if(function_exists('acf_add_options_page')){
                 'icon' => 'paperclip',
                 'render_template' => 'template-parts/blocks/block-all-projects.php'
             ));
+            //Projects
+            acf_register_block_type(array(
+                'name' => 'Leistungen',
+                'title' => __('Leistungen', 'wifi'),
+                'description' => __('Das sind unsere Leistungen', 'wifi'),
+                'supports' => array('anchor' => true),
+                'category' => 'wifi',
+                'keywords' => array('Leistunge', 'Haddes', 'news', 'wifi'),
+                'post_type' => array('page', 'posts'),
+                'align' => false,
+                'mode' => false,
+                'icon' => 'format-status',
+                'render_template' => 'template-parts/blocks/block-leistungen.php'
+            ));
         }
 
     }   );
