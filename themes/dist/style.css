@@ -75,6 +75,9 @@ a:link {
 a:active {
     color: var(--base-color);
 }
+a:visited {
+    color:white;
+}
 a:link {
     text-decoration: none;
 }
@@ -86,14 +89,14 @@ body {
 }
 h2, h3, .portfolio {
     color: var(--base-color);
-    line-height: 2rem;
+    line-height: 3rem;
     text-align: end;
 }
+
 .date {
     color: var(--navbar-bg-color);
 }
 .container {
-
     margin-left: auto;
     margin-right: auto;
     padding-left: calc(var(--columns-gap) / 5);
@@ -384,6 +387,7 @@ h2, h3, .portfolio {
      font-family: 'Charmonman';
      padding: 1rem;
      font-size: 3rem;
+
  }
 .is-style-headline {
     line-height: 5rem;
@@ -433,7 +437,7 @@ button, input, .btn, #wpforms-submit-361 {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
+    min-height: 100vh;
     min-width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -475,7 +479,8 @@ button, input, .btn, #wpforms-submit-361 {
     #page-header h1 {
         color: grey;
         font-size: 3rem;
-        font-family: 'Charmonman'}
+        font-family: 'Charmonman';
+    }
 }#page-header .actions {
      display: inline-block;
      justify-content: center;
@@ -487,11 +492,11 @@ button, input, .btn, #wpforms-submit-361 {
     }
 }#page-header h1 {
      color: var(--base-color);
-     font-size: 2.5rem;
+     font-size: 1.5rem;
      font-family: 'Charmonman';
      text-decoration: underline;
      text-decoration-color: #eeeeee29;
-     margin-top: 1.5em;
+     margin-top: -80px;
  }
 @media screen and (min-width:768px) {
     #page-header h1, #page-header1 h1 {
@@ -546,6 +551,8 @@ button, input, .btn, #wpforms-submit-361 {
     padding: 1em 5%;
     color: var(--navbar-bg-color);
     border-radius: 0 0 20px 20px ;
+    gap:1rem;
+    margin-bottom:3rem;
 }
 .content-headline {
     color: var(--base-color);
@@ -883,11 +890,7 @@ button, input, .btn, #wpforms-submit-361 {
      align-items: center;
      flex-direction: column;
  }
-.seo-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 @media screen and (min-width:768px) {
     .seo {
         display: flex;
@@ -952,7 +955,7 @@ button, input, .btn, #wpforms-submit-361 {
     transform: translateY(0);
 }
 .portfolio {
-    margin-top: 3rem;
+    margin-top: 5rem;
     padding: 1rem;
 }
 .portfolio-img {
@@ -1031,6 +1034,17 @@ row {
     background-color:white;
 
 }
+.kontakt-title{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Cinzel Decorative';
+    line-height: 1.5em;
+    color:white;
+    padding:.5em;
+    margin:1em;
+    font-size: 2em;
+}
 .kontakt-title1{
     display:flex;
     justify-content: center;
@@ -1041,4 +1055,31 @@ row {
     padding:.5em;
     margin:1em;
     font-size: 2em;
+}
+.ttbTextTyping {
+    margin-top:3rem;
+}
+.seotitleone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cinzel Decorative';
+    line-height: 1.5em;
+    color: white;
+    padding: .5em;
+    margin-top: 5em;
+    font-size: 1.2em;
+}
+@media screen and (min-width:768px) {
+    .seotitleone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Cinzel Decorative';
+        line-height: 1.5em;
+        color: white;
+        padding: .5em;
+        margin-top: 5em;
+        font-size: 2em;
+    }
 }

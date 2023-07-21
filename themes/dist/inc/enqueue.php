@@ -9,7 +9,8 @@ add_action('wp_enqueue_scripts', function(){
 
 
     // JS einbinden
-    wp_enqueue_script('webdev-js', get_template_directory_uri(  ) . '/assets/js/scripts.js', array('jquery'), $version, true);wp_enqueue_script('disallow', get_template_directory_uri(  ) . '/assets/js/disallow.js', array('jquery'), $version, true);
+    wp_enqueue_script('webdev-js', get_template_directory_uri(  ) . '/assets/js/scripts.js', array('jquery'), $version, true);
+
 });
 
 

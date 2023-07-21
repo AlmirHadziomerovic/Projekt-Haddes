@@ -13,7 +13,7 @@ function elementsInViewport(){let elements=document.querySelectorAll('.animate')
     for(let i=0;i<elements.length;i++){let elementTopPosition=elements[i].getBoundingClientRect().top+windowTopPosition
         let elementBottomPosition=elements[i].getBoundingClientRect().bottom+windowTopPosition
         if((windowsBottomPosition>elementTopPosition)&&(windowTopPosition<elementBottomPosition)){elements[i].classList.add(animated)}else{}}}
-function addAnimateClass(){let elements=document.querySelectorAll('h1,h2,p,.post,.seo,.about,.span,.project,.allProjects,.projects,.column,.blog-wrapper,.blog-content6')
+function addAnimateClass(){let elements=document.querySelectorAll('h1,h2,p,.post,.header-media-text,.titleabout,.seo,.span,.seotitleone,.seo-img,.project,.allProjects,.projects,.column,.blog-wrapper,.blog-content6,.container')
     for(let i=0;i<elements.length;i++){elements[i].classList.add('animate')}}
 document.addEventListener('DOMContentLoaded',function(){jsLoaded()
     toTopButton()
