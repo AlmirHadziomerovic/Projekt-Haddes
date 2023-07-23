@@ -128,7 +128,8 @@ h2, h3, .portfolio {
     #navbar .container {
         height: var(--navbar-height-desktop);
     }
-}#brand {
+}
+#brand {
      height: 100%;
      width: auto;
  }
@@ -140,7 +141,8 @@ h2, h3, .portfolio {
     #brand {
         height: calc(var(--navbar-height-desktop));
     }
-}#brand img:not([src$=svg]) {
+}
+#brand img:not([src$=svg]) {
      height: 100%;
      width: auto;
  }
@@ -162,13 +164,15 @@ h2, h3, .portfolio {
         color: var(--navbar-bg-color);
         font-size: 1em;
     }
-}.nav-menu {
+}
+.nav-menu {
      position: fixed;
      top: var(--navbar-height-mobile);
      left: 0;
      right: 0;
      bottom: 0;
      padding: 2rem 0;
+    min-height:100vw;
      background-color: rgba(0, 2, 8, .863);
      opacity: 0;
      pointer-events: none;
@@ -176,6 +180,8 @@ h2, h3, .portfolio {
      text-align: center;
      font-weight: 400;
  }
+
+
 @media screen and (min-width:768px) {
     .nav-menu {
         position: fixed;
@@ -184,6 +190,7 @@ h2, h3, .portfolio {
         right: 0;
         bottom: 0;
         padding: 0;
+        min-height:0;
         background-color: transparent;
         opacity: 0;
         pointer-events: none;
@@ -192,7 +199,9 @@ h2, h3, .portfolio {
         font-weight: 400;
         gap: 0;
     }
-}@media screen and (min-width:768px) {
+}
+
+@media screen and (min-width:768px) {
     #nav-main {
         position: static;
         display: flex;
@@ -202,7 +211,8 @@ h2, h3, .portfolio {
         pointer-events: auto;
         font-size: clamp(12px, 1vw, 18px);
     }
-}input[type="checkbox"] {
+}
+input[type="checkbox"] {
      display: none;
  }
 #nav-main a {
@@ -366,7 +376,7 @@ h2, h3, .portfolio {
 #nav-main {
     transform: translateY(-100%);
     transition: all 1.5s;
-    max-height:40%;
+    max-height:100%;
 }
 #nav-toggle:checked~#nav-main {
     opacity: 1;
@@ -437,13 +447,13 @@ button, input, .btn, #wpforms-submit-361 {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     min-width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: cover;
+    position: cover;
     background-attachment: fixed;
-    padding: 2.5 1.5em;
+    padding: 2.5rem ;
     line-height: 1.4;
     text-align: center;
     position: relative;
@@ -480,23 +490,29 @@ button, input, .btn, #wpforms-submit-361 {
         color: grey;
         font-size: 3rem;
         font-family: 'Charmonman';
+
     }
 }#page-header .actions {
-     display: inline-block;
-     justify-content: center;
-     width: 100%}
+       display: inline-block;
+       justify-content: center;
+       width: 100%;
+       margin-top:1rem;
+       font-size: 1rem;
+   }
 @media screen and (min-width:768px) {
     #page-header .actions {
         position: absolute;
-        margin-top: 15rem;
+        margin-top: 5rem;
     }
-}#page-header h1 {
+}
+#page-header h1 {
      color: var(--base-color);
      font-size: 1.5rem;
      font-family: 'Charmonman';
      text-decoration: underline;
      text-decoration-color: #eeeeee29;
-     margin-top: -80px;
+      margin-top:-7rem;
+
  }
 @media screen and (min-width:768px) {
     #page-header h1, #page-header1 h1 {
@@ -553,6 +569,7 @@ button, input, .btn, #wpforms-submit-361 {
     border-radius: 0 0 20px 20px ;
     gap:1rem;
     margin-bottom:3rem;
+    max-width:750px;
 }
 .content-headline {
     color: var(--base-color);

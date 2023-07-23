@@ -44,7 +44,7 @@
         </div>
 
 
-<sidebar class="social-link columns">
+<aside class="social-link columns">
 <?php 
     $social_links = get_field('social_links', 'option');
     ?>
@@ -77,7 +77,7 @@
         <span class="screen-reader-text"><?php _e('Call us', 'wifi');?></span>
     </a>    
     <?php endif;?>
-</sidebar>
+</aside>
     </nav>
 
     
