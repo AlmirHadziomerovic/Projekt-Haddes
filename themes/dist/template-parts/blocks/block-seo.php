@@ -42,7 +42,7 @@ if($seo['seo_direction']){
 
     <div class="seo-img alignfull animate">
                 <?php
-                 echo wp_get_attachment_image($seo['seo_img'], 'medium-large', false, array('class' => 'seo-img animate'));
+                 echo wp_get_attachment_image($seo['seo_img'], 'projekt', false, array('class' => 'seo-img animate'));
                 ?>
     </div>
     <div>

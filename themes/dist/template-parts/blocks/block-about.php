@@ -21,13 +21,13 @@ $about = get_field('about');
                  echo wp_get_attachment_image($about['about_image'], 'medium-large', false, array('class' => 'about-img animate'));
                 ?>
     </div>
-    <div>
+
             <div class="about-text">
                 <h2 class="titleabout"> HALLO</h2>
                 <?php echo $about['about_description'];
                 ?>
             </div>
-     </div>
+
 </div>
 <div class="actions">
                     <a href="mailto:<?php echo antispambot('almir_hadziomerovic@hotmail.com'); ?>" 
