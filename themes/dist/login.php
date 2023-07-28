@@ -24,7 +24,7 @@ add_filter('login_message', function ($message) {
 	</image>
 </g>
 <g id="HADES-LOGOGZeichenflche-1">
-	
+
 		<image style="display:none;overflow:visible;enable-background:new    ;" width="2475" height="1756" id="Ellipse--Linie" xlink:href="3D693CA1DD6CB51D.png"  transform="matrix(0.1098 0 0 3.601256e-02 -44.9999 -0.463)">
 	</image>
 	<path id="Ellipse" class="st1" d="M212.4,31.3c0-14.9-54.4-27.1-121.6-27.1C23.7,4.2-30.7,16.3-30.7,31.3

@@ -9,7 +9,7 @@
     <title>
             Haddes übernimmt für Sie die Herausforderung Webseiten!
     </title>
-    <?php wp_head(); ?> 
+    <?php wp_head(); ?>
 
 </head>
 <body <?php body_class();?>>
@@ -64,7 +64,7 @@
     <?php endif;?>
 
     <?php if($social_links['instagram']):?>
-    
+
     <a href="<?php echo $social_links['instagram'];?>" target="_blank">
         <span class="icon-instagram" aria-hidden="true"></span>
         <span class="screen-reader-text"><?php _e('Contact Me', 'wifi');?></span>

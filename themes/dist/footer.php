@@ -1,9 +1,10 @@
+<?php
+    $social_links = get_field('social_links', 'option');
+?>
 <footer id="page-footer" class="columns container">
 
     <div class="social-links column">
-        <?php 
-        $social_links = get_field('social_links', 'option');
-        ?>
+
 
         <?php if($social_links['instagram']):?>
         <a href="<?php echo $social_links['instagram'];?>" target="_blank">
@@ -12,6 +13,7 @@
         </a>
         <?php endif;?>
 
+
         <?php if($social_links['facebook']):?>
         <a href="<?php echo $social_links['facebook'];?>" target="_blank">
             <span class="icon-facebook1" aria-hidden="true"></span>
@@ -19,6 +21,7 @@
         </a>    
         <?php endif;?>
     </div>
+
     <?php
     wp_nav_menu(array(
         'theme_location' => 'footer',

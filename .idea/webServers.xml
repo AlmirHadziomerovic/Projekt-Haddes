@@ -9,6 +9,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="93827ecd-e65e-4334-8648-5ee07e52343d" name="Hoststar" url="http://lx57.hoststar.hosting">
+        <fileTransfer host="lx57.hoststar.hosting" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" forceListCommand="true" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>
