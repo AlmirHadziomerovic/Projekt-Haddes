@@ -537,10 +537,32 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
     #page-header h1 {
         color: grey;
         font-size: 3rem;
-        font-family: 'Charmonman';
+        font-family: 'Charmonman';}
 
+        .typing-demo {
+            animation: typing 8s steps(44, end), blink-caret .5s step-end infinite;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            font-family: monospace;
+            font-size: 2em;
+        }
+
+        @keyframes typing {
+            from {width: 0}
+            to{width:100%}
+        }
+
+        @keyframes blink-caret {
+            from, to {
+                border-color:transparent
+            }
+            50% {
+                border-color: var(--primary-color)
+            }
+        }
     }
-}#page-header .actions {
+#page-header .actions {
      display: inline-block;
      justify-content: center;
      width: 100%;
@@ -1279,13 +1301,4 @@ row {
         font-weight: 400;
         font-size: 14px;
     }
-@media screen and (min-width: 860px) {
-    .leistungen {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
-        gap: 10px;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-}
+
