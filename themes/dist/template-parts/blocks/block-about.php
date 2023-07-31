@@ -30,7 +30,7 @@ $about = get_field('about');
 
 </div>
 <div class="actions">
-                    <a href="mailto:<?php echo antispambot('almir_hadziomerovic@hotmail.com'); ?>" 
+                    <a href="mailto:<?php echo antispambot('office@haddes.at'); ?>"
                         class="btn"><?php echo $about['about_link']; ?></a>
                 </div>
 

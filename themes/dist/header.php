@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?php language_attributes(); ?>" class="no-js">
+<html <?php language_attributes(); ?> class="no-js">
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
@@ -55,13 +55,6 @@
         <span class="screen-reader-text"><?php _e('Follow on Facebook', 'wifi');?></span>
     </a>    
     <?php endif;?>
-    <?php if($social_links['email']):?>
-    
-    <a href="mailto:<?php echo $social_links['email'];?>" target="_blank">
-        <span class="icon-mail" aria-hidden="true"></span>
-        <span class="screen-reader-text"><?php _e('Contact Me', 'wifi');?></span>
-    </a>  
-    <?php endif;?>
 
     <?php if($social_links['instagram']):?>
 
@@ -76,6 +69,13 @@
         <span class="icon-phone" aria-hidden="true"></span>
         <span class="screen-reader-text"><?php _e('Call us', 'wifi');?></span>
     </a>    
+    <?php endif;?>
+    <?php if($social_links['email']):?>
+
+        <a href="mailto:<?php echo $social_links['email'];?>" target="_blank">
+            <span class="icon-mail" aria-hidden="true"></span>
+            <span class="screen-reader-text"><?php _e('Contact Me', 'wifi');?></span>
+        </a>
     <?php endif;?>
 </aside>
     </nav>

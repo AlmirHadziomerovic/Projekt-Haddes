@@ -16,7 +16,7 @@
         <div id="page-header" style="background-image:url('<?php echo $header['image'];?>');" class="alignfull img">
                 <h1  class="headline typing-demo"><?php echo $header['headline']; ?> </h1>
                 <div class="actions">
-                    <a href="mailto:<?php echo antispambot('almir_hadziomerovic@hotmail.com'); ?>" 
+                    <a href="mailto:<?php echo antispambot('office@haddes.at'); ?>"
                         class="btn"><?php echo $header['link_text']; ?></a>
                 </div>
                 <ul id="scroll">

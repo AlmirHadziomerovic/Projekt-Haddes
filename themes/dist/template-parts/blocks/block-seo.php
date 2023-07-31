@@ -46,7 +46,7 @@ if($seo['seo_direction']){
                 ?>
     </div>
     <div>
-            <div class="about-text">
+            <div class="seo-text">
                 <?php echo $seo['seo_description'];
                     if($seo['seo_description'])
                     ?>

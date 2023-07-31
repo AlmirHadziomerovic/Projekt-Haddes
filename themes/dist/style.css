@@ -58,7 +58,8 @@ text Domain: wifi
 *, *::before, *::after {
     box-sizing: border-box;
 }
-img {
+img,
+#cn-notice-icon{
     max-width: 100%;
     height: auto;
     vertical-align: bottom;
@@ -455,7 +456,6 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
     background-repeat: no-repeat;
     background-position: cover;
     background-attachment: fixed;
-    padding: 2.5rem ;
     line-height: 1.4;
     text-align: center;
     position: relative;
@@ -691,6 +691,9 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
     margin-bottom:3rem;
     max-width:750px;
 }
+.posts {
+    margin-top:-250px;
+}
 .content-headline {
     color: var(--base-color);
     font-size: 2rem;
@@ -785,6 +788,7 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
     padding-bottom: 1rem;
     margin: 0;
     border-top: solid 1px rgba(0, 0, 0, .205);
+    line-height: 2em;
 }
 
 #page-footer ul {
@@ -818,7 +822,7 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
 @media screen and (min-width:768px) {
     #page-footer {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         gap: 1.5rem;
         border-top: solid 1px rgba(0, 0, 0, .205);
@@ -955,6 +959,16 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
     text-align: center;
     color: var(--navbar-bg-color);
 }
+.seo-text {
+    padding: 5%;
+    margin: .5em;
+    font-family: 'Cinzel Decorative';
+    font-weight: 400;
+    font-size: clamp(12px, 1vw, 18px);
+    background-color: var(--base-color);
+    text-align: center;
+    color: var(--navbar-bg-color);
+}
 @media screen and (min-width:768px) {
     .about {
         display: flex;
@@ -1026,14 +1040,15 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
         opacity: 1;
         color: var(--primary-color);
         font-family: "Cinzel Decorative"}
-}.seo {
+}
+.seo {
      display: flex;
      justify-content: center;
      align-items: center;
      flex-direction: column;
  }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:850px) {
     .seo {
         display: flex;
         justify-content: center;
@@ -1044,6 +1059,8 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
     .seo-img {
         max-width: 100%;
         height: auto;
+        min-width: 730px;
+        min-height:487px;
     }
     .reverse {
         display: flex;

@@ -28,7 +28,7 @@
         'container' => false,
         'menu_id'=> 'nav-menu',
         'fallback_cb' => false,
-        'depth' =>2
+        'depth' =>1
     ));
     ?>
 <div class="copyright column">

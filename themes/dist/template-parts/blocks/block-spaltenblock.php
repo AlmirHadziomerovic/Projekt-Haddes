@@ -44,12 +44,7 @@ if(!empty($spaltenBlock)):?>
                     <p><?php echo $spaltenBlock['content_kopie'];?></p>
                     </div>
     </article>
-            
 </section>
-
-
-
-
 
     <?php
     elseif (is_admin()):

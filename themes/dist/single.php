@@ -22,7 +22,7 @@
 </main>
 
     <a class="btn"
-        href="mailto:<?php echo antispambot('almir_hadziomerovic@hotmail.com');  ?>"><?php _e('Jetzt Kontaktieren', 'wifi'); ?></a>
+        href="mailto:<?php echo antispambot('office@haddes.at');  ?>"><?php _e('Jetzt Kontaktieren', 'wifi'); ?></a>
 
 
 
