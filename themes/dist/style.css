@@ -689,7 +689,7 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
     border-radius: 0 0 20px 20px ;
     gap:1rem;
     margin-bottom:3rem;
-    max-width:750px;
+    max-width:660px;
 }
 .posts {
     margin-top:-250px;
@@ -969,6 +969,31 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
     text-align: center;
     color: var(--navbar-bg-color);
 }
+
+.seo-text-check{
+    padding: 5%;
+    margin: .5em;
+    font-family: 'Cinzel Decorative';
+    font-weight: 400;
+    font-size: clamp(12px, 1vw, 20px);
+    line-height: 1.9em;
+    background-color: var(--base-color);
+    text-align: center;
+    color: var(--navbar-bg-color);
+}
+@media screen and (min-width:768px){
+    .seo-text-check{
+    padding: 5%;
+    margin: .5em;
+    font-family: 'Cinzel Decorative';
+    font-weight: 400;
+    font-size: clamp(18px, 1vw, 20px);
+    line-height: 1.9em;
+    background-color: var(--base-color);
+    text-align: center;
+    color: var(--navbar-bg-color);
+}
+}
 @media screen and (min-width:768px) {
     .about {
         display: flex;
@@ -1039,8 +1064,11 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
     .allProjectsImg:hover .project-title {
         opacity: 1;
         color: var(--primary-color);
-        font-family: "Cinzel Decorative"}
+        font-family: "Cinzel Decorative";
+    }
 }
+
+
 .seo {
      display: flex;
      justify-content: center;

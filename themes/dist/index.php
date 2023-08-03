@@ -26,7 +26,7 @@ get_header(); ?>
                 echo '<h2 class="blog_title">' .$blog['blog_description1'] . '</h2>';
             } else {
                 if(the_archive_description()) {
-                    the_archive_description('<p>', '</p>');
+                    the_archive_description('<span>', '</span>');
                 }
             }
         ?>
@@ -82,7 +82,7 @@ $paged = (get_query_var('paged')) ? get_query_var('pages') : 1;
 $args = [
     'post_type' => 'project',
     'order' => 'rand',
-    'posts_per_page' => 3,     
+    'posts_per_page' => 6,
 ];
 
 $project_query = new WP_Query($args);
