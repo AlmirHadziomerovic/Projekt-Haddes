@@ -5,9 +5,9 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sie Benötigen eine NEUE Webseite? Ich helfe Ihnen dabei ganz unkompliziert. Vereinbaren Sie doch gleich unverbindlich einen Termin.">
+    <meta name="keywords" content="webdesign graz,seo agentur graz,seo,webseitenerstellung graz,websites," />
     <title>
-            Haddes übernimmt für Sie die Herausforderung Webseiten!
+        Webdesign Graz: Haddes - Hadziomerovic Design für kreative und effektive Online-Präsenzen
     </title>
     <?php wp_head(); ?>
 

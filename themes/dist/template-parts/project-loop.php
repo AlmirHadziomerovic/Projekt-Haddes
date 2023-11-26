@@ -10,8 +10,8 @@
         ?>
     </a>
     <figcaption class="project-caption">
-        <h3 class="project-title">
+        <h2 class="project-title-caroussel">
             <a href="<?php echo esc_url(get_permalink()); ?>"><?php the_title(); ?></a>
-        </h3>
+        </h2>
     </figcaption>
 </figure>

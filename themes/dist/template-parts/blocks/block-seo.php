@@ -46,10 +46,11 @@ if($seo['seo_direction']){
                 ?>
     </div>
     <div>
-            <div class="seo-text">
+            <div class="seo-text animate">
                 <?php echo $seo['seo_description'];
                     if($seo['seo_description'])
                     ?>
+                <div class="read-more" onclick="toggleText()">Mehr lesen</div>
             </div>
      </div>
 </section>

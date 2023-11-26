@@ -69,6 +69,9 @@ html {
     line-height: 1.4em;
     scroll-behavior: smooth;
 }
+a{
+    color:white;
+}
 a:hover {
     text-decoration: underline;
 }
@@ -76,13 +79,17 @@ a:link {
     text-decoration: none;
 }
 a:active {
-    color: var(--base-color);
+    color: black;
 }
 a:visited {
     color:white;
 }
 a:link {
     text-decoration: none;
+}
+link-text {
+    color:black;
+    backgound-color:white;
 }
 body {
     padding-top: var(--navbar-height-mobile);
@@ -98,6 +105,15 @@ h2, h3, .portfolio {
 
 .date {
     color: var(--navbar-bg-color);
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+.meta {
+    display:block;
+    justify-content: center;
+    align-items: baseline;
 }
 .container {
     margin-left: auto;
@@ -526,41 +542,14 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
         margin-top: -100px;
     }
 }
-#page-header h1 {
-    color: grey;
-    font-size: 3rem;
-    font-family: 'Charmonman';
 
-
-}
 @media screen and (min-width:768px) {
     #page-header h1 {
-        color: grey;
+        color: var(--base-color);
         font-size: 3rem;
         font-family: 'Charmonman';}
 
-        .typing-demo {
-            animation: typing 8s steps(44, end), blink-caret .5s step-end infinite;
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 3px solid;
-            font-family: monospace;
-            font-size: 2em;
-        }
 
-        @keyframes typing {
-            from {width: 0}
-            to{width:100%}
-        }
-
-        @keyframes blink-caret {
-            from, to {
-                border-color:transparent
-            }
-            50% {
-                border-color: var(--primary-color)
-            }
-        }
     }
 #page-header .actions {
      display: inline-block;
@@ -612,16 +601,10 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
 
     }
 }
+
 @media screen and (min-width:768px) {
     #page-header h1, #page-header1 h1 {
-        color: grey;
-        font-size: 5rem;
-        font-family: 'Charmonman';
-    }
-}
-@media screen and (min-width:768px) {
-    #page-header h1, #page-header1 h1 {
-        color: grey;
+        color: var(--base-color);
         font-size: 3rem;
         font-family: 'Charmonman'
     }
@@ -727,11 +710,8 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
         transition: all 0.5s;
     }
 }
-.splide__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
 .icon-three {
     display: flex;
     justify-content: center;
@@ -886,6 +866,7 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
         padding: 1em;
         margin: 5em;
         font-size: 1em;
+        color:black;
     }
 }.blog-content {
      padding: 1em;
@@ -893,20 +874,40 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
      border-right: 1px rgba(0, 0, 0, .145) solid;
      border-bottom: 1px rgba(0, 0, 0, .145) solid;
      padding: 1em;
+    position:relative;
  }
+
+
 .blog-content:hover {
     background-color: grey;
     transition: all 1s linear;
 }
 .post-categories {
     padding: 0;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    color:black;
+}
+.meta a {
+    color:black;
+}
+h4, .blog-headline {
+    font-size: 1.5rem;
+    line-height: 1.4em;
+    color: var(--primary-color);
+}
+.blog-headline a {
+    color:var(--base-bg-color);
 }
 @media screen and (min-width:768px) {
     h4, .blog-headline {
         font-size: 1.5rem;
         line-height: 1.4em;
-        color: var(--base-color);
+        color: var(--primary-color);
     }
+
 }@media screen and (min-width:768px) {
     .screen-reader-text {
         border: 0;
@@ -960,6 +961,7 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
     color: var(--navbar-bg-color);
 }
 .seo-text {
+    flex:1;
     padding: 5%;
     margin: .5em;
     font-family: 'Cinzel Decorative';
@@ -968,6 +970,7 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
     background-color: var(--base-color);
     text-align: center;
     color: var(--navbar-bg-color);
+
 }
 
 .seo-text-check{
@@ -1018,6 +1021,7 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
     color: var(--base-color);
     text-decoration: underline;
 }
+
 .single-project_title {
     font-size: 2em;
     text-decoration: underline;
@@ -1032,7 +1036,7 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
 .project-img {
     padding: 4rem;
 }
-.project-title {
+.project-title{
     color: var(--base-color);
     display: flex;
     justify-content: center;
@@ -1066,6 +1070,15 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
         color: var(--primary-color);
         font-family: "Cinzel Decorative";
     }
+    .project-title-caroussel{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5em;
+        opacity: 0;
+        min-width: 100%;
+        padding: .5rem;
+    }
 }
 
 
@@ -1085,10 +1098,15 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
         margin-bottom: 1rem;
     }
     .seo-img {
-        max-width: 100%;
+        flex:1;
+        max-width: 50%;
         height: auto;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
         min-width: 730px;
         min-height:487px;
+        float:left;
     }
     .reverse {
         display: flex;
@@ -1098,7 +1116,7 @@ button, input, .btn, #wpforms-submit-361, #wpforms-submit-950 {
         flex-direction: column;
     }
     .seo-direction-row {
-        flex-direction: column-reverse;
+        flex-direction: row-reverse;
     }
 }.error-logo {
      width: 60%;
@@ -1282,31 +1300,33 @@ row {
     }
 }
 .leistungen {
-
     margin-bottom:2rem;
 }
 
 @media screen and (min-width: 768px) {
     .leistungen {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
         gap: 10px;
         margin-top: 2rem;
         margin-bottom: 2rem;
+        flex-wrap: wrap;
     }
 
-    .leistungen-img {
-        grid-column: 1 / 3;
-        grid-row: 1;
-        max-width: 100%;
+    .leistungen-img,
+    .leistungen-img_Kopie,
+    .leistungen-img_Kopie2 {
+        flex: 1;
         height: auto;
         vertical-align: bottom;
+        object-fit: cover;
     }
 
-    .leistungen_description {
-        grid-column: 1 / 3;
-        grid-row: 2;
+    .leistungen_description,
+    .leistungen_description_Kopie,
+    .leistungen_description_Kopie2 {
+        flex: 1;
         font-family: 'Cinzel Decorative';
         font-style: oblique;
         font-weight: 400;
@@ -1314,36 +1334,41 @@ row {
     }
 }
 
+.leistungen {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
 
-    .leistungen {
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: 2rem;
-        margin-bottom: 4rem;
-    }
+.leistungen-img_Kopie,
+.leistungen-img_Kopie2 {
+    grid-column: span 1;
+    height: auto;
+    vertical-align: bottom;
+    object-fit: cover;
+}
 
-    .leistungen-img_Kopie {
-        grid-column: 1 / 4;
-        grid-row: 1;
-        max-width: 100%;
-        height: auto;
-        vertical-align: bottom;
-    }
-
-    .leistungen-img_Kopie2 {
-        grid-column: 1 / 4;
-        grid-row: 1;
-        max-width: 100%;
-        height: auto;
-        vertical-align: bottom;
-    }
-
-    .leistungen_description_Kopie,
-    .leistungen_description_Kopie2 {
-        grid-column: 1 / 4;
-        grid-row: 2;
-        font-family: 'Cinzel Decorative';
-        font-style: oblique;
-        font-weight: 400;
-        font-size: 14px;
-    }
-
+.leistungen_description_Kopie,
+.leistungen_description_Kopie2 {
+    grid-column: span 1;
+    font-family: 'Cinzel Decorative';
+    font-style: oblique;
+    font-weight: 400;
+    font-size: 14px;
+}
+.text {
+    grid-column: span 1;
+    font-family: 'Cinzel Decorative';
+    font-style: oblique;
+    font-weight: 400;
+    font-size: 14px;
+}
+.text_m {
+    grid-column: span 1;
+    font-family: 'Cinzel Decorative';
+    font-style: oblique;
+    font-weight: 400;
+    font-size: 18px;
+}

@@ -44,7 +44,7 @@ add_action('login_footer', function () {
     ?>
     <p class="creator">
         <small>development by Haddes.</small>
-        <a class="creator-logo" href="https://www.wifi.at" target="_blank" title="wifi">
+        <a class="creator-logo" href="https://www.haddes.at" target="_blank" title="wifi">
             <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 162 53.2" style="enable-background:new 0 0 162 53.2;" xml:space="preserve">
 <style type="text/css">
