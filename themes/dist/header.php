@@ -7,11 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="webdesign graz,seo agentur graz,seo,webseitenerstellung graz,websites," />
     <title>
-        Webdesign Graz: Haddes - Hadziomerovic Design für kreative und effektive Online-Präsenzen
+        Webdesign in Graz (Steiermark): Haddes - Hadziomerovic Design für kreative und effektive Online-Präsenzen
     </title>
     <?php wp_head(); ?>
 
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DQFEJ5CVGW"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DQFEJ5CVGW');
+</script>
 <body <?php body_class();?>>
     <a href="#content" class="screen-reader-text"><?php _e('Zum Inhalt Springen', 'wifi'); ?></a>
     <nav id="navbar">
